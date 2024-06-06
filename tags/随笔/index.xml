@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>随笔 on 我语言之局限,即是我世界之局限</title>
+        <link>http://localhost:1313/tags/%E9%9A%8F%E7%AC%94/</link>
+        <description>Recent content in 随笔 on 我语言之局限,即是我世界之局限</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sat, 18 Mar 2023 22:07:31 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>第一篇文章亦或不是</title>
+        <link>http://localhost:1313/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/</link>
+        <pubDate>Sat, 18 Mar 2023 22:07:31 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/Hello-World.jpg" alt="Featured image of post 第一篇文章亦或不是" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;早在去年初旬，我就创建了一个Github Pag，打开就一个空白页面，留下一行字“Lucasblacklu.github.io”，那时候并不知晓什么主题也不懂什么Hexo,Hugo。后来，去年刚开学不久看到班上的同学在show他的Blog，于是便粗略的看了一下，自己并没有什么想法去搭建；直到后来，在班上的老师展示他的Blog，用hexo和js搭建的，后来便开始了，我自己摸索搭建Blog。刚开始慢慢看教程，然后不断碰壁，一开始我看到的优质教程是&lt;a class=&#34;link&#34; href=&#34;https://huangno1.github.io/hugo_theme_change/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;RemBlog的教程&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+以及啓发RemBlog的&lt;a class=&#34;link&#34; href=&#34;https://medium.com/@chswei/%E5%9C%A8-github-%E9%83%A8%E7%BD%B2-hugo-%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99-9c40682dfe40&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;教程&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+,也就是因爲这个教程，我懂得了如何搭建Hugo Blog，也就是从这里开始我爱上Hugo的快速部署，而不是Hexo的丰富且美观的主题。&lt;/p&gt;
+&lt;h2 id=&#34;一波多折&#34;&gt;一波多折
+&lt;/h2&gt;&lt;p&gt;前面谈到Hugo快速，但是缺乏优质主题，毕竟颜值是第一动力，后来我挑了很多个主题，一开始是这个主题stack，但是由于自己不会如何配置，遇上很多问题，例如部署出来的Blog没有正确显示主题，也就是CSS配置出错，但我当时并不知道什么是CSS，后来又试了好几个，最后折腾到凌晨，无奈只好选择一个简单的主题。之后，我在一个telegram看到一个&lt;a class=&#34;link&#34; href=&#34;https://wol.moe/%E5%9F%BA%E4%BA%8Ehugo-github-actions-cloudflare-pages%E7%9A%84%E8%87%AA%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%83%A8%E7%BD%B2/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;教程&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+教人使用三个仓库，自动化部署Blog仅需上传markdown文件即可，这对于当时并不瞭解Github Action和Workflow的我，无疑是巨大的诱惑，然后我按照他的教程试了好久还是不行，我甚至都不知道设定Token,后来也就不了了之，之前问过他里面的bash脚本怎么使用（还包括sed命令），可是我现在只看懂一些。也是因爲此，于是我便下定决定要搭建个Hugo+&lt;del&gt;Github Action&lt;/del&gt;(Github Action暂时出问题，暂时用回两个仓库的方式) 的自动化部署Blog,后来在Workflow的多次踩坑当中学会了如何使用Token,加上那段时间在折腾Rom 编译学会了不少Git和一些Linux 命令。&lt;/p&gt;
+&lt;h2 id=&#34;最后&#34;&gt;最后
+&lt;/h2&gt;&lt;p&gt;我爲什么又选择这个主题，是因爲之前在Hugo Shoka碰壁发现，很多是自己的问题，加上我有认识不同国家的人，而Stack支持多语言输出，只需要写出一篇中文文章，把他发给chatgpt可以帮忙去润色，再创建其他语言的markdown文件，例如我原始文件是index.md，英文的则是index.en.md。人的慾望是难以满足的，最后我是再三抉择才决定使用Stack主题，未来有更好的，可能是我会选择迁移到新的主题或新的驱动。再者是爲什么我默认语言选择繁体中文，别问,问就是延续之前的我之前传统&lt;/p&gt;
+&lt;h2 id=&#34;更新&#34;&gt;更新
+&lt;/h2&gt;&lt;p&gt;其实博客主题什么的都不重要,重要的内容,内容足够好自然可以吸引读者,延续一直以来用的博客即可,太累或太懒不想折腾,一昧追求更好看,性能更好或者是其他需求的主题,反而使其写博客的本心,&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

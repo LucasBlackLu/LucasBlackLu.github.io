@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='前言 原本我想借编程随想文章的标题 学习与人生 ,但仔细想想还是算了,这篇文章我并不想过多叙述, 本想用这几天的感想带过这篇文章,但斟酌片刻之后便打'>
+<title>四月的总结--To Darling</title>
+
+<link rel='canonical' href='http://localhost:1313/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/'>
+
+<link rel="stylesheet" href="/scss/style.min.1203e9143381595224d07e2cf2421ca3e8b9990dcd519e7f539c15da9b27e1b7.css"><meta property='og:title' content='四月的总结--To Darling'>
+<meta property='og:description' content='前言 原本我想借编程随想文章的标题 学习与人生 ,但仔细想想还是算了,这篇文章我并不想过多叙述, 本想用这几天的感想带过这篇文章,但斟酌片刻之后便打'>
+<meta property='og:url' content='http://localhost:1313/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/'>
+<meta property='og:site_name' content='我语言之局限,即是我世界之局限'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Think' /><meta property='article:published_time' content='2024-05-04T08:03:05&#43;08:00'/><meta property='article:modified_time' content='2024-05-04T08:03:05&#43;08:00'/><meta property='og:image' content='http://localhost:1313/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/imposter_factory.jpg' />
+<meta name="twitter:title" content="四月的总结--To Darling">
+<meta name="twitter:description" content="前言 原本我想借编程随想文章的标题 学习与人生 ,但仔细想想还是算了,这篇文章我并不想过多叙述, 本想用这几天的感想带过这篇文章,但斟酌片刻之后便打"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/imposter_factory.jpg' />
+  
+
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu0e429c6c5e22e495d9f8d8382dd0396f_64312_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">我语言之局限,即是我世界之局限</a></h1>
+            <h2 class="site-description"></h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/LucasBlackLu'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>链接</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+                
+                    <li id="i18n-switch">  
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                        <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
+                            
+                                <option value="http://localhost:1313/zh-tw/" >繁中</option>
+                            
+                                <option value="http://localhost:1313/" selected>简中</option>
+                            
+                                <option value="http://localhost:1313/en/" >English</option>
+                            
+                                <option value="http://localhost:1313/vi/" >Tiếng Việt</option>
+                            
+                        </select>
+                    </li>
+                
+            
+
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>暗色模式</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#前言">前言</a></li>
+        <li><a href="#读书">读书</a>
+          <ol>
+            <li><a href="#来自新世界">来自新世界</a></li>
+            <li><a href="#csapp">CSAPP</a></li>
+          </ol>
+        </li>
+        <li><a href="#刷题">刷题</a></li>
+        <li><a href="#情感">情感</a></li>
+        <li><a href="#结语">结语</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/">
+                <img src="/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/imposter_factory_huda4c57261821735b7299c99bde243fc3_369115_800x0_resize_q75_box.jpg"
+                        srcset="/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/imposter_factory_huda4c57261821735b7299c99bde243fc3_369115_800x0_resize_q75_box.jpg 800w, /p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/imposter_factory_huda4c57261821735b7299c99bde243fc3_369115_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="450" 
+                        loading="lazy"
+                        alt="Featured image of post 四月的总结--To Darling" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/daily/" >
+                Daily
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/">四月的总结--To Darling</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">May 04, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 3 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+        <footer class="article-translations">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+            <div>
+                
+                    <a href="http://localhost:1313/zh-tw/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E7%B8%BD%E7%B5%90/" class="link">繁中</a>
+                
+            </div>
+        </footer>
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h3 id="前言">前言
+</h3><p>原本我想借编程随想文章的标题 <strong><a class="link" href="https://program-think.blogspot.com/2020/12/Study-and-Life.html?m=1"  target="_blank" rel="noopener"
+    >学习与人生</a>
+
+
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+
+</strong>,但仔细想想还是算了,这篇文章我并不想过多叙述, 本想用<strong>这几天的感想</strong>带过这篇文章,但斟酌片刻之后便打消此念头,还是要写一些内容</p>
+<h3 id="读书">读书
+</h3><h4 id="来自新世界">来自新世界
+</h4><p>在四月,我读完了 <strong>来自新世界</strong> 这本书,这本书主要讲了一些觉醒超能力的人类掀起了凡人与超人的战争,最后超人完胜,随着超人获胜,超人发现他们每个人都是一颗定时的原子弹,便通过基因改造的技术加入了<strong>槐死机制的基因</strong> =&gt;只要杀死同类自己便一同死去;世界上仅存的人类分佈零散分佈在世界各地,他们大多数组成乌托邦式的部落,而书中的日本分爲9个部落,各个部落几乎不联络,过得与世隔绝的生活,生活的方方面面都有伦理委员会支配,只有内部人员才会知道他们彼此的身份,伦理委员会害怕出现异类从而危害整个部落,他们不会把不满18岁的人当作完整的人,若未成年期间出现异样,他们便会抹去其存在;超人统治世界的同时,一批进化成人形态的化鼠爲新一代人类任劳任怨并成爲他们的奴隶,他们除了长得像老鼠且丑陋与人类并无多少差异,实际上他们是没有超能力的人类;后来化鼠从小偷窃并培养人类的婴儿,让他们认爲自己是化鼠,未来并运用于战场上,人类无法攻击化鼠培养的人类,而人类可以.最后,主角拯救了所有人打败了化鼠,但是化鼠也是人类的祕密,只有少数人知道. 在网络上很多人说是反乌托邦小说,实际上也是反殖民.</p>
+<h4 id="csapp">CSAPP
+</h4><p>CSAPP 中文翻译深入理解计算机系统准确来说是以程序员视角瞭解计算机,书的第一章,自己完完整整地看完了,但是第二,第三是通过视频完成了,一章大概100页,一页一页地看实在是太累太耗时间了,或许我应该考虑精读</p>
+<h3 id="刷题">刷题
+</h3><p>上一週,我基本每天刷几道leetcode 题,但最近都没怎麽刷, 应该考虑刷几道,毕竟我甚至不熟悉一些算法</p>
+<h3 id="情感">情感
+</h3><p>原则上我是不会写这方面的内容,但正是因爲Darling 昨晚一句 ** 我可以看看吗**, 我写了一晚上; 有个人在牵挂着,我写Blog 也有一定的动力;最近些日子Darling 在忙碌着她的作业与论文,而我总是显得无所事事,无忧无虑,前几天她主动找我而我刚好和室友开一把游戏,我让她等20分钟,实际上这时间是40分钟,最后她去忙她的作业了,我对此感到十分懊悔;那天晚上她更新了她的头像,我看到她开心的样子莫名感到心酸,让我想起了那句话 &ldquo;任何肌肉太过用力都会因爲在分解释放能量时缺氧而形成乳酸,于是就会有酸痛感, 那麽内心的那些满满的酸楚,也是因爲太过用力吗&rdquo;. 我很享受和Darling的时光, 因爲有她,我心会莫名地感受到一种不知道如何形容的感觉,或者这就是爱情,你看不到它的存在也摸不到,但是你可以感受到. 我希望可以陪她多一些时间,也希望她坚强一些,不要捉个无法登陆考试就哭的爱哭鬼;3 ,也希望她健健康康,开开心心.早安,亲爱的,你还好吗
+爱你的卢致上</p>
+<h3 id="结语">结语
+</h3><p>卢要多写一些文章,把这些类似的文章复盖掉,不然我的Blog 要变成和Darling的恋恋笔记本了</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/think/">Think</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/_hu9ff7ba776453248539ee3997c5e3c952_56613_248db31ded4fb9b076bfb893892859c3.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 夏日之惑"
+                        
+                        data-hash="md5-3AmPy0ZHmh9LVZ3UD007SQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">夏日之惑</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E5%A4%B1%E7%9C%A0/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E5%A4%B1%E7%9C%A0/sleepless.e9493071729493160d60accfce4c2504_hu4f2da5504e57e65493a1aeca122ea786_134643_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 失眠"
+                        
+                        data-hash="md5-6UkwcXKUkxYNYKzPzkwlBA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">失眠</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E8%BF%99%E5%87%A0%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E8%BF%99%E5%87%A0%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/_hu7a4131a4c9a2df158e1444246d7033e6_85295_a83f4ea191283be8352a5216104fcf9a.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 这几天的感想"
+                        
+                        data-hash="md5-RS/WT5E1QFdXocIIXQqwoQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">这几天的感想</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E9%9D%A2%E8%A9%A6%E7%B6%93%E6%AD%B7/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E9%9D%A2%E8%A9%A6%E7%B6%93%E6%AD%B7/linux.140d41a7f13e247a4b223411fae46972_hu328fd905c00de5c48c9d0e1c05a773d7_4576_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 面試經歷"
+                        
+                        data-hash="md5-FA1Bp/E&#43;JHpLIjQR&#43;uRpcg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">面試經歷</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/Hello-World.c92dc5f0967b1afedd9d7bcf1e4822cc_huac6442c03371f05f20e9ed69e0c98107_925974_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 第一篇文章亦或不是"
+                        
+                        data-hash="md5-yS3F8JZ7Gv7dnXvPHkgizA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">第一篇文章亦或不是</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script src="https://utteranc.es/client.js" 
+        repo="LucasBlackLu/blog-comment"
+        issue-term="pathname"
+        
+        crossorigin="anonymous"
+        async
+        >
+</script>
+
+<style>
+    .utterances {
+        max-width: unset;
+    }
+</style>
+
+<script>
+    let utterancesLoaded = false;
+
+    function setUtterancesTheme(theme) {
+        let utterances = document.querySelector('.utterances iframe');
+        if (utterances) {
+            utterances.contentWindow.postMessage(
+                {
+                    type: 'set-theme',
+                    theme: `github-${theme}`
+                },
+                'https://utteranc.es'
+            );
+        }
+    }
+
+    addEventListener('message', event => {
+        if (event.origin !== 'https://utteranc.es') return;
+
+        
+        utterancesLoaded = true;
+        setUtterancesTheme(document.documentElement.dataset.scheme)
+    });
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (!utterancesLoaded) return;
+        setUtterancesTheme(e.detail)
+    })
+</script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2022 - 
+        
+        2024 我语言之局限,即是我世界之局限
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.22.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

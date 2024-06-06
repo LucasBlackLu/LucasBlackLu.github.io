@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Program on 我語言之局限，即是我世界之局限</title>
+        <title>Program on 我语言之局限,即是我世界之局限</title>
         <link>http://localhost:1313/tags/program/</link>
-        <description>Recent content in Program on 我語言之局限，即是我世界之局限</description>
+        <description>Recent content in Program on 我语言之局限,即是我世界之局限</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-tw</language>
+        <language>zh-cn</language>
         <lastBuildDate>Sat, 04 May 2024 07:16:07 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/program/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>面試經歷</title>
         <link>http://localhost:1313/p/%E9%9D%A2%E8%A9%A6%E7%B6%93%E6%AD%B7/</link>

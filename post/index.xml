@@ -1,20 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on 我語言之局限，即是我世界之局限</title>
+        <title>Posts on 我语言之局限,即是我世界之局限</title>
         <link>http://localhost:1313/post/</link>
-        <description>Recent content in Posts on 我語言之局限，即是我世界之局限</description>
+        <description>Recent content in Posts on 我语言之局限,即是我世界之局限</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-tw</language>
-        <lastBuildDate>Sat, 04 May 2024 08:03:05 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>四月的總結</title>
-        <link>http://localhost:1313/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E7%B8%BD%E7%B5%90/</link>
-        <pubDate>Sat, 04 May 2024 08:03:05 +0800</pubDate>
+        <language>zh-cn</language>
+        <lastBuildDate>Thu, 09 May 2024 00:54:15 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Android Rom 基础配置</title>
+        <link>http://localhost:1313/p/android-rom-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</link>
+        <pubDate>Thu, 09 May 2024 00:54:15 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E7%B8%BD%E7%B5%90/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E7%B8%BD%E7%B5%90/imposter_factory.jpg" alt="Featured image of post 四月的總結" /&gt;&lt;h3 id=&#34;前言&#34;&gt;前言
-&lt;/h3&gt;&lt;p&gt;原本我想借編程隨想文章的標題 &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://program-think.blogspot.com/2020/12/Study-and-Life.html?m=1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;學習與人生&lt;/a&gt;
+        <guid>http://localhost:1313/p/android-rom-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;img src="http://localhost:1313/p/android-rom-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/Factory_image.png" alt="Featured image of post Android Rom 基础配置" /&gt;&lt;hr&gt;
+&lt;h2 id=&#34;配置android-rom-编译环境&#34;&gt;配置Android Rom 编译环境
+&lt;/h2&gt;&lt;p&gt;Android Developer 官网上所使用的是 Ubuntu,需要安装一系列繁琐的内容，还有配置Repo 工具和路径
+这里不得不说一下，Archlinux的优点 &lt;code&gt;Aur&lt;/code&gt;,得益于此,我们仅需安装两个package,在这两个package当中包含了我们所需的所有package，在此之前我们需开启32位库&lt;/p&gt;
+&lt;h3 id=&#34;开启32位库&#34;&gt;开启32位库
+&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;sudo vim /etc/pacman.conf
+
+#[multilib]
+#Include = /etc/pacman.d/mirrorlist
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;更改为&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#[multilib]
+#Include = /etc/pacman.d/mirrorlist
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;安装所需套件&#34;&gt;安装所需套件
+&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;yay -S lineageos-devel android-devel
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;adb-工具包&#34;&gt;ADB 工具包
+&lt;/h3&gt;&lt;p&gt;在windows 系统中我们可能需要配置环境，而在 ArchLinux 当中， 我们仅需安装一个package&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; sudo pacman -S android-tools
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;三星odin&#34;&gt;三星Odin
+&lt;/h3&gt;&lt;p&gt;在Linux 系统上，我们无法使用带gui 的odin3,但是我们有odin4,这不是开玩笑而是真的有&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;yay -S odin4-cli
+
+odin4 -a ~/Downloads/twrp-t2q-20240324-1620.tar -s ~/Documents/t2q_patched_vbmeta.tar # 刷twrp
+odn4 -h # 可以查看更多，也可以刷Rom
+odin4 -b BL_XXXX.tar.md5 -a AP_XXXX.tar.md5 -c CP_XXXX.tar.md5 -s CSC_XXXX.tar.md5 -d PATH_OF_DEVICE_A # 刷固件
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;pixel-刷官方固件&#34;&gt;Pixel 刷官方固件
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Pixel 有两种途径刷写官方固件，一个是OTA包，另一个是工厂镜像 factory image
+&lt;a class=&#34;link&#34; href=&#34;https://developers.google.com/android/ota&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;OTA&lt;/a&gt;
 
 
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -25,19 +58,88 @@
 &lt;/svg&gt;&lt;/span&gt;
 
 
-&lt;/strong&gt;,但仔細想想還是算了,這篇文章我並不想過多敘述, 本想用&lt;strong&gt;這幾天的感想&lt;/strong&gt;帶過這篇文章,但斟酌片刻之後便打消此念頭,還是要寫一些內容&lt;/p&gt;
-&lt;h3 id=&#34;讀書&#34;&gt;讀書
-&lt;/h3&gt;&lt;h4 id=&#34;來自新世界&#34;&gt;來自新世界
-&lt;/h4&gt;&lt;p&gt;在四月,我讀完了 &lt;strong&gt;來自新世界&lt;/strong&gt; 這本書,這本書主要講了一些覺醒超能力的人類掀起了凡人與超人的戰爭,最後超人完勝,隨着超人獲勝,超人發現他們每個人都是一顆定時的原子彈,便通過基因改造的技術加入了&lt;strong&gt;槐死機制的基因&lt;/strong&gt; =&amp;gt;只要殺死同類自己便一同死去;世界上僅存的人類分佈零散分佈在世界各地,他們大多數組成烏托邦式的部落,而書中的日本分爲9個部落,各個部落幾乎不聯絡,過得與世隔絕的生活,生活的方方面面都有倫理委員會支配,只有內部人員才會知道他們彼此的身份,倫理委員會害怕出現異類從而危害整個部落,他們不會把不滿18歲的人當作完整的人,若未成年期間出現異樣,他們便會抹去其存在;超人統治世界的同時,一批進化成人形態的化鼠爲新一代人類任勞任怨並成爲他們的奴隸,他們除了長得像老鼠且醜陋與人類並無多少差異,實際上他們是沒有超能力的人類;後來化鼠從小偷竊並培養人類的嬰兒,讓他們認爲自己是化鼠,未來並運用於戰場上,人類無法攻擊化鼠培養的人類,而人類可以.最後,主角拯救了所有人打敗了化鼠,但是化鼠也是人類的祕密,只有少數人知道. 在網絡上很多人說是反烏托邦小說,實際上也是反殖民.&lt;/p&gt;
+
+&lt;a class=&#34;link&#34; href=&#34;https://developers.google.com/android/images&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Factory Image&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;开启usb-调试&#34;&gt;开启USB 调试
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;设定=&amp;gt;关于手机=&amp;gt;版本号, 连续点版本号5,6次进入开发者模式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;设定=&amp;gt;系统=&amp;gt; 开发者选项=&amp;gt;USB 调试 ，选择开启&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将手机使用USB线连接到笔电上，在手机上允许USB 调试&lt;/p&gt;
+&lt;p&gt;adb devices&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;ota&#34;&gt;OTA
+&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;adb reboot recovery
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;当你看到一个 Android 机器人，按住电源键再点击音量增加键，使用音量键选择Apply Upldate From ADB, 再使用电源键确定&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;heading&#34;&gt;
+&lt;/h6&gt;&lt;pre&gt;&lt;code&gt;adb sideload path_to_OAT.zip
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;factory-images&#34;&gt;Factory Images
+&lt;/h4&gt;&lt;p&gt;下载工厂镜像并解压，进入其文件夹,连接手机到笔电&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;adb reboot bootloader #重启至Bootloader模式
+bash flash-all.sh
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        </item>
+        <item>
+        <title>四月的总结--To Darling</title>
+        <link>http://localhost:1313/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/</link>
+        <pubDate>Sat, 04 May 2024 08:03:05 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/imposter_factory.jpg" alt="Featured image of post 四月的总结--To Darling" /&gt;&lt;h3 id=&#34;前言&#34;&gt;前言
+&lt;/h3&gt;&lt;p&gt;原本我想借编程随想文章的标题 &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://program-think.blogspot.com/2020/12/Study-and-Life.html?m=1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;学习与人生&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/strong&gt;,但仔细想想还是算了,这篇文章我并不想过多叙述, 本想用&lt;strong&gt;这几天的感想&lt;/strong&gt;带过这篇文章,但斟酌片刻之后便打消此念头,还是要写一些内容&lt;/p&gt;
+&lt;h3 id=&#34;读书&#34;&gt;读书
+&lt;/h3&gt;&lt;h4 id=&#34;来自新世界&#34;&gt;来自新世界
+&lt;/h4&gt;&lt;p&gt;在四月,我读完了 &lt;strong&gt;来自新世界&lt;/strong&gt; 这本书,这本书主要讲了一些觉醒超能力的人类掀起了凡人与超人的战争,最后超人完胜,随着超人获胜,超人发现他们每个人都是一颗定时的原子弹,便通过基因改造的技术加入了&lt;strong&gt;槐死机制的基因&lt;/strong&gt; =&amp;gt;只要杀死同类自己便一同死去;世界上仅存的人类分佈零散分佈在世界各地,他们大多数组成乌托邦式的部落,而书中的日本分爲9个部落,各个部落几乎不联络,过得与世隔绝的生活,生活的方方面面都有伦理委员会支配,只有内部人员才会知道他们彼此的身份,伦理委员会害怕出现异类从而危害整个部落,他们不会把不满18岁的人当作完整的人,若未成年期间出现异样,他们便会抹去其存在;超人统治世界的同时,一批进化成人形态的化鼠爲新一代人类任劳任怨并成爲他们的奴隶,他们除了长得像老鼠且丑陋与人类并无多少差异,实际上他们是没有超能力的人类;后来化鼠从小偷窃并培养人类的婴儿,让他们认爲自己是化鼠,未来并运用于战场上,人类无法攻击化鼠培养的人类,而人类可以.最后,主角拯救了所有人打败了化鼠,但是化鼠也是人类的祕密,只有少数人知道. 在网络上很多人说是反乌托邦小说,实际上也是反殖民.&lt;/p&gt;
 &lt;h4 id=&#34;csapp&#34;&gt;CSAPP
-&lt;/h4&gt;&lt;p&gt;CSAPP 中文翻譯深入理解計算機系統準確來說是以程序員視角瞭解計算機,書的第一章,自己完完整整地看完了,但是第二,第三是通過視頻完成了,一章大概100頁,一頁一頁地看實在是太累太耗時間了,或許我應該考慮精讀&lt;/p&gt;
-&lt;h3 id=&#34;刷題&#34;&gt;刷題
-&lt;/h3&gt;&lt;p&gt;上一週,我基本每天刷幾道leetcode 題,但最近都沒怎麼刷, 應該考慮刷幾道,畢竟我甚至不熟悉一些算法&lt;/p&gt;
+&lt;/h4&gt;&lt;p&gt;CSAPP 中文翻译深入理解计算机系统准确来说是以程序员视角瞭解计算机,书的第一章,自己完完整整地看完了,但是第二,第三是通过视频完成了,一章大概100页,一页一页地看实在是太累太耗时间了,或许我应该考虑精读&lt;/p&gt;
+&lt;h3 id=&#34;刷题&#34;&gt;刷题
+&lt;/h3&gt;&lt;p&gt;上一週,我基本每天刷几道leetcode 题,但最近都没怎麽刷, 应该考虑刷几道,毕竟我甚至不熟悉一些算法&lt;/p&gt;
 &lt;h3 id=&#34;情感&#34;&gt;情感
-&lt;/h3&gt;&lt;p&gt;原則上我是不會寫這方面的內容,但正是因爲Darling 昨晚一句 ** 我可以看看嗎**, 我寫了一晚上; 有個人在牽掛着,我寫Blog 也有一定的動力;最近些日子Darling 在忙碌着她的作業與論文,而我總是顯得無所事事,無憂無慮,前幾天她主動找我而我剛好和室友開一把遊戲,我讓她等20分鐘,實際上這時間是40分鐘,最後她去忙她的作業了,我對此感到十分懊悔;那天晚上她更新了她的頭像,我看到她開心的樣子莫名感到心酸,讓我想起了那句話 &amp;ldquo;任何肌肉太過用力都會因爲在分解釋放能量時缺氧而形成乳酸,於是就會有酸痛感, 那麼內心的那些滿滿的酸楚,也是因爲太過用力嗎&amp;rdquo;. 我很享受和Darling的時光, 因爲有她,我心會莫名地感受到一種不知道如何形容的感覺,或者這就是愛情,你看不到它的存在也摸不到,但是你可以感受到. 我希望可以陪她多一些時間,也希望她堅強一些,不要捉個無法登陸考試就哭的愛哭鬼;3 ,也希望她健健康康,開開心心.早安,親愛的,你還好嗎
-愛你的盧致上&lt;/p&gt;
-&lt;h3 id=&#34;結語&#34;&gt;結語
-&lt;/h3&gt;&lt;p&gt;盧要多寫一些文章,把這些類似的文章覆蓋掉,不然我的Blog 要變成和Darling的戀戀筆記本了&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;原则上我是不会写这方面的内容,但正是因爲Darling 昨晚一句 ** 我可以看看吗**, 我写了一晚上; 有个人在牵挂着,我写Blog 也有一定的动力;最近些日子Darling 在忙碌着她的作业与论文,而我总是显得无所事事,无忧无虑,前几天她主动找我而我刚好和室友开一把游戏,我让她等20分钟,实际上这时间是40分钟,最后她去忙她的作业了,我对此感到十分懊悔;那天晚上她更新了她的头像,我看到她开心的样子莫名感到心酸,让我想起了那句话 &amp;ldquo;任何肌肉太过用力都会因爲在分解释放能量时缺氧而形成乳酸,于是就会有酸痛感, 那麽内心的那些满满的酸楚,也是因爲太过用力吗&amp;rdquo;. 我很享受和Darling的时光, 因爲有她,我心会莫名地感受到一种不知道如何形容的感觉,或者这就是爱情,你看不到它的存在也摸不到,但是你可以感受到. 我希望可以陪她多一些时间,也希望她坚强一些,不要捉个无法登陆考试就哭的爱哭鬼;3 ,也希望她健健康康,开开心心.早安,亲爱的,你还好吗
+爱你的卢致上&lt;/p&gt;
+&lt;h3 id=&#34;结语&#34;&gt;结语
+&lt;/h3&gt;&lt;p&gt;卢要多写一些文章,把这些类似的文章复盖掉,不然我的Blog 要变成和Darling的恋恋笔记本了&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -100,18 +202,18 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
         <pubDate>Sat, 04 May 2024 05:05:04 +0800</pubDate>
         
         <guid>http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</guid>
-        <description>&lt;img src="http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/pawel.jpg" alt="Featured image of post Hugo &#43; Github Page 快速搭建部落格" /&gt;&lt;h3 id=&#34;緣起&#34;&gt;緣起
-&lt;/h3&gt;&lt;p&gt;原本有一篇文章是關於如何使用github page 搭建部落格,由於配置系統的時候丟失了,故今日快速重寫一篇,順便藉此提高自己寫作的速度,下載就以stack 爲例&lt;/p&gt;
-&lt;h3 id=&#34;準備&#34;&gt;準備
+        <description>&lt;img src="http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/pawel.jpg" alt="Featured image of post Hugo &#43; Github Page 快速搭建部落格" /&gt;&lt;h3 id=&#34;缘起&#34;&gt;缘起
+&lt;/h3&gt;&lt;p&gt;原本有一篇文章是关于如何使用github page 搭建部落格,由于配置系统的时候丢失了,故今日快速重写一篇,顺便藉此提高自己写作的速度,下载就以stack 爲例&lt;/p&gt;
+&lt;h3 id=&#34;准备&#34;&gt;准备
 &lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;準備一個github 賬戶,如果沒有就註冊一個&lt;/li&gt;
-&lt;li&gt;創建兩個repo, 一個名爲hugo-stack, 另一個爲github.用戶名.&amp;gt;&lt;/li&gt;
-&lt;li&gt;安裝hugo&lt;/li&gt;
+&lt;li&gt;准备一个github 账户,如果没有就注册一个&lt;/li&gt;
+&lt;li&gt;创建两个repo, 一个名爲hugo-stack, 另一个爲github.用户名.&amp;gt;&lt;/li&gt;
+&lt;li&gt;安装hugo&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;Windows 系統可以參考此&lt;a class=&#34;link&#34; href=&#34;https://the-walking-fish.com/p/install-hugo-on-windows/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;鏈接&lt;/a&gt;
+&lt;li&gt;Windows 系统可以参考此&lt;a class=&#34;link&#34; href=&#34;https://the-walking-fish.com/p/install-hugo-on-windows/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;链接&lt;/a&gt;
 
 
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -123,7 +225,7 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 
 
 或者&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/installation/windows/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;官方文檔&lt;/a&gt;
+    &gt;官方文档&lt;/a&gt;
 
 
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -136,23 +238,23 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 
 &lt;/li&gt;
 &lt;li&gt;ArchLinux: sudo pacman -S hugo&lt;/li&gt;
-&lt;li&gt;其他發行版使用自帶包管理工具直接安裝 hugo即可&lt;/li&gt;
+&lt;li&gt;其他发行版使用自带包管理工具直接安装 hugo即可&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;開始&#34;&gt;開始
+&lt;h3 id=&#34;开始&#34;&gt;开始
 &lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;生成一個hugo 工作資料夾&lt;/li&gt;
+&lt;li&gt;生成一个hugo 工作资料夹&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new site hugo-stack # hugo-stack 爲資料夾名稱
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new site hugo-stack # hugo-stack 爲资料夹名称
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;初始化repo及將stack 主題以submodule形式clone到本地&lt;/li&gt;
+&lt;li&gt;初始化repo及将stack 主题以submodule形式clone到本地&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -165,7 +267,7 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;將stack 主題的配置copy 到根目錄&lt;/li&gt;
+&lt;li&gt;将stack 主题的配置copy 到根目录&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -190,12 +292,12 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;運行博客
+&lt;li&gt;运行博客
 &lt;code&gt; hugo server -D&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;在終端按住Ctrl 鍵點擊 &lt;strong&gt;http://localhost:*/&lt;/strong&gt; 開啓預覽網站,或者複製 &lt;strong&gt;http://localhost:*/&lt;/strong&gt; 粘貼到瀏覽器開啓,* 代表系統分配的端口名&lt;/li&gt;
+&lt;li&gt;在终端按住Ctrl 键点击 &lt;strong&gt;http://localhost:*/&lt;/strong&gt; 开啓预览网站,或者複製 &lt;strong&gt;http://localhost:*/&lt;/strong&gt; 粘贴到浏览器开啓,* 代表系统分配的端口名&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/stack_sample.png&#34;
@@ -212,10 +314,10 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 		data-flex-basis=&#34;365px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h3 id=&#34;簡單配置blog&#34;&gt;簡單配置Blog
-&lt;/h3&gt;&lt;p&gt;按需修改以下配置,添加到根目錄的config.yaml&lt;/p&gt;
+&lt;h3 id=&#34;简单配置blog&#34;&gt;简单配置Blog
+&lt;/h3&gt;&lt;p&gt;按需修改以下配置,添加到根目录的config.yaml&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;默認語言與域名配置&lt;/li&gt;
+&lt;li&gt;默认语言与域名配置&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -228,17 +330,17 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;baseurl: https://github.用戶名.io ## hugo 生產靜態網頁存放的域名
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;baseurl: https://github.用户名.io ## hugo 生产静态网页存放的域名
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;languageCode: en-us
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;theme: hugo-theme-stack
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;paginate: 5
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;defaultContentLanguage: zh-tw # 默認語言
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;title: Black Lu # 標題
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;defaultContentLanguage: zh-tw # 默认语言
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;title: Black Lu # 标题
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;修改副標題和頭像&lt;/li&gt;
+&lt;li&gt;修改副标题和头像&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -253,15 +355,15 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    sidebar:
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        emoji: 🍥
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        subtitle: 我的語言之局限，即是我的世界之局限 # 副標題
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        subtitle: 我的语言之局限，即是我的世界之局限 # 副标题
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        avatar:     
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            enabled: true
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            local: true
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            src: img/avatar.png #頭像存放在根目錄的 assets/img 下
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            src: img/avatar.png #头像存放在根目录的 assets/img 下
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;添加最後更新與 字段&lt;/li&gt;
+&lt;li&gt;添加最后更新与 字段&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -275,9 +377,9 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    lastUpdated: Jan 02, 2006 15:04 MST
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;推送到遠程repo&#34;&gt;推送到遠程repo
+&lt;/div&gt;&lt;h3 id=&#34;推送到远程repo&#34;&gt;推送到远程repo
 &lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;將目錄推送到 hugo-stack repo&lt;/li&gt;
+&lt;li&gt;将目录推送到 hugo-stack repo&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -298,7 +400,7 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;將 Pulic 的內容推送到 github.用戶名.io repo&lt;/li&gt;
+&lt;li&gt;将 Pulic 的内容推送到 github.用户名.io repo&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -322,10 +424,10 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;Public 資料夾裏面的是構建靜態網頁的資源,直接push 到 github.用戶名.io  Repo, 在瀏覽器輸入 github.用戶名.io 即可查看你部署好的Blog&lt;/li&gt;
+&lt;li&gt;Public 资料夹里面的是构建静态网页的资源,直接push 到 github.用户名.io  Repo, 在浏览器输入 github.用户名.io 即可查看你部署好的Blog&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;注意事項&#34;&gt;注意事項
+&lt;h3 id=&#34;注意事项&#34;&gt;注意事项
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;Page Bundle&lt;/li&gt;
 &lt;/ol&gt;
@@ -333,7 +435,7 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 
 
 
- 的文件結構，如下&lt;/p&gt;
+ 的文件结构，如下&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -363,13 +465,13 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new post/new_post/index.md # new_post 改成你文章的英文名字
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;結語&#34;&gt;結語
-&lt;/h3&gt;&lt;p&gt;本文主要是爲填補以前挖下的坑,剩下的坑還有git, rom 編譯等,祝各位好運&lt;/p&gt;
-&lt;h3 id=&#34;參考與致謝&#34;&gt;參考與致謝
+&lt;/div&gt;&lt;h3 id=&#34;结语&#34;&gt;结语
+&lt;/h3&gt;&lt;p&gt;本文主要是爲填补以前挖下的坑,剩下的坑还有git, rom 编译等,祝各位好运&lt;/p&gt;
+&lt;h3 id=&#34;参考与致谢&#34;&gt;参考与致谢
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://chswei.netlify.app/blog/hugo/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;在 GitHub 部署 Hugo 靜態網站 &lt;/a&gt;
+    &gt;在 GitHub 部署 Hugo 静态网站 &lt;/a&gt;
 
 
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -382,7 +484,7 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 
 &lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://the-walking-fish.com/p/install-hugo-on-windows/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;如何在 Windows 系統上快速安裝 Hugo&lt;/a&gt;
+    &gt;如何在 Windows 系统上快速安装 Hugo&lt;/a&gt;
 
 
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -395,7 +497,7 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 
 &lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/installation/windows/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo 官方文檔&lt;/a&gt;
+    &gt;Hugo 官方文档&lt;/a&gt;
 
 
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -412,20 +514,20 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 </description>
         </item>
         <item>
-        <title>華碩 RT-AC86U 配置</title>
-        <link>http://localhost:1313/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/</link>
+        <title>华硕 RT-AC86U 配置</title>
+        <link>http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/</link>
         <pubDate>Fri, 03 May 2024 21:18:02 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/AC86U.webp" alt="Featured image of post 華碩 RT-AC86U 配置" /&gt;&lt;h3 id=&#34;起因&#34;&gt;起因
-&lt;/h3&gt;&lt;p&gt;在我尚未上高中時候，在群組裏就有人直接使用路由器進行翻牆上網，當時就十分好奇如何實現&lt;/p&gt;
+        <guid>http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/AC86U.webp" alt="Featured image of post 华硕 RT-AC86U 配置" /&gt;&lt;h3 id=&#34;起因&#34;&gt;起因
+&lt;/h3&gt;&lt;p&gt;在我尚未上高中时候，在群组里就有人直接使用路由器进行翻牆上网，当时就十分好奇如何实现&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;原理是在路由層面進行網路代理，從而免去終端設備使用vpn等進行代理也不易被檢測，可以理解爲更高層次的代理手段; 且大多數需要自行刷官改固件或第三方固件&lt;/li&gt;
+&lt;li&gt;原理是在路由层面进行网路代理，从而免去终端设备使用vpn等进行代理也不易被检测，可以理解爲更高层次的代理手段; 且大多数需要自行刷官改固件或第三方固件&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;只可惜當時家裏的路由器老舊且無第三方修改固件，且年紀尚輕並無過多金錢置買較好的路由器，上高中之後父母商議與諾更換家裏老舊的路由器 &lt;strong&gt;紅米 AX5路由&lt;/strong&gt;, 後面才得知需要筆電或者是帶無線網卡的電腦才可以刷固件，遂放棄;後面大學時候擁有人生第一臺筆電，但很少時間待在家裏便不再折騰&lt;/p&gt;
-&lt;h3 id=&#34;準備&#34;&gt;準備
+&lt;p&gt;只可惜当时家里的路由器老旧且无第三方修改固件，且年纪尚轻并无过多金钱置买较好的路由器，上高中之后父母商议与诺更换家里老旧的路由器 &lt;strong&gt;红米 AX5路由&lt;/strong&gt;, 后面才得知需要笔电或者是带无线网卡的电脑才可以刷固件，遂放弃;后面大学时候拥有人生第一臺笔电，但很少时间待在家里便不再折腾&lt;/p&gt;
+&lt;h3 id=&#34;准备&#34;&gt;准备
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;在&lt;a class=&#34;link&#34; href=&#34;https://www.koolcenter.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;koolcenter&lt;/a&gt;
@@ -439,11 +541,11 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/svg&gt;&lt;/span&gt;
 
 
-搜尋RT-AC86U並下載固件
-&lt;img src=&#34;http://localhost:1313/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware.png&#34;
+搜寻RT-AC86U并下载固件
+&lt;img src=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware.png&#34;
 	width=&#34;1249&#34;
 	height=&#34;1068&#34;
-	srcset=&#34;http://localhost:1313/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware_huab63e992f50e4fe75c365c48d01cb758_347806_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware_huab63e992f50e4fe75c365c48d01cb758_347806_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware_huab63e992f50e4fe75c365c48d01cb758_347806_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware_huab63e992f50e4fe75c365c48d01cb758_347806_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;merlin_firmware&#34;
@@ -454,7 +556,7 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 		data-flex-basis=&#34;280px&#34;
 	
 &gt;&lt;/li&gt;
-&lt;li&gt;開啓&lt;a class=&#34;link&#34; href=&#34;https://mcreadme.gitbook.io/mc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;li&gt;开啓&lt;a class=&#34;link&#34; href=&#34;https://mcreadme.gitbook.io/mc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;MerlinClash&lt;/a&gt;
 
 
@@ -466,8 +568,8 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/svg&gt;&lt;/span&gt;
 
 
-,查看自己設備支持的軟體版本,進入&lt;a class=&#34;link&#34; href=&#34;https://t.me/merlinclashcat&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Telegram 群組&lt;/a&gt;
+,查看自己设备支持的软体版本,进入&lt;a class=&#34;link&#34; href=&#34;https://t.me/merlinclashcat&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Telegram 群组&lt;/a&gt;
 
 
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -478,27 +580,27 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/svg&gt;&lt;/span&gt;
 
 
-下載對應版本的插件&lt;/li&gt;
+下载对应版本的插件&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;配置&#34;&gt;配置
 &lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;接上電源，然後用牙籤或者針插入路由器背後的Reset 小孔長按大約30s恢復出廠設定&lt;/li&gt;
-&lt;li&gt;按照官方文檔連接網路，如下圖
+&lt;li&gt;接上电源，然后用牙籤或者针插入路由器背后的Reset 小孔长按大约30s恢復出厂设定&lt;/li&gt;
+&lt;li&gt;按照官方文档连接网路，如下图
 ！&lt;a class=&#34;link&#34; href=&#34;asus_doc.png&#34; &gt;doc&lt;/a&gt;
 
 
 
 
-[如果你與我一樣使用烽火CPE，僅需使用網線將烽火的&lt;strong&gt;LAN口&lt;/strong&gt;連接到路由的&lt;strong&gt;WAN口&lt;/strong&gt;]&lt;/li&gt;
-&lt;li&gt;電腦端在瀏覽器輸入 &lt;strong&gt;192.168.50.1&lt;/strong&gt;,也可以手機連接RT-AC86U的WiFi 同樣在瀏覽器輸入&lt;strong&gt;192.168.50.1&lt;/strong&gt;,進行網路設定&lt;/li&gt;
+[如果你与我一样使用烽火CPE，仅需使用网线将烽火的&lt;strong&gt;LAN口&lt;/strong&gt;连接到路由的&lt;strong&gt;WAN口&lt;/strong&gt;]&lt;/li&gt;
+&lt;li&gt;电脑端在浏览器输入 &lt;strong&gt;192.168.50.1&lt;/strong&gt;,也可以手机连接RT-AC86U的WiFi 同样在浏览器输入&lt;strong&gt;192.168.50.1&lt;/strong&gt;,进行网路设定&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;刷機&#34;&gt;刷機
+&lt;h3 id=&#34;刷机&#34;&gt;刷机
 &lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;在chromium 內核的瀏覽器輸入 192.168.50.1 進入路由器管理頁面, 系統管理=&amp;gt; 固件升級,點擊上傳固件選擇下載的固件,此過程需要耐心等待
-&lt;img src=&#34;http://localhost:1313/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade.jpg&#34;
+&lt;li&gt;在chromium 内核的浏览器输入 192.168.50.1 进入路由器管理页面, 系统管理=&amp;gt; 固件升级,点击上传固件选择下载的固件,此过程需要耐心等待
+&lt;img src=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade.jpg&#34;
 	width=&#34;1034&#34;
 	height=&#34;1504&#34;
-	srcset=&#34;http://localhost:1313/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade_hu6096c0906f99a312f953cc97a5a8e8a0_308618_480x0_resize_q75_box.jpg 480w, http://localhost:1313/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade_hu6096c0906f99a312f953cc97a5a8e8a0_308618_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade_hu6096c0906f99a312f953cc97a5a8e8a0_308618_480x0_resize_q75_box.jpg 480w, http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade_hu6096c0906f99a312f953cc97a5a8e8a0_308618_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;firmupgrade&#34;
@@ -509,17 +611,17 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 		data-flex-basis=&#34;165px&#34;
 	
 &gt;&lt;/li&gt;
-&lt;li&gt;完成之後, 系統管理=&amp;gt;系統設定, 選擇開啓 &amp;ldquo;Format JFFS partition at next boot&amp;rdquo;, 和&amp;quot;Enable JFFS custom scripts and configs&amp;quot;,下滑到頁面最後點擊應用本頁面設定
-[安裝插件需要軟體中心, 而軟體中心需要開啓 JFFS 設定]&lt;/li&gt;
+&lt;li&gt;完成之后, 系统管理=&amp;gt;系统设定, 选择开啓 &amp;ldquo;Format JFFS partition at next boot&amp;rdquo;, 和&amp;quot;Enable JFFS custom scripts and configs&amp;quot;,下滑到页面最后点击应用本页面设定
+[安装插件需要软体中心, 而软体中心需要开啓 JFFS 设定]&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;插件安裝&#34;&gt;插件安裝
+&lt;h3 id=&#34;插件安装&#34;&gt;插件安装
 &lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;軟體中心 =&amp;gt; 手動安裝 =&amp;gt; 離線安裝插件安裝 =&amp;gt; 選擇文件, 選擇已下載的 MerlinClash 插件
-[軟體中心=&amp;gt; 全部軟體 可以在線安裝插件,軟體中心=&amp;gt; 手動安裝, 離線安裝插件即安裝軟體中心沒有的插件]
-&lt;img src=&#34;http://localhost:1313/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/extension.jpg&#34;
+&lt;li&gt;软体中心 =&amp;gt; 手动安装 =&amp;gt; 离线安装插件安装 =&amp;gt; 选择文件, 选择已下载的 MerlinClash 插件
+[软体中心=&amp;gt; 全部软体 可以在线安装插件,软体中心=&amp;gt; 手动安装, 离线安装插件即安装软体中心没有的插件]
+&lt;img src=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;1368&#34;
-	srcset=&#34;http://localhost:1313/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/extension_hu2fef85b49a5ffe457e38bfbbe9e61951_226148_480x0_resize_q75_box.jpg 480w, http://localhost:1313/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/extension_hu2fef85b49a5ffe457e38bfbbe9e61951_226148_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension_hu2fef85b49a5ffe457e38bfbbe9e61951_226148_480x0_resize_q75_box.jpg 480w, http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension_hu2fef85b49a5ffe457e38bfbbe9e61951_226148_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;extension&#34;
@@ -533,13 +635,13 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/ol&gt;
 &lt;h3 id=&#34;配置-merlinclash&#34;&gt;配置 MerlinClash
 &lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;下載ClashVerge 或者是其他的pc端Clash, 訂閱導入 你的訂閱鏈接&lt;/li&gt;
-&lt;li&gt;右鍵點擊打開文件,找到其.yaml 文件所在位置,複製到其他目錄並重命名爲*.ymal, *要求15個字符以內&lt;/li&gt;
-&lt;li&gt;軟體中心 =&amp;gt; 已安裝 =&amp;gt; MerlinClash =&amp;gt; 打開=&amp;gt; 配置文件 =&amp;gt;配置文件選擇並導入&lt;/li&gt;
+&lt;li&gt;下载ClashVerge 或者是其他的pc端Clash, 订阅导入 你的订阅链接&lt;/li&gt;
+&lt;li&gt;右键点击打开文件,找到其.yaml 文件所在位置,複製到其他目录并重命名爲*.ymal, *要求15个字符以内&lt;/li&gt;
+&lt;li&gt;软体中心 =&amp;gt; 已安装 =&amp;gt; MerlinClash =&amp;gt; 打开=&amp;gt; 配置文件 =&amp;gt;配置文件选择并导入&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;詳細配置可查看&lt;a class=&#34;link&#34; href=&#34;https://mcreadme.gitbook.io/mc/base/subscribe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;官網配置&lt;/a&gt;
+&lt;li&gt;详细配置可查看&lt;a class=&#34;link&#34; href=&#34;https://mcreadme.gitbook.io/mc/base/subscribe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网配置&lt;/a&gt;
 
 
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -552,11 +654,11 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;參考及致謝&#34;&gt;參考及致謝
+&lt;h3 id=&#34;参考及致谢&#34;&gt;参考及致谢
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.koolcenter.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;固件下載&lt;/a&gt;
+    &gt;固件下载&lt;/a&gt;
 
 
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -569,7 +671,7 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 
 &lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://t.me/merlinclashcat&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;獲取插件的Telegram 群組&lt;/a&gt;
+    &gt;获取插件的Telegram 群组&lt;/a&gt;
 
 
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -582,7 +684,7 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 
 &lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.wannaflix.net/installation-guides/routers/merlin-koolshare-routers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;固件刷寫教程&lt;/a&gt;
+    &gt;固件刷写教程&lt;/a&gt;
 
 
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -612,15 +714,15 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 </description>
         </item>
         <item>
-        <title>Hugo Stack 主題魔改</title>
-        <link>http://localhost:1313/p/hugo-stack-%E4%B8%BB%E9%A1%8C%E9%AD%94%E6%94%B9/</link>
+        <title>Hugo Stack 主题魔改</title>
+        <link>http://localhost:1313/p/hugo-stack-%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/</link>
         <pubDate>Fri, 03 May 2024 05:12:33 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/hugo-stack-%E4%B8%BB%E9%A1%8C%E9%AD%94%E6%94%B9/</guid>
-        <description>&lt;img src="http://localhost:1313/p/hugo-stack-%E4%B8%BB%E9%A1%8C%E9%AD%94%E6%94%B9/hugo.png" alt="Featured image of post Hugo Stack 主題魔改" /&gt;&lt;h2 id=&#34;緣起&#34;&gt;緣起
-&lt;/h2&gt;&lt;p&gt;在部署完成博客之後一直有對Blog進行大改的想法，無奈自己懶惰的緣由以及stack 主題有一些小問題導致問題一直遺留至今&lt;/p&gt;
-&lt;h2 id=&#34;問題&#34;&gt;問題
-&lt;/h2&gt;&lt;p&gt;Stack 主題在content裏面的內容會與根目錄下的文件衝突，而現在已經沒有類似的問題，配置方式如下&lt;/p&gt;
+        <guid>http://localhost:1313/p/hugo-stack-%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/</guid>
+        <description>&lt;img src="http://localhost:1313/p/hugo-stack-%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/hugo.png" alt="Featured image of post Hugo Stack 主题魔改" /&gt;&lt;h2 id=&#34;缘起&#34;&gt;缘起
+&lt;/h2&gt;&lt;p&gt;在部署完成博客之后一直有对Blog进行大改的想法，无奈自己懒惰的缘由以及stack 主题有一些小问题导致问题一直遗留至今&lt;/p&gt;
+&lt;h2 id=&#34;问题&#34;&gt;问题
+&lt;/h2&gt;&lt;p&gt;Stack 主题在content里面的内容会与根目录下的文件冲突，而现在已经没有类似的问题，配置方式如下&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -644,7 +746,7 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;頭像存放在根目錄的 assets/img 資料夾內,一些配置需要自己配置config.yaml&lt;/li&gt;
+&lt;li&gt;头像存放在根目录的 assets/img 资料夹内,一些配置需要自己配置config.yaml&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;修改&#34;&gt;修改
 &lt;/h2&gt;&lt;p&gt;此次Blog修改主要借鑑自&lt;a class=&#34;link&#34; href=&#34;https://thirdshire.com/hugo-stack-renovation-part-two/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -671,10 +773,10 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/svg&gt;&lt;/span&gt;
 
 
-，本人只借鑑部分內容且大部分內容爲複製粘貼就不一一敘述了，詳情請仔細瀏覽上面的鏈接&lt;/p&gt;
-&lt;h2 id=&#34;參考及致謝&#34;&gt;參考及致謝
+，本人只借鑑部分内容且大部分内容爲複製粘贴就不一一叙述了，详情请仔细浏览上面的链接&lt;/p&gt;
+&lt;h2 id=&#34;参考及致谢&#34;&gt;参考及致谢
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo stack 主題&lt;/a&gt;
+    &gt;Hugo stack 主题&lt;/a&gt;
 
 
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -715,20 +817,117 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 </description>
         </item>
         <item>
-        <title>使用Cloudflare Page 搭建部落格</title>
-        <link>http://localhost:1313/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</link>
+        <title>合并两个有序链表</title>
+        <link>http://localhost:1313/p/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/</link>
+        <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/</guid>
+        <description>&lt;h1 id=&#34;合并两个有序链表&#34;&gt;合并两个有序链表
+&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/mergetwolists.png&#34;
+	width=&#34;333&#34;
+	height=&#34;151&#34;
+	srcset=&#34;http://localhost:1313/p/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/mergetwolists_hu74e4907842b1adb9c5c3f342cf6c03c7_9026_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/mergetwolists_hu74e4907842b1adb9c5c3f342cf6c03c7_9026_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;MergeTwoLists&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;220&#34;
+		data-flex-basis=&#34;529px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;1,初始时,合并的链表 preHead 为空&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        ListNode* preHead = new ListNode(0);
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        ListNode* prev = preHead;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;2,设定边界,比较 &lt;code&gt;l1&lt;/code&gt;​与 节点的值,若&lt;code&gt;l1&lt;/code&gt;​ 的值小于于 &lt;code&gt;l2&lt;/code&gt;​的值则 pre的 next 指针指向 &lt;code&gt;l1&lt;/code&gt;​,更新 &lt;code&gt;l1&lt;/code&gt;​ 的位置为&lt;code&gt;l2&lt;/code&gt;​的 next指针指向的位置,否则将 prev 的 next 指针指向 &lt;code&gt;l2&lt;/code&gt;，并将 &lt;code&gt;l2&lt;/code&gt; 的位置更新为 &lt;code&gt;l2&lt;/code&gt; 的下一个节点,将 &lt;code&gt;l1&lt;/code&gt;,&lt;code&gt;l2&lt;/code&gt;视为一个&lt;strong&gt;节点&lt;/strong&gt;而不是 链表&lt;/p&gt;
+&lt;p&gt;‍&lt;/p&gt;
+&lt;p&gt;‍&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        while (l1 != nullptr &amp;amp;&amp;amp; l2 != nullptr) {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            if (l1-&amp;gt;val &amp;lt; l2-&amp;gt;val) {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                prev-&amp;gt;next = l1;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                l1 = l1-&amp;gt;next;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            } else {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                prev-&amp;gt;next = l2;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                l2 = l2-&amp;gt;next;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            prev = prev-&amp;gt;next;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;3,此时，&lt;code&gt;l2&lt;/code&gt;​ 已经为空，因此直接将 &lt;code&gt;l1&lt;/code&gt;​ 的剩余部分连接到 &lt;code&gt;prev&lt;/code&gt;​ 上。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    	// 处理剩余节点： 若其中一个链表已经遍历完毕，则直接将另一个链表的剩余部分连接到 prev 上
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        prev-&amp;gt;next = l1 == nullptr ? l2 : l1;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    	// 这行代码的逻辑可以理解为：
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        if (l1 != nullptr) {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        	prev-&amp;gt;next = l1;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    	}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    	if (l2 != nullptr) {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        	prev-&amp;gt;next = l2;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    	}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		# 返回指向合并后链表的第一个节点的指针，以完成合并两个有序链表的函数，并将合并后链表的头节点返回供调用者使用
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        return preHead-&amp;gt;next;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;‍&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>使用Cloudflare Page 搭建博客</title>
+        <link>http://localhost:1313/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
         <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/cloudflare_page.png" alt="Featured image of post 使用Cloudflare Page 搭建部落格" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
-&lt;/h2&gt;&lt;p&gt;　　過去幾個月當中，我搭建部落格都是使用Github Page的方式搭建且域名無法自定義，從朋友中得知可以用CloudFlare搭建，不僅簡單且可以自定義域名，那我們開始吧&lt;/p&gt;
+        <guid>http://localhost:1313/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/cloudflare_page.png" alt="Featured image of post 使用Cloudflare Page 搭建博客" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;　　过去几个月当中，我搭建部落格都是使用Github Page的方式搭建且域名无法自定义，从朋友中得知可以用CloudFlare搭建，不仅简单且可以自定义域名，那我们开始吧&lt;/p&gt;
 &lt;h2 id=&#34;部署&#34;&gt;部署
 &lt;/h2&gt;&lt;h3 id=&#34;github-page&#34;&gt;GitHub Page
-&lt;/h3&gt;&lt;p&gt;　　使用Hugo框架快速部署Meme主題的部落格非常容易。我原本是採用GitHub Page的形式，只需要幾步就能成功部署。我自己的部落格也是用這個方式搭建，不過自定義域名要花點心思（PS：我自己也沒整自定義域名，不想花錢買）&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;　　使用Hugo框架快速部署Meme主题的部落格非常容易。我原本是採用GitHub Page的形式，只需要几步就能成功部署。我自己的部落格也是用这个方式搭建，不过自定义域名要花点心思（PS：我自己也没整自定义域名，不想花钱买）&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;參考&lt;a class=&#34;link&#34; href=&#34;https://chswei.netlify.app/blog/hugo/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;在 GitHub 部署 Hugo 靜態網站&lt;/a&gt;
+&lt;li&gt;参考&lt;a class=&#34;link&#34; href=&#34;https://chswei.netlify.app/blog/hugo/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;在 GitHub 部署 Hugo 静态网站&lt;/a&gt;
 
 
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -743,8 +942,8 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;cloudflare&#34;&gt;CloudFlare
-&lt;/h3&gt;&lt;p&gt;　　在和Atom的通話中得知，耗子的部落格也是使用CloudFlare託管的，所以我們便打算使用Cloud Flare託管&lt;/p&gt;
-&lt;h3 id=&#34;購買域名&#34;&gt;購買域名
+&lt;/h3&gt;&lt;p&gt;　　在和Atom的通话中得知，耗子的部落格也是使用CloudFlare託管的，所以我们便打算使用Cloud Flare託管&lt;/p&gt;
+&lt;h3 id=&#34;购买域名&#34;&gt;购买域名
 &lt;/h3&gt;&lt;p&gt;　　可以在&lt;a class=&#34;link&#34; href=&#34;https://www.namecheap.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Name Cheap&lt;/a&gt;
 
@@ -769,12 +968,12 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/svg&gt;&lt;/span&gt;
 
 
-購買域名，我們是在Name Cheap上買的域名；如果是我會在Name Silo，因為可以直接用支付表買單。&lt;/p&gt;
+购买域名，我们是在Name Cheap上买的域名；如果是我会在Name Silo，因为可以直接用支付表买单。&lt;/p&gt;
 &lt;h3 id=&#34;配置dns&#34;&gt;配置DNS
-&lt;/h3&gt;&lt;p&gt;　　由於我們是使用CloudFlare Page 託管我們的網站，所以域名購買之後需要使用Could Flare解析，解析域名可能需要一定的時間請耐心等待&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;　　由于我们是使用CloudFlare Page 託管我们的网站，所以域名购买之后需要使用Could Flare解析，解析域名可能需要一定的时间请耐心等待&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;參考 &lt;a class=&#34;link&#34; href=&#34;https://blog.misaka.rest/2023/03/03/cf-dns/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;li&gt;参考 &lt;a class=&#34;link&#34; href=&#34;https://blog.misaka.rest/2023/03/03/cf-dns/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;在CloudFlare上解析自己的域名&lt;/a&gt;
 
 
@@ -790,11 +989,11 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;部署部落格&#34;&gt;部署部落格
-&lt;/h3&gt;&lt;p&gt;　　部署部落格需要一個GitHub Repo，Public或者Private都可以，使用CloudFlare 還有一個好處就是可以自定義二級域名&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;　　部署部落格需要一个GitHub Repo，Public或者Private都可以，使用CloudFlare 还有一个好处就是可以自定义二级域名&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;參考 &lt;a class=&#34;link&#34; href=&#34;https://www.minwt.com/website/server/22861.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Cloudflare Pages 提供無限流、無限容量，免費網頁空間，同時還可綁定自己的網域名稱架設教學&lt;/a&gt;
+&lt;li&gt;参考 &lt;a class=&#34;link&#34; href=&#34;https://www.minwt.com/website/server/22861.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloudflare Pages 提供无限流、无限容量，免费网页空间，同时还可绑定自己的网域名称架设教学&lt;/a&gt;
 
 
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -808,9 +1007,9 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;post文注意事項&#34;&gt;Post文注意事項
+&lt;h2 id=&#34;post文注意事项&#34;&gt;Post文注意事项
 &lt;/h2&gt;&lt;h3 id=&#34;page-bundle&#34;&gt;Page Bundle
-&lt;/h3&gt;&lt;p&gt;　　我們都是用markdwon檔案，語法基本上大家都熟悉就不過多描述，主要是說明我們要使用&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/page-bundles/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/h3&gt;&lt;p&gt;　　我们都是用markdwon档案，语法基本上大家都熟悉就不过多描述，主要是说明我们要使用&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/page-bundles/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Page Bundle&lt;/a&gt;
 
 
@@ -822,7 +1021,7 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/svg&gt;&lt;/span&gt;
 
 
-的形式，而不是簡單地寫個md檔案。特別是針對有普通的文章，如下&lt;/p&gt;
+的形式，而不是简单地写个md档案。特别是针对有普通的文章，如下&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;tree archlinux_install
 
 /archlinux_install
@@ -830,8 +1029,8 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 ├── etcher.png 
 └── index.zh.md
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;多語言&#34;&gt;多語言
-&lt;/h3&gt;&lt;p&gt;　　由於使用了Hugo的多語言配置，所以我的部落格content內容有所改變，如下&lt;/p&gt;
+&lt;h3 id=&#34;多语言&#34;&gt;多语言
+&lt;/h3&gt;&lt;p&gt;　　由于使用了Hugo的多语言配置，所以我的部落格content内容有所改变，如下&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;tree content 
 
 /content 
@@ -840,8 +1039,8 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 ├── zh-tw
 └── zh-cn
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;總結&#34;&gt;總結
-&lt;/h2&gt;&lt;p&gt;　　以上就是本篇文章的所以內容，引用內容有點多，但實際操作並不口難，熟悉之後便可半小時之內完成，寫這篇文章對於不太習慣寫作的我而言，可能就要更長對時間了，感謝你花時間看完我的部落格，希望這篇文章能夠給你帶來一些啟發和幫助。&lt;/p&gt;
+&lt;h2 id=&#34;总结&#34;&gt;总结
+&lt;/h2&gt;&lt;p&gt;　　以上就是本篇文章的所以内容，引用内容有点多，但实际操作并不口难，熟悉之后便可半小时之内完成，写这篇文章对于不太习惯写作的我而言，可能就要更长对时间了，感谢你花时间看完我的博客，希望这篇文章能够给你带来一些启发和帮助。&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -851,17 +1050,17 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
         
         <guid>http://localhost:1313/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/</guid>
         <description>&lt;img src="http://localhost:1313/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/photo_2023-12-11_01-36-08.jpg" alt="Featured image of post 夏日之惑" /&gt;&lt;h3 id=&#34;前言&#34;&gt;前言
-&lt;/h3&gt;&lt;p&gt;近一些天，發現自己不僅失眠而且注意力分散，且無法專注看完一本&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;近一些天，发现自己不仅失眠而且注意力分散，且无法专注看完一本&lt;/p&gt;
 &lt;h3 id=&#34;失眠&#34;&gt;失眠
-&lt;/h3&gt;&lt;p&gt;最近老是失眠，以前的時候是下午睡覺然後在晚上敲敲代碼，編譯系統去看看有什麼 Bug 需要修或者去 pick 別人的代碼，現在完全不行了，彷彿是日夜顛倒，成功過上美國人的生活，但身體和精神狀況卻越來越糟；甚至成了曠課大王，真的是惡夢啊&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;最近老是失眠，以前的时候是下午睡觉然后在晚上敲敲代码，编译系统去看看有什麽 Bug 需要修或者去 pick 别人的代码，现在完全不行了，彷彿是日夜颠倒，成功过上美国人的生活，但身体和精神状况却越来越糟；甚至成了旷课大王，真的是恶梦啊&lt;/p&gt;
 &lt;h4 id=&#34;202454&#34;&gt;2024.5.4
-&lt;/h4&gt;&lt;p&gt;其實失眠也沒那麼可怕,假如睡不着就找一些事情做,保持充足的睡眠時間即可; 最好的睡眠方法是讓自己疲憊; Rom 編譯的事情可以留在白天在做,給自己一個安穩的睡眠吧&lt;/p&gt;
+&lt;/h4&gt;&lt;p&gt;其实失眠也没那麽可怕,假如睡不着就找一些事情做,保持充足的睡眠时间即可; 最好的睡眠方法是让自己疲惫; Rom 编译的事情可以留在白天在做,给自己一个安稳的睡眠吧&lt;/p&gt;
 &lt;h3 id=&#34;注意力分散&#34;&gt;注意力分散
-&lt;/h3&gt;&lt;p&gt;~這個問題已經是老生常談，在互聯網下充斥著短視頻和社交媒體，很難集中精力學習。以前我以為是短視頻所以戒掉 Tiktok 之類的短視頻 App 或者關掉其功能；短視頻，使得人們難以擺脫這種短暫的刺激，導致注意力分散和學習效果不佳。~&lt;/p&gt;
-&lt;p&gt;假如因爲其他事情而導致注意力分散,那麼先做完其他事情吧,不然一心二用只會竹籃打水&amp;ndash;一場空&lt;/p&gt;
-&lt;p&gt;~不論我用手機還是筆記本看書在都會感覺到困，但是在晚上看手機卻不會，不知道怎麼回事，可能是 OLED 螢幕的問題？~ 看書最好不要疲憊&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;~这个问题已经是老生常谈，在互联网下充斥着短视频和社交媒体，很难集中精力学习。以前我以为是短视频所以戒掉 Tiktok 之类的短视频 App 或者关掉其功能；短视频，使得人们难以摆脱这种短暂的刺激，导致注意力分散和学习效果不佳。~&lt;/p&gt;
+&lt;p&gt;假如因爲其他事情而导致注意力分散,那麽先做完其他事情吧,不然一心二用只会竹篮打水&amp;ndash;一场空&lt;/p&gt;
+&lt;p&gt;~不论我用手机还是笔记本看书在都会感觉到困，但是在晚上看手机却不会，不知道怎麽回事，可能是 OLED 萤幕的问题？~ 看书最好不要疲惫&lt;/p&gt;
 &lt;h3 id=&#34;haskell&#34;&gt;Haskell
-&lt;/h3&gt;&lt;p&gt;~言歸正傳，注意力分散實際上就是專注力下滑，如我之前一直在學的 Haskell，我從 YouTube 上面發現了&lt;a class=&#34;link&#34; href=&#34;https://learnyouahaskell.mno2.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/h3&gt;&lt;p&gt;~言归正传，注意力分散实际上就是专注力下滑，如我之前一直在学的 Haskell，我从 YouTube 上面发现了&lt;a class=&#34;link&#34; href=&#34;https://learnyouahaskell.mno2.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Learn You A Haskell For Great Good&lt;/a&gt;
 
 
@@ -873,18 +1072,18 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/svg&gt;&lt;/span&gt;
 
 
-這本書就開始看了一週時間，大致懂了，但是還是無法解開 exercism 練習題裡麵的第二題；後來，在 Telegram 上面的某個群組裡麵得知學 Haskell 建議去 看 [The Real World Haskell ]（https://rwh.readthedocs.io/en/latest/）；~&lt;/p&gt;
+这本书就开始看了一週时间，大致懂了，但是还是无法解开 exercism 练习题裡麵的第二题；后来，在 Telegram 上面的某个群组裡麵得知学 Haskell 建议去 看 [The Real World Haskell ]（https://rwh.readthedocs.io/en/latest/）；~&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;雖然他說 Rust 寫起來比 Haskell 更好
-但是我是主要是想通過學 Haskell 學習 Functional Program，因此還是會選擇 Haskell 作為學習語言。&lt;/li&gt;
-&lt;li&gt;Haskell 確實是很好的學習 Functional Program 的語言，只是 Rust 也有其獨特的優勢。我覺得都可以試試看，根據個人興趣和需求做決定。值得一試的語言，多學習才能拓寬自己的視野。此注釋由 AI 生產出。&lt;/li&gt;
+&lt;li&gt;虽然他说 Rust 写起来比 Haskell 更好
+但是我是主要是想通过学 Haskell 学习 Functional Program，因此还是会选择 Haskell 作为学习语言。&lt;/li&gt;
+&lt;li&gt;Haskell 确实是很好的学习 Functional Program 的语言，只是 Rust 也有其独特的优势。我觉得都可以试试看，根据个人兴趣和需求做决定。值得一试的语言，多学习才能拓宽自己的视野。此注释由 AI 生产出。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;與其專研一些獨樹一幟的編程語言不錯,但還是得把握好學習的重心&lt;/p&gt;
+&lt;p&gt;与其专研一些独树一帜的编程语言不错,但还是得把握好学习的重心&lt;/p&gt;
 &lt;h3 id=&#34;反思&#34;&gt;反思
-&lt;/h3&gt;&lt;p&gt;~最近失眠已經影響到日常的課程和自己的生活作息，所以需要加以調整，不然容易形成不好的習慣；加上自己的注意力分散，學不到什麼東西，只能虛度光陰，現在還在謀求解決方案~
-方法其實心裏已經知道,只是沒有下定決心去做; 事情進度慢一些也無妨,至少比什麼都不做好&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;~最近失眠已经影响到日常的课程和自己的生活作息，所以需要加以调整，不然容易形成不好的习惯；加上自己的注意力分散，学不到什麽东西，只能虚度光阴，现在还在谋求解决方案~
+方法其实心里已经知道,只是没有下定决心去做; 事情进度慢一些也无妨,至少比什麽都不做好&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -894,11 +1093,11 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
         
         <guid>http://localhost:1313/p/%E5%A4%B1%E7%9C%A0/</guid>
         <description>&lt;img src="http://localhost:1313/p/%E5%A4%B1%E7%9C%A0/sleepless.jpg" alt="Featured image of post 失眠" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
-&lt;/h2&gt;&lt;p&gt;近一些天，發現自己不僅失眠而且注意力分散，且無法專注看完一本&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;近一些天，发现自己不仅失眠而且注意力分散，且无法专注看完一本&lt;/p&gt;
 &lt;h2 id=&#34;失眠&#34;&gt;失眠
-&lt;/h2&gt;&lt;p&gt;最近老是失眠，以前的時候是下午睡覺然後在晚上敲敲代碼，編譯系統去看看有什麼 Bug 需要修或者去 pick 別人的代碼，現在完全不行了，彷彿是日夜顛倒，成功過上美國人的生活，但身體和精神狀況卻越來越糟；甚至成了曠課大王，真的是惡夢啊&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;最近老是失眠，以前的时候是下午睡觉然后在晚上敲敲代码，编译系统去看看有什麽 Bug 需要修或者去 pick 别人的代码，现在完全不行了，彷彿是日夜颠倒，成功过上美国人的生活，但身体和精神状况却越来越糟；甚至成了旷课大王，真的是恶梦啊&lt;/p&gt;
 &lt;h2 id=&#34;注意力分散&#34;&gt;注意力分散
-&lt;/h2&gt;&lt;p&gt;這個問題已經是老生常談，在互聯網下充斥著短視頻和社交媒體，很難集中精力學習。以前我以為是短視頻所以戒掉 Tiktok 之類的短視頻 App 或者關掉其功能；短視頻，使得人們難以擺脫這種短暫的刺激，導致注意力分散和學習效果不佳。言歸正傳，注意力分散實際上就是專注力下滑，如我之前一直在學的 Haskell，我從 YouTube 上面發現了&lt;a class=&#34;link&#34; href=&#34;https://learnyouahaskell.mno2.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/h2&gt;&lt;p&gt;这个问题已经是老生常谈，在互联网下充斥着短视频和社交媒体，很难集中精力学习。以前我以为是短视频所以戒掉 Tiktok 之类的短视频 App 或者关掉其功能；短视频，使得人们难以摆脱这种短暂的刺激，导致注意力分散和学习效果不佳。言归正传，注意力分散实际上就是专注力下滑，如我之前一直在学的 Haskell，我从 YouTube 上面发现了&lt;a class=&#34;link&#34; href=&#34;https://learnyouahaskell.mno2.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Learn You A Haskell For Great Good&lt;/a&gt;
 
 
@@ -910,47 +1109,45 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/svg&gt;&lt;/span&gt;
 
 
-這本書就開始看了一週時間，大致懂了，但是還是無法解開 exercism 練習題裡麵的第二題；後來，在 Telegram 上面的某個群組裡麵得知學 Haskell 建議去 看 [The Real World Haskell ]（https://rwh.readthedocs.io/en/latest/）；&lt;/p&gt;
+这本书就开始看了一週时间，大致懂了，但是还是无法解开 exercism 练习题裡麵的第二题；后来，在 Telegram 上面的某个群组裡麵得知学 Haskell 建议去 看 [The Real World Haskell ]（https://rwh.readthedocs.io/en/latest/）；&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;雖然他說 Rust 寫起來比 Haskell 更好
-但是我是主要是想通過學 Haskell 學習 Functional Program，因此還是會選擇 Haskell 作為學習語言。&lt;/li&gt;
-&lt;li&gt;Haskell 確實是很好的學習 Functional Program 的語言，只是 Rust 也有其獨特的優勢。我覺得都可以試試看，根據個人興趣和需求做決定。值得一試的語言，多學習才能拓寬自己的視野。此注釋由 AI 生產出。&lt;/li&gt;
+&lt;li&gt;虽然他说 Rust 写起来比 Haskell 更好
+但是我是主要是想通过学 Haskell 学习 Functional Program，因此还是会选择 Haskell 作为学习语言。&lt;/li&gt;
+&lt;li&gt;Haskell 确实是很好的学习 Functional Program 的语言，只是 Rust 也有其独特的优势。我觉得都可以试试看，根据个人兴趣和需求做决定。值得一试的语言，多学习才能拓宽自己的视野。此注释由 AI 生产出。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;不論我用手機還是筆記本看書在都會感覺到困，但是在晚上看手機卻不會，不知道怎麼回事，可能是 OLED 螢幕的問題？&lt;/p&gt;
+&lt;p&gt;不论我用手机还是笔记本看书在都会感觉到困，但是在晚上看手机却不会，不知道怎麽回事，可能是 OLED 萤幕的问题？&lt;/p&gt;
 &lt;h2 id=&#34;反思&#34;&gt;反思
-&lt;/h2&gt;&lt;p&gt;最近失眠已經影響到日常的課程和自己的生活作息，所以需要加以調整，不然容易形成不好的習慣；加上自己的注意力分散，學不到什麼東西，只能虛度光陰，現在還在謀求解決方案&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;最近失眠已经影响到日常的课程和自己的生活作息，所以需要加以调整，不然容易形成不好的习惯；加上自己的注意力分散，学不到什麽东西，只能虚度光阴，现在还在谋求解决方案&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>這幾天的感想</title>
-        <link>http://localhost:1313/p/%E9%80%99%E5%B9%BE%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/</link>
+        <title>这几天的感想</title>
+        <link>http://localhost:1313/p/%E8%BF%99%E5%87%A0%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/</link>
         <pubDate>Fri, 26 May 2023 05:02:28 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/%E9%80%99%E5%B9%BE%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E9%80%99%E5%B9%BE%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/photo_2023-05-13_21-54-26.jpg" alt="Featured image of post 這幾天的感想" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
-&lt;/h2&gt;&lt;p&gt;最近在瞎折騰，什麼內核啊，再什麼onedrive網盤，還有什麼自定義域名當郵箱，反正是屁事一堆，什麼都是做一半;&lt;/p&gt;
-&lt;h2 id=&#34;落實&#34;&gt;落實
-&lt;/h2&gt;&lt;p&gt;明天打算把onedrive整了，然後再看看吧，email差不多可以了，可以裝裝門面&lt;/p&gt;
+        <guid>http://localhost:1313/p/%E8%BF%99%E5%87%A0%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E8%BF%99%E5%87%A0%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/photo_2023-05-13_21-54-26.jpg" alt="Featured image of post 这几天的感想" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;最近在瞎折腾，什麽内核啊，再什麽onedrive网盘，还有什麽自定义域名当邮箱，反正是屁事一堆，什麽都是做一半;&lt;/p&gt;
+&lt;h2 id=&#34;落实&#34;&gt;落实
+&lt;/h2&gt;&lt;p&gt;明天打算把onedrive整了，然后再看看吧，email差不多可以了，可以装装门面&lt;/p&gt;
 &lt;h2 id=&#34;感想&#34;&gt;感想
-&lt;/h2&gt;&lt;p&gt;最近幾天，真的很感謝Darling陪我，有時候啥也不想幹或者沒有動力，每次和Darling交談之後心情都變得很愉悅，而且滿血復活;希望Darling身體無恙，開心每一天。&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;最近几天，真的很感谢Darling陪我，有时候啥也不想干或者没有动力，每次和Darling交谈之后心情都变得很愉悦，而且满血復活;希望Darling身体无恙，开心每一天。&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>ArchLinux安裝</title>
-        <link>http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%9D/</link>
+        <title>ArchLinux安装</title>
+        <link>http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/</link>
         <pubDate>Tue, 23 May 2023 14:33:51 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%9D/</guid>
-        <description>&lt;img src="http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%9D/arch.png" alt="Featured image of post ArchLinux安裝" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
-&lt;/h2&gt;&lt;p&gt;本來有寫這個博客的想法，但無奈最近時間比較忙&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;一心想去編譯Samsung內核，中間一波多折.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;故一拖再拖。幸好最近內核的進程一直擱置，我就打算今晚扔到Stackoverflow然後收穫一堆downvote，或者去XDA看看。&lt;/p&gt;
-&lt;h2 id=&#34;材料準備&#34;&gt;材料準備
-&lt;/h2&gt;&lt;p&gt;電腦，U盤各一個，在&lt;a class=&#34;link&#34; href=&#34;https://archlinux.org/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/</guid>
+        <description>&lt;img src="http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/arch.png" alt="Featured image of post ArchLinux安装" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;本来有写这个博客的想法，但无奈最近时间比较忙
+~一心想去编译Samsung内核，中间一波多折.~&lt;/p&gt;
+&lt;p&gt;~故一拖再拖。幸好最近内核的进程一直搁置，我就打算今晚扔到Stackoverflow然后收获一堆downvote，或者去XDA看看。~&lt;/p&gt;
+&lt;h2 id=&#34;材料准备&#34;&gt;材料准备
+&lt;/h2&gt;&lt;p&gt;电脑，U盘各一个，在&lt;a class=&#34;link&#34; href=&#34;https://archlinux.org/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;ArchLinux官方&lt;/a&gt;
 
 
@@ -962,7 +1159,7 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/svg&gt;&lt;/span&gt;
 
 
-選擇鏡像站下載鏡像，用&lt;a class=&#34;link&#34; href=&#34;https://etcher.balena.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+选择镜像站下载镜像，用&lt;a class=&#34;link&#34; href=&#34;https://etcher.balena.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Etcher&lt;/a&gt;
 
 
@@ -974,20 +1171,20 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/svg&gt;&lt;/span&gt;
 
 
-製作啓動U盤&lt;/p&gt;
+制作启动U盘&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;Etcher 有個非常好的優點——全平臺兼容，醬紫就不怕出現在Linux很難製作Windows啓動U盤的尷尬場面。&lt;/li&gt;
+&lt;li&gt;Etcher 有个非常好的优点——全平台兼容，酱紫就不怕出现在Linux很难制作Windows启动U盘的尴尬场面。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;安裝步驟&#34;&gt;安裝步驟
-&lt;/h2&gt;&lt;h3 id=&#34;製作啓動盤&#34;&gt;製作啓動盤
-&lt;/h3&gt;&lt;p&gt;打開Etcher 直接選擇iso文件再選擇U盤安裝即可
-&lt;img src=&#34;http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%9D/etcher.png&#34;
+&lt;h2 id=&#34;安装步骤&#34;&gt;安装步骤
+&lt;/h2&gt;&lt;h3 id=&#34;制作启动盘&#34;&gt;制作启动盘
+&lt;/h3&gt;&lt;p&gt;打开Etcher 直接选择iso文件再选择U盘安装即可
+&lt;img src=&#34;http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/etcher.png&#34;
 	width=&#34;1593&#34;
 	height=&#34;1015&#34;
-	srcset=&#34;http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%9D/etcher_hu6381e2e734e42ff5318ef07523feabe7_49359_480x0_resize_box_3.png 480w, http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%9D/etcher_hu6381e2e734e42ff5318ef07523feabe7_49359_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/etcher_hu6381e2e734e42ff5318ef07523feabe7_49359_480x0_resize_box_3.png 480w, http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/etcher_hu6381e2e734e42ff5318ef07523feabe7_49359_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -996,121 +1193,120 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 		data-flex-basis=&#34;376px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h3 id=&#34;進入bios&#34;&gt;進入BIOS
-&lt;/h3&gt;&lt;p&gt;每個主板或筆電進入BIOS的方法,各不相同故請自行Google
-記得在BIOS裏面關閉secure boot&lt;/p&gt;
-&lt;h3 id=&#34;連接網路&#34;&gt;連接網路
-&lt;/h3&gt;&lt;h4 id=&#34;有線網路&#34;&gt;有線網路
-&lt;/h4&gt;&lt;p&gt;接上網路，稍等片刻即可&lt;/p&gt;
-&lt;h4 id=&#34;無線網路&#34;&gt;無線網路
-&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;iwctl #進入無線網路工具         
-device list # 列出網路設備 通常爲Wlan0
-station wlan0 scan #掃描無線網路
-station wlan0 get-networks #列出可用無線網路
+&lt;h3 id=&#34;进入bios&#34;&gt;进入BIOS
+&lt;/h3&gt;&lt;p&gt;每个主板或笔电进入BIOS的方法,各不相同故请自行Google
+记得在BIOS里面关闭secure boot&lt;/p&gt;
+&lt;h3 id=&#34;连接网路&#34;&gt;连接网路
+&lt;/h3&gt;&lt;h4 id=&#34;有线网路&#34;&gt;有线网路
+&lt;/h4&gt;&lt;p&gt;接上网路，稍等片刻即可&lt;/p&gt;
+&lt;h4 id=&#34;无线网路&#34;&gt;无线网路
+&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;iwctl #进入无线网路工具         
+device list # 列出网路设备 通常为Wlan0
+station wlan0 scan #扫描无线网路
+station wlan0 get-networks #列出可用无线网路
 station wlan0 connnect WiFiname
 &lt;/code&gt;&lt;/pre&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;WiFiname 爲WiFi 名稱，輸入一部分可用Tab補全，然後輸入密碼回車，最後輸入exit退出&lt;/li&gt;
+&lt;li&gt;WiFiname 为WiFi 名称，输入一部分可用Tab补全，然后输入密码回车，最后输入exit退出&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;測試網路連接是否正常&#34;&gt;測試網路連接是否正常
+&lt;h3 id=&#34;测试网路连接是否正常&#34;&gt;测试网路连接是否正常
 &lt;/h3&gt;&lt;pre&gt;&lt;code&gt;ping www.bing.com
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;設定鏡像網站&#34;&gt;設定鏡像網站
+&lt;h3 id=&#34;设置镜像网站&#34;&gt;设置镜像网站
 &lt;/h3&gt;&lt;p&gt;把我们要设定的镜像站放在前面&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;使用上下左右鍵移動，按i輸入文字，改好後按Esc，再輸入「:wq」退出VIM&lt;/li&gt;
-&lt;li&gt;如果真的不會如何使用vim那就Google一下再回來吧&lt;/li&gt;
+&lt;li&gt;使用上下左右键移动，按i输入文字，改好后按Esc，再输入「:wq」退出VIM&lt;/li&gt;
+&lt;li&gt;如果真的不会如何使用vim那就Google一下再回来吧&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;vim /etc/pacman.d/mirrorlist #打開文件按需求把下面的源加進去
+&lt;pre&gt;&lt;code&gt;vim /etc/pacman.d/mirrorlist #打开文件按需求把下面的源加进去
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;中國大陸用戶設定清華源和中科大即可&lt;/p&gt;
+&lt;p&gt;中国大陆用户设定清华源和中科大即可&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;#China 
 Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
 Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;臺灣用戶的可用使用&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Server = https://mirror.archlinux.tw/ArchLinux/$repo/os/$arch
+&lt;h3 id=&#34;分割磁盘&#34;&gt;分割磁盘
+&lt;/h3&gt;&lt;p&gt;archlinux安装需要分三个分区&lt;/p&gt;
+&lt;p&gt;efi分区 512MB.&lt;/p&gt;
+&lt;p&gt;swap分区 运存的60% # 看个人运存而定&lt;/p&gt;
+&lt;p&gt;主分区 剩余部分即为主分区 .&lt;/p&gt;
+&lt;p&gt;下面将会用cfdisk分割磁盘，efi分区格式type为 EFI Ssystem，Swap分区为Swap System，主分区为Lnux System&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cfdisk /dev/nvme0n1 #执行分割分区大小，类型
+fdisk -l # 查看分区情况
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;分割磁盤&#34;&gt;分割磁盤
-&lt;/h3&gt;&lt;p&gt;archlinux安裝需要分三個分區&lt;/p&gt;
-&lt;p&gt;efi分區 512MB.&lt;/p&gt;
-&lt;p&gt;swap分區 運存的60%&lt;/p&gt;
-&lt;p&gt;主分區 剩餘部分即爲主分區 .&lt;/p&gt;
-&lt;p&gt;下面將會把磁盤轉化爲gpt格式，固態硬盤一般爲nvme0n1，我們是直接但系統故直接裝在固態硬盤&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;lsblk #顯示分區情況
-parted /dev/nvme0n1
-(parted)mktable            #輸入mktable
-New disk label type? gpt   #輸入gpt 輸入yes即可
-quit                       #退出
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;下面將會用cfdisk分割磁盤，efi分區格式type爲 EFI Ssystem，Swap分區爲Swap System，主分區爲Lnux System&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;cfdisk /dev/nvme0n1 #執行分割分區大小，類型
-fdisk -l 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h5 id=&#34;配置分區&#34;&gt;配置分區
-&lt;/h5&gt;&lt;pre&gt;&lt;code&gt;mkfs.vfat /dev/nvmexn1p1 #格式化EFI分區
-mkfs.ext4 /dev/nvmexn1p3 # 格式化主分區爲ext4
+&lt;h5 id=&#34;配置分区&#34;&gt;配置分区
+&lt;/h5&gt;&lt;pre&gt;&lt;code&gt;mkswap /dev/nvmexn1p2 # 格式化 swap 分区
+mkfs.vfat /dev/nvmexn1p1 #格式化EFI分区
+mkfs.btrfs -L ArchLinux /dev/nvmexn1p3 # 格式化主分区为ext4
 
-mount /dev/nvmexn1p3 /mnt #掛載主分區到/mnt
-mkdir -p /mnt/boot/efi 
-mount /dev/nvmexn1p1 /mnt/boot/efi #掛載efi分區
+mount -t btrfs -o compress=zstd /dev/nvmexn1p3 #挂载主分区到/mnt, 为创建子卷做准备
 
-mkswap /dev/nvmexn1p2 
-swappon /dev/nvmexn1p2 #設定Swao分區
-fdisk -l #查看分區掛載是否正確
+btrfs subvolume create /mnt/@ # 创建 / 目录子卷
+btrfs subvolume create /mnt/@home # 创建 /home 目录子卷
+unmount /mnt 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;用pacstrap安裝基本linux檔案系統base核心linux&#34;&gt;用pacstrap安裝基本Linux檔案系統base、核心linux
-&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;pacstrap /mnt linux linux-firmware linux-headers base base-devel vim
+&lt;h5 id=&#34;挂载分区&#34;&gt;挂载分区
+&lt;/h5&gt;&lt;pre&gt;&lt;code&gt;mount -t btrfs -o subvol=/@,compress=zstd /dev/nvmexn1p3 /mnt # 挂载 / 目录
+mkdir /mnt/home # 创建 /home 目录
+mount -t btrfs -o subvol=/@home,compress=zstd /dev/nvmexn1p3 /mnt/home # 挂载 /home 目录
+mkdir -p /mnt/boot # 创建 /boot 目录
+mount /dev/nvmexn1p1 /mnt/boot # 挂载 /boot 目录
+swapon /dev/nvmexn1p1 # 挂载交换分区
+fdisk -l #查看分区挂载是否正确
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;使用pacstrap安装基本linux-baselinux&#34;&gt;使用pacstrap安装基本Linux base、linux
+&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;pacstrap /mnt linux linux-firmware linux-headers base base-devel vim btrfs-progs 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h4 id=&#34;生成fstab&#34;&gt;生成fstab
 &lt;/h4&gt;&lt;pre&gt;&lt;code&gt;genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;檢視掛載狀況&#34;&gt;檢視掛載狀況
+&lt;h4 id=&#34;检视挂载状况&#34;&gt;检视挂载状况
 &lt;/h4&gt;&lt;pre&gt;&lt;code&gt;cat /mnt/etc/fstab
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;chroot到系統&#34;&gt;chroot到系統。
+&lt;h4 id=&#34;chroot到系统&#34;&gt;chroot到系统。
 &lt;/h4&gt;&lt;pre&gt;&lt;code&gt;arch-chroot /mnt
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;設定主機名和時區&#34;&gt;設定主機名和時區
-&lt;/h3&gt;&lt;h4 id=&#34;首先在etchostname設定主機名字&#34;&gt;首先在/etc/hostname設定主機名字
-&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;vim /etc/hostname #輸入ArchLinux 再：wq保存退出即可
+&lt;h3 id=&#34;设定主机名和时区&#34;&gt;设定主机名和时区
+&lt;/h3&gt;&lt;h4 id=&#34;首先在etchostname设定主机名字&#34;&gt;首先在/etc/hostname设定主机名字
+&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;vim /etc/hostname #输入ArchLinux 再:wq保存退出即可
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;ArchLinux 爲主機名&lt;/p&gt;
+&lt;p&gt;ArchLinux 为主机名&lt;/p&gt;
 &lt;h4 id=&#34;在vim-etchosts配置hosts&#34;&gt;在vim /etc/hosts配置hosts
 &lt;/h4&gt;&lt;pre&gt;&lt;code&gt;127.0.0.1   localhost
 ::1         localhost
 127.0.1.1   ArchLinux.localdomain ArchLinux
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;設定時區&#34;&gt;設定時區
-&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime # 設定臺北爲時間同步時區 二選一
-ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime # 設定上海爲時間同步時區 
+&lt;h4 id=&#34;设定时区&#34;&gt;设定时区
+&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime # 设定台北为时间同步时区 二选一
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime # 设定上海为时间同步时区 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;硬體時間&#34;&gt;硬體時間
-&lt;/h4&gt;&lt;p&gt;用命令將同步時間設定到硬體&lt;/p&gt;
+&lt;h4 id=&#34;硬体时间&#34;&gt;硬体时间
+&lt;/h4&gt;&lt;p&gt;用命令将同步时间设定到硬体&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;hwclock --systohc
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;安裝微碼&#34;&gt;安裝微碼
+&lt;h3 id=&#34;安装微码&#34;&gt;安装微码
 &lt;/h3&gt;&lt;pre&gt;&lt;code&gt;pacman -S intel-ucode # Intel
 pacman -S amd-ucode # AMD
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;設定locale&#34;&gt;設定locale
-&lt;/h3&gt;&lt;p&gt;編輯 /etc/locale.gen，去掉 en_US.UTF-8 UTF-8 以及 zh_CN.UTF-8 UTF-8 tw_CN.UTF-8 UTF-8&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; vim /etc/locale.gen
+&lt;h3 id=&#34;设定locale&#34;&gt;设定locale
+&lt;/h3&gt;&lt;p&gt;编辑 /etc/locale.gen，去掉 en_US.UTF-8 UTF-8 以及 zh_CN.UTF-8 UTF-8 tw_CN.UTF-8 UTF-8&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;vim /etc/locale.gen
 locale-gen 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;在 /etc/locale.conf 設定爲英文，防止亂碼&lt;/p&gt;
+&lt;p&gt;在 /etc/locale.conf 设定为英文，防止乱码&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;echo &#39;LANG=en_US.UTF-8&#39;  &amp;gt; /etc/locale.conf
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;安装桌面程式&#34;&gt;安装桌面程式
-&lt;/h3&gt;&lt;h4 id=&#34;安装基本软体&#34;&gt;安装基本软体
+&lt;/h3&gt;&lt;h4 id=&#34;安装基本软件&#34;&gt;安装基本软件
 &lt;/h4&gt;&lt;pre&gt;&lt;code&gt;pacman -S sudo networkmanager vim firefox noto-fonts-cjk noto-fonts-emoji
-pacman -S xorg xorg-server pipewire intel-ucode nvtop
-pacman -S fcitx5-im fcitx5-chewing fcitx5-qt fcitx5-gtk fcitx5-chinese-addons
+pacman -S xorg xorg-server pipewire nvtop
+pacman -S fcitx5-im fcitx5-chewing fcitx5-qt fcitx5-gtk fcitx5-chinese-addons # 输入法
 pacman -S git openssh fakeroot base-devel
+pacman -S sof-firmware alsa-firmware alsa-ucm-conf #声卡
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;安装gnome-桌面&#34;&gt;安装gnome 桌面
 &lt;/h3&gt;&lt;pre&gt;&lt;code&gt;pacman -S gnome gdm 
@@ -1120,59 +1316,47 @@ pacman -S git openssh fakeroot base-devel
 &lt;/code&gt;&lt;/pre&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;sddm 为kde桌面的登錄管理器，而gdm为gnome的，
-两个桌面二選一即可&lt;/li&gt;
+&lt;li&gt;sddm 为kde桌面的登录管理器，而gdm为gnome的，
+两个桌面二选一即可&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;僅適用於我的華碩vivobook筆電的聲卡軟體&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;如果聲卡不行，可以去arch.wiki查詢&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;sudo pacman -S sof-firmware
-sudo pacman -S alsa-ucm-conf
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;爲root用戶設定密碼&#34;&gt;爲Root用戶設定密碼
+&lt;h3 id=&#34;为root用户设定密码&#34;&gt;为Root用户设定密码
 &lt;/h3&gt;&lt;pre&gt;&lt;code&gt;passwd root
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;配置root用戶默認編輯器&#34;&gt;配置Root用戶默認編輯器
+&lt;h4 id=&#34;配置root用户默认编辑器&#34;&gt;配置Root用户默认编辑器
 &lt;/h4&gt;&lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;在git 和visudo archlinux會使用vi而不是vim，有時候會出錯，所以需要設置默認編輯器&lt;/li&gt;
+&lt;li&gt;在git 和visudo archlinux会使用vi而不是vim，有时候会出错，所以需要设置默认编辑器&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;pre&gt;&lt;code&gt;vim ~/.bash_profile
 export EDITOR=&#39;vim&#39;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;創建普通用戶&#34;&gt;創建普通用戶
+&lt;h4 id=&#34;创建普通用户&#34;&gt;创建普通用户
 &lt;/h4&gt;&lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;username 爲用戶名，可自行改成自己的名字如 black
+&lt;li&gt;username 为用户名，可自行改成自己的名字如 black
 useradd -m -G wheel -s /bin/bash username
-passwd user # 設定普通用戶密碼&lt;/li&gt;
+passwd user # 设定普通用户密码&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;給予普通用戶sudo權限&#34;&gt;給予普通用戶sudo權限
-&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;EDITOR=vim visudo # 設定visudo的編輯器爲vim,上面的配置尚未生效
+&lt;h4 id=&#34;给予普通用户sudo权限&#34;&gt;给予普通用户sudo权限
+&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;EDITOR=vim visudo # 设定visudo的编辑器为vim,上面的配置尚未生效
 &lt;/code&gt;&lt;/pre&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;找到這行#%wheel ALL=(ALL:ALL) ALL，並把前面的註釋符 # 去掉&lt;/li&gt;
+&lt;li&gt;找到这行#%wheel ALL=(ALL:ALL) ALL，并把前面的注释符 # 去掉&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;設定開機服務&#34;&gt;設定開機服務
-&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;systemctl enable sddm.service #kde桌面需要
-systemctl enable gdm.service #gnome桌面需要
-systemctl enable NetworkManager.service #網路管理員，會自動處理網路連線變更
-systemctl enable sshd.service #ssh服務
-sudo systemctl enable --now bluetooth 啓用藍牙服務(若有)
+&lt;h3 id=&#34;设置开机服务&#34;&gt;设置开机服务
+&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;systemctl enable gdm.service #gnome桌面需要
+systemctl enable NetworkManager.service #网络管理器,连接网络所需
+systemctl enable sshd.service #ssh服务
+sudo systemctl enable --now bluetooth 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;安裝引導程式&#34;&gt;安裝引導程式
-&lt;/h3&gt;&lt;h4 id=&#34;安裝對應的軟體&#34;&gt;安裝對應的軟體
+&lt;h3 id=&#34;安装引导程式&#34;&gt;安装引导程式
+&lt;/h3&gt;&lt;h4 id=&#34;安装对应的软体&#34;&gt;安装对应的软体
 &lt;/h4&gt;&lt;pre&gt;&lt;code&gt;pacman -S grub efibootmgr
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;安装grub-到efi分区&#34;&gt;安装grub 到EFI分区
@@ -1181,96 +1365,117 @@ sudo systemctl enable --now bluetooth 啓用藍牙服務(若有)
 &lt;h3 id=&#34;生成grub所需文件&#34;&gt;生成grub所需文件
 &lt;/h3&gt;&lt;pre&gt;&lt;code&gt;grub-mkconfig -o /boot/grub/grub.cfg
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;系統安裝完成退出chroot取消掛載重啓&#34;&gt;系統安裝完成。退出chroot，取消掛載，重啓
+&lt;h3 id=&#34;系统安装完成退出chroot取消挂载重启&#34;&gt;系统安装完成。退出chroot，取消挂载，重启
 &lt;/h3&gt;&lt;pre&gt;&lt;code&gt;exit
 umount /mnt
-reboot 重啓 
+reboot 重启 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;系統後續安裝優化&#34;&gt;系統後續安裝優化
-&lt;/h2&gt;&lt;h3 id=&#34;配置中文輸入法&#34;&gt;配置中文輸入法
+&lt;p&gt;_&lt;/p&gt;
+&lt;h2 id=&#34;系统后续安装优化&#34;&gt;系统后续安装优化
+&lt;/h2&gt;&lt;h3 id=&#34;配置中文输入法&#34;&gt;配置中文输入法
 &lt;/h3&gt;&lt;pre&gt;&lt;code&gt;sudo vim /etc/environment
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;把下面這幾行加入即可&lt;/p&gt;
+&lt;p&gt;把下面这几行加入即可&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;GTK_IM_MODULE=fcitx
 QT_IM_MODULE=fcitx
 XMODIFIERS=@im=fcitx
 SDL_IM_MODULE=fcitx
 GLFW_IM_MODULE=ibus
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;clash-for-windows-代理軟體&#34;&gt;Clash for windows 代理軟體
-&lt;/h3&gt;&lt;p&gt;開啓&lt;a class=&#34;link&#34; href=&#34;https://github.com/Fndroid/clash_for_windows_pkg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Clash for windows GitHub倉庫&lt;/a&gt;
-
-
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
-，下載含linux字符文件並解壓運行cfw即可，如有不明之處可查看&lt;a class=&#34;link&#34; href=&#34;https://clashforwindows.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;官網&lt;/a&gt;
-
-
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
-&lt;/p&gt;
-&lt;h3 id=&#34;pacman套件管理員使用方式&#34;&gt;pacman套件管理員使用方式
-&lt;/h3&gt;&lt;p&gt;pacman 相當於ubuntu 的apt-get,此節列出Arch Linux的套件管理員pacman的常用指令。&lt;br&gt;
-搜索線上倉庫軟體&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo pacman -Ss &amp;lt;套件名稱&amp;gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;在桌面打开 fcitx5 搜索拼音(Pinyin)添加即可&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;pacman软件管理器使用方式&#34;&gt;pacman软件管理器使用方式
+&lt;/h3&gt;&lt;p&gt;pacman 相当于ubuntu 的apt-get,此节列出Arch Linux的套件管理员pacman的常用指令。&lt;br&gt;
+搜索线上仓库软件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo pacman -Ss &amp;lt;软件名称&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;用此指令安裝套件&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo pacman -S &amp;lt;套件名稱&amp;gt;
+&lt;p&gt;用此指令安装软件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo pacman -S &amp;lt;软件名称&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;移除套件&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo pacman -R &amp;lt;套件名稱&amp;gt;
+&lt;p&gt;卸载软件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo pacman -R &amp;lt;软件名称&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;以下指令會更新整個系統的套件。因為Arch Linux是滾動發行版，建議每半個月進行一次全系統更新。更新前建議看ArchLinux的新聞有無嚴重bug再更新。&lt;/p&gt;
+&lt;p&gt;以下指令会更新整个系统的软件。因为Arch Linux是滚动发行版，建议每半个月进行一次全系统更新。更新前建议看ArchLinux官方的新闻有无更新注意事项。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;sudo pacman -Syu
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;強制同步套件庫。某個套件無法下載的時候才執行此指令。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo pacman -Syu
+&lt;p&gt;强制同步软件库。某个软件无法下载的时候才执行此指令。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo pacman -Syuu
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;刪除本機套件快取
-sudo pacman -Sc&lt;/p&gt;
-&lt;p&gt;查看本地已安裝套件&lt;/p&gt;
+&lt;p&gt;删除本机软件快取&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo pacman -Sc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;查看本地已安装软件&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;sudo pacman -Qt
 &lt;/code&gt;&lt;/pre&gt;
-&lt;blockquote&gt;
-&lt;p&gt;可用來移除桌面冗餘的套件&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;安裝aur套件管理員&#34;&gt;安裝AUR套件管理員
-&lt;/h3&gt;&lt;p&gt;AUR (Arch User Repository) 是Arch Linux官方套件庫以外的主要套件來源。AUR沒有收錄套件檔案，只有編譯套件的設定檔。AUR套件最直接的裝法是手動git clone儲存庫，然後檢查依賴項目，再用makepkg指令打包安裝。&lt;/p&gt;
-&lt;p&gt;但是這樣太麻煩了，所以我們通常會安裝一個AUR Helper來自動化處理，我使用yay，語法跟pacman很像&lt;/p&gt;
+&lt;h3 id=&#34;安装aur-助手&#34;&gt;安装AUR 助手
+&lt;/h3&gt;&lt;p&gt;AUR (Arch User Repository) 是Arch Linux官方软件库以外的主要软件来源。AUR没有收录套件档案，只有编译软件的设定档。AUR软件最直接的装法是手动git clone远程仓库，再用makepkg指令打包安装。&lt;/p&gt;
+&lt;p&gt;但是这样太麻烦了，所以我们通常会安装一个AUR Helper来自动化处理，我使用Paru，语法跟pacman很像&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;sudo pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/yay.git
-cd yay
+git clone https://aur.archlinux.org/paru.git
+cd paru
 makepkg -si
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;yay 安裝套件&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;yay -S google-chrome # 按下Enter同意安裝，並按照螢幕提示輸入密碼
+&lt;p&gt;Paru 安装软件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;paru -S google-chrome # 按下Enter同意安装，并按照萤幕提示输入密码
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;yay 移除套件&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;yay -R google-chrome
+&lt;p&gt;Paru 移除软件件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;paru -R google-chrome
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;更新所有AUR套件，並順便更新整個系統的套件：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;yay -Syu
+&lt;p&gt;更新所有AUR套件，并顺便更新整个系统的套件：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;paru -Syu
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;自用gnome-插件&#34;&gt;自用gnome 插件
-&lt;/h2&gt;&lt;p&gt;先安裝gnome-browser-connector&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;yay -S gnome-browser-connector
+&lt;h3 id=&#34;clash-for-windows-代理软体&#34;&gt;Clash for windows 代理软体
+&lt;/h3&gt;&lt;p&gt;~开启&lt;a class=&#34;link&#34; href=&#34;https://github.com/Fndroid/clash_for_windows_pkg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Clash for windows GitHub仓库&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+，下载含linux字符文件并解压运行cfw即可，如有不明之处可查看&lt;a class=&#34;link&#34; href=&#34;https://clashforwindows.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+~&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Clash for Windows 已删库,我们使用clash-verge-rev&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;paru -S clash-verge-rev-bin&lt;/p&gt;
+&lt;h3 id=&#34;自用gnome-插件&#34;&gt;自用gnome 插件
+&lt;/h3&gt;&lt;p&gt;安装 gnome 插件管理器&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;paru -S gnome-browser-connector
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;blur-my-shellhttpsextensionsgnomeorgextension3193blur-my-shell-模糊抽屜界面不再是灰色&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://extensions.gnome.org/extension/3193/blur-my-shell/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h3 id=&#34;开启32位库支持&#34;&gt;开启32位库支持
+&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;vim /etc/pacman.conf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;仅需把下面两行前面的#去掉,输入:wq保持并退出即可,然后强制更新整个系统&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#[community]
+#Include = /etc/pacman.d/mirrorlist
+
+sudo pacman -Syyu #更新系统
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;android-刷机工具&#34;&gt;Android 刷机工具
+&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;sudo pacman -S android-tools
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://extensions.gnome.org/extension/3193/blur-my-shell/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;blur-my-shell&lt;/a&gt;
 
 
@@ -1282,8 +1487,8 @@ makepkg -si
 &lt;/svg&gt;&lt;/span&gt;
 
 
- 模糊抽屜界面不再是灰色
-&lt;/h3&gt;&lt;h3 id=&#34;caffeine-httpsextensionsgnomeorgextension517caffeine-禁用熒幕保護和自動暫停&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://extensions.gnome.org/extension/517/caffeine/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+ 模糊抽屉界面不再是灰色~&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://extensions.gnome.org/extension/517/caffeine/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Caffeine &lt;/a&gt;
 
 
@@ -1295,8 +1500,8 @@ makepkg -si
 &lt;/svg&gt;&lt;/span&gt;
 
 
- 禁用熒幕保護和自動暫停
-&lt;/h3&gt;&lt;h3 id=&#34;clipboard-indicatorhttpsextensionsgnomeorgextension779clipboard-indicator-剪貼板管理器記錄你複製過的內容&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://extensions.gnome.org/extension/779/clipboard-indicator/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+ 禁用荧幕保护和自动暂停&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://extensions.gnome.org/extension/779/clipboard-indicator/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Clipboard Indicator&lt;/a&gt;
 
 
@@ -1308,8 +1513,8 @@ makepkg -si
 &lt;/svg&gt;&lt;/span&gt;
 
 
- 剪貼板管理器，記錄你複製過的內容
-&lt;/h3&gt;&lt;h3 id=&#34;coverflow-alt-tabhttpsextensionsgnomeorgextension307dash-to-dock-此插件可以實現mac系統的快速切換任務且自帶流暢切換動畫&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://extensions.gnome.org/extension/307/dash-to-dock/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+ 剪贴板管理器，记录你复制过的内容&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://extensions.gnome.org/extension/307/dash-to-dock/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Coverflow Alt-Tab&lt;/a&gt;
 
 
@@ -1321,8 +1526,8 @@ makepkg -si
 &lt;/svg&gt;&lt;/span&gt;
 
 
- 此插件可以實現Mac系統的快速切換任務且自帶流暢切換動畫
-&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://extensions.gnome.org/extension/307/dash-to-dock/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+ 此插件可以实现Mac系统的快速切换任务且自带流畅切换动画&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://extensions.gnome.org/extension/307/dash-to-dock/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Dash to Dock&lt;/a&gt;
 
 
@@ -1334,7 +1539,7 @@ makepkg -si
 &lt;/svg&gt;&lt;/span&gt;
 
 
- 固定Dock欄，gnome在某次更新砍了這個功能&lt;/p&gt;
+ 固定Dock栏，gnome在某次更新砍了这个功能&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://extensions.gnome.org/extension/3088/extension-list/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Extension List&lt;/a&gt;
 
@@ -1347,7 +1552,7 @@ makepkg -si
 &lt;/svg&gt;&lt;/span&gt;
 
 
- 在狀態欄開啓插件清單&lt;/p&gt;
+ 在状态栏开启插件清单&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://extensions.gnome.org/extension/750/openweather/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;OpenWeather &lt;/a&gt;
 
@@ -1360,7 +1565,7 @@ makepkg -si
 &lt;/svg&gt;&lt;/span&gt;
 
 
- 在頂欄顯示天氣狀況&lt;/p&gt;
+ 在顶栏显示天气状况&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://extensions.gnome.org/extension/1460/vitals/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Vitals &lt;/a&gt;
 
@@ -1373,31 +1578,13 @@ makepkg -si
 &lt;/svg&gt;&lt;/span&gt;
 
 
- 一個很好用的插件可快速查看系統的CPU，Ram，存儲佔用狀況&lt;/p&gt;
-&lt;h3 id=&#34;android-刷機工具&#34;&gt;Android 刷機工具
-&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;sudo pacman -S android-tools
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;配置android-rom-編譯環境&#34;&gt;配置Android Rom 編譯環境
-&lt;/h2&gt;&lt;p&gt;這裏不得不說一下，Archlinux的優點Aur,得益於Aur,安裝編譯Android Rom 的套件僅需開啓32位庫&lt;/p&gt;
-&lt;h3 id=&#34;開啓32位庫支援&#34;&gt;開啓32位庫支援
-&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;vim /etc/pacman.conf
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;僅需把下面兩行前面的#去掉,輸入：wq保持並推出即可&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#[community]
-#Include = /etc/pacman.d/mirrorlist
-
-sudo pacman -Syyu #更新套件
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;安裝所需套件&#34;&gt;安裝所需套件
-&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;yay -S lineageos-devel android-devel
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
+ 一个很好用的插件可快速查看系统的CPU，Ram，存储占用状况&lt;/p&gt;
 &lt;h2 id=&#34;文章引用&#34;&gt;文章引用
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;h3 id=&#34;arch-linux安裝教學kde-plasma桌面中文輸入法httpsivonblogcompostsinstall-archlinux&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://ivonblog.com/posts/install-archlinux/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Arch Linux安裝教學，KDE Plasma桌面＋中文輸入法&lt;/a&gt;
+&lt;h3 id=&#34;arch-linux安装教学kde-plasma桌面中文输入法httpsivonblogcompostsinstall-archlinux&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://ivonblog.com/posts/install-archlinux/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Arch Linux安装教学，KDE Plasma桌面＋中文输入法&lt;/a&gt;
 
 
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -1426,8 +1613,8 @@ sudo pacman -Syyu #更新套件
 
 &lt;/h3&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;h3 id=&#34;如果你感覺arch很耗電可以看看這篇文章httpsflymeow-2compostrecordstlp-for-power-savinghtml&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://fly.meow-2.com/post/records/tlp-for-power-saving.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;如果你感覺Arch很耗電，可以看看這篇文章&lt;/a&gt;
+&lt;h3 id=&#34;如果你感觉arch很耗电可以看看这篇文章httpsflymeow-2compostrecordstlp-for-power-savinghtml&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://fly.meow-2.com/post/records/tlp-for-power-saving.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;如果你感觉Arch很耗电，可以看看这篇文章&lt;/a&gt;
 
 
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -1436,6 +1623,13 @@ sudo pacman -Syyu #更新套件
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
+
+
+
+&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;heading&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;&lt;/a&gt;
+
 
 
 
@@ -1451,7 +1645,7 @@ sudo pacman -Syyu #更新套件
         
         <guid>http://localhost:1313/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/</guid>
         <description>&lt;img src="http://localhost:1313/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/Hello-World.jpg" alt="Featured image of post 第一篇文章亦或不是" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
-&lt;/h2&gt;&lt;p&gt;早在去年初旬，我就創建了一個Github Pag，打開就一個空白頁面，留下一行字“Lucasblacklu.github.io”，那時候並不知曉什麼主題也不懂什麼Hexo,Hugo。後來，去年剛開學不久看到班上的同學在show他的Blog，於是便粗略的看了一下，自己並沒有什麼想法去搭建；直到後來，在班上的老師展示他的Blog，用hexo和js搭建的，後來便開始了，我自己摸索搭建Blog。剛開始慢慢看教程，然後不斷碰壁，一開始我看到的優質教程是&lt;a class=&#34;link&#34; href=&#34;https://huangno1.github.io/hugo_theme_change/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/h2&gt;&lt;p&gt;早在去年初旬，我就创建了一个Github Pag，打开就一个空白页面，留下一行字“Lucasblacklu.github.io”，那时候并不知晓什么主题也不懂什么Hexo,Hugo。后来，去年刚开学不久看到班上的同学在show他的Blog，于是便粗略的看了一下，自己并没有什么想法去搭建；直到后来，在班上的老师展示他的Blog，用hexo和js搭建的，后来便开始了，我自己摸索搭建Blog。刚开始慢慢看教程，然后不断碰壁，一开始我看到的优质教程是&lt;a class=&#34;link&#34; href=&#34;https://huangno1.github.io/hugo_theme_change/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;RemBlog的教程&lt;/a&gt;
 
 
@@ -1463,7 +1657,7 @@ sudo pacman -Syyu #更新套件
 &lt;/svg&gt;&lt;/span&gt;
 
 
-以及啓發RemBlog的&lt;a class=&#34;link&#34; href=&#34;https://medium.com/@chswei/%E5%9C%A8-github-%E9%83%A8%E7%BD%B2-hugo-%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99-9c40682dfe40&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+以及啓发RemBlog的&lt;a class=&#34;link&#34; href=&#34;https://medium.com/@chswei/%E5%9C%A8-github-%E9%83%A8%E7%BD%B2-hugo-%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99-9c40682dfe40&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;教程&lt;/a&gt;
 
 
@@ -1475,9 +1669,9 @@ sudo pacman -Syyu #更新套件
 &lt;/svg&gt;&lt;/span&gt;
 
 
-,也就是因爲這個教程，我懂得了如何搭建Hugo Blog，也就是從這裏開始我愛上Hugo的快速部署，而不是Hexo的豐富且美觀的主題。&lt;/p&gt;
+,也就是因爲这个教程，我懂得了如何搭建Hugo Blog，也就是从这里开始我爱上Hugo的快速部署，而不是Hexo的丰富且美观的主题。&lt;/p&gt;
 &lt;h2 id=&#34;一波多折&#34;&gt;一波多折
-&lt;/h2&gt;&lt;p&gt;前面談到Hugo快速，但是缺乏優質主題，畢竟顏值是第一動力，後來我挑了很多個主題，一開始是這個主題stack，但是由於自己不會如何配置，遇上很多問題，例如部署出來的Blog沒有正確顯示主題，也就是CSS配置出錯，但我當時並不知道什麼是CSS，後來又試了好幾個，最後折騰到凌晨，無奈只好選擇一個簡單的主題。之後，我在一個telegram看到一個&lt;a class=&#34;link&#34; href=&#34;https://wol.moe/%E5%9F%BA%E4%BA%8Ehugo-github-actions-cloudflare-pages%E7%9A%84%E8%87%AA%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%83%A8%E7%BD%B2/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/h2&gt;&lt;p&gt;前面谈到Hugo快速，但是缺乏优质主题，毕竟颜值是第一动力，后来我挑了很多个主题，一开始是这个主题stack，但是由于自己不会如何配置，遇上很多问题，例如部署出来的Blog没有正确显示主题，也就是CSS配置出错，但我当时并不知道什么是CSS，后来又试了好几个，最后折腾到凌晨，无奈只好选择一个简单的主题。之后，我在一个telegram看到一个&lt;a class=&#34;link&#34; href=&#34;https://wol.moe/%E5%9F%BA%E4%BA%8Ehugo-github-actions-cloudflare-pages%E7%9A%84%E8%87%AA%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%83%A8%E7%BD%B2/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;教程&lt;/a&gt;
 
 
@@ -1489,11 +1683,11 @@ sudo pacman -Syyu #更新套件
 &lt;/svg&gt;&lt;/span&gt;
 
 
-教人使用三個倉庫，自動化部署Blog僅需上傳markdown文件即可，這對於當時並不瞭解Github Action和Workflow的我，無疑是巨大的誘惑，然後我按照他的教程試了好久還是不行，我甚至都不知道設定Token,後來也就不了了之，之前問過他裏面的bash腳本怎麼使用（還包括sed命令），可是我現在只看懂一些。也是因爲此，於是我便下定決定要搭建個Hugo+&lt;del&gt;Github Action&lt;/del&gt;(Github Action暫時出問題，暫時用回兩個倉庫的方式) 的自動化部署Blog,後來在Workflow的多次踩坑當中學會了如何使用Token,加上那段時間在折騰Rom 編譯學會了不少Git和一些Linux 命令。&lt;/p&gt;
-&lt;h2 id=&#34;最後&#34;&gt;最後
-&lt;/h2&gt;&lt;p&gt;我爲什麼又選擇這個主題，是因爲之前在Hugo Shoka碰壁發現，很多是自己的問題，加上我有認識不同國家的人，而Stack支持多語言輸出，只需要寫出一篇中文文章，把他發給chatgpt可以幫忙去潤色，再創建其他語言的markdown文件，例如我原始文件是index.md，英文的則是index.en.md。人的慾望是難以滿足的，最後我是再三抉擇才決定使用Stack主題，未來有更好的，可能是我會選擇遷移到新的主題或新的驅動。再者是爲什麼我默認語言選擇繁體中文，別問,問就是延續之前的我之前傳統&lt;/p&gt;
+教人使用三个仓库，自动化部署Blog仅需上传markdown文件即可，这对于当时并不瞭解Github Action和Workflow的我，无疑是巨大的诱惑，然后我按照他的教程试了好久还是不行，我甚至都不知道设定Token,后来也就不了了之，之前问过他里面的bash脚本怎么使用（还包括sed命令），可是我现在只看懂一些。也是因爲此，于是我便下定决定要搭建个Hugo+&lt;del&gt;Github Action&lt;/del&gt;(Github Action暂时出问题，暂时用回两个仓库的方式) 的自动化部署Blog,后来在Workflow的多次踩坑当中学会了如何使用Token,加上那段时间在折腾Rom 编译学会了不少Git和一些Linux 命令。&lt;/p&gt;
+&lt;h2 id=&#34;最后&#34;&gt;最后
+&lt;/h2&gt;&lt;p&gt;我爲什么又选择这个主题，是因爲之前在Hugo Shoka碰壁发现，很多是自己的问题，加上我有认识不同国家的人，而Stack支持多语言输出，只需要写出一篇中文文章，把他发给chatgpt可以帮忙去润色，再创建其他语言的markdown文件，例如我原始文件是index.md，英文的则是index.en.md。人的慾望是难以满足的，最后我是再三抉择才决定使用Stack主题，未来有更好的，可能是我会选择迁移到新的主题或新的驱动。再者是爲什么我默认语言选择繁体中文，别问,问就是延续之前的我之前传统&lt;/p&gt;
 &lt;h2 id=&#34;更新&#34;&gt;更新
-&lt;/h2&gt;&lt;p&gt;其實博客主題什麼的都不重要,重要的內容,內容足夠好自然可以吸引讀者,延續一直以來用的博客即可,太累或太懶不想折騰,一昧追求更好看,性能更好或者是其他需求的主題,反而使其寫博客的本心,&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;其实博客主题什么的都不重要,重要的内容,内容足够好自然可以吸引读者,延续一直以来用的博客即可,太累或太懒不想折腾,一昧追求更好看,性能更好或者是其他需求的主题,反而使其写博客的本心,&lt;/p&gt;
 </description>
         </item>
         

@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='前言 本来有写这个博客的想法，但无奈最近时间比较忙 ~一心想去编译Samsung内核，中间一波多折.~ ~故一拖再拖。幸好最近内核的进程一直搁置，'>
+<title>ArchLinux安装</title>
+
+<link rel='canonical' href='http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/'>
+
+<link rel="stylesheet" href="/scss/style.min.1203e9143381595224d07e2cf2421ca3e8b9990dcd519e7f539c15da9b27e1b7.css"><meta property='og:title' content='ArchLinux安装'>
+<meta property='og:description' content='前言 本来有写这个博客的想法，但无奈最近时间比较忙 ~一心想去编译Samsung内核，中间一波多折.~ ~故一拖再拖。幸好最近内核的进程一直搁置，'>
+<meta property='og:url' content='http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/'>
+<meta property='og:site_name' content='我语言之局限,即是我世界之局限'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Archlinux' /><meta property='article:tag' content='Android' /><meta property='article:published_time' content='2023-05-23T14:33:51&#43;08:00'/><meta property='article:modified_time' content='2023-05-23T14:33:51&#43;08:00'/><meta property='og:image' content='http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/arch.png' />
+<meta name="twitter:title" content="ArchLinux安装">
+<meta name="twitter:description" content="前言 本来有写这个博客的想法，但无奈最近时间比较忙 ~一心想去编译Samsung内核，中间一波多折.~ ~故一拖再拖。幸好最近内核的进程一直搁置，"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/arch.png' />
+  
+
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu0e429c6c5e22e495d9f8d8382dd0396f_64312_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">我语言之局限,即是我世界之局限</a></h1>
+            <h2 class="site-description"></h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/LucasBlackLu'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>链接</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+                
+                    <li id="i18n-switch">  
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                        <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
+                            
+                                <option value="http://localhost:1313/zh-tw/" >繁中</option>
+                            
+                                <option value="http://localhost:1313/" selected>简中</option>
+                            
+                                <option value="http://localhost:1313/en/" >English</option>
+                            
+                                <option value="http://localhost:1313/vi/" >Tiếng Việt</option>
+                            
+                        </select>
+                    </li>
+                
+            
+
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>暗色模式</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#材料准备">材料准备</a></li>
+    <li><a href="#安装步骤">安装步骤</a>
+      <ol>
+        <li><a href="#制作启动盘">制作启动盘</a></li>
+        <li><a href="#进入bios">进入BIOS</a></li>
+        <li><a href="#连接网路">连接网路</a>
+          <ol>
+            <li><a href="#有线网路">有线网路</a></li>
+            <li><a href="#无线网路">无线网路</a></li>
+          </ol>
+        </li>
+        <li><a href="#测试网路连接是否正常">测试网路连接是否正常</a></li>
+        <li><a href="#设置镜像网站">设置镜像网站</a></li>
+        <li><a href="#分割磁盘">分割磁盘</a>
+          <ol>
+            <li></li>
+          </ol>
+        </li>
+        <li><a href="#使用pacstrap安装基本linux-baselinux">使用pacstrap安装基本Linux base、linux</a>
+          <ol>
+            <li><a href="#生成fstab">生成fstab</a></li>
+            <li><a href="#检视挂载状况">检视挂载状况</a></li>
+            <li><a href="#chroot到系统">chroot到系统。</a></li>
+          </ol>
+        </li>
+        <li><a href="#设定主机名和时区">设定主机名和时区</a>
+          <ol>
+            <li><a href="#首先在etchostname设定主机名字">首先在/etc/hostname设定主机名字</a></li>
+            <li><a href="#在vim-etchosts配置hosts">在vim /etc/hosts配置hosts</a></li>
+            <li><a href="#设定时区">设定时区</a></li>
+            <li><a href="#硬体时间">硬体时间</a></li>
+          </ol>
+        </li>
+        <li><a href="#安装微码">安装微码</a></li>
+        <li><a href="#设定locale">设定locale</a></li>
+        <li><a href="#安装桌面程式">安装桌面程式</a>
+          <ol>
+            <li><a href="#安装基本软件">安装基本软件</a></li>
+          </ol>
+        </li>
+        <li><a href="#安装gnome-桌面">安装gnome 桌面</a>
+          <ol>
+            <li><a href="#安装kde桌面">安装KDE桌面</a></li>
+          </ol>
+        </li>
+        <li><a href="#为root用户设定密码">为Root用户设定密码</a>
+          <ol>
+            <li><a href="#配置root用户默认编辑器">配置Root用户默认编辑器</a></li>
+            <li><a href="#创建普通用户">创建普通用户</a></li>
+            <li><a href="#给予普通用户sudo权限">给予普通用户sudo权限</a></li>
+          </ol>
+        </li>
+        <li><a href="#设置开机服务">设置开机服务</a></li>
+        <li><a href="#安装引导程式">安装引导程式</a>
+          <ol>
+            <li><a href="#安装对应的软体">安装对应的软体</a></li>
+          </ol>
+        </li>
+        <li><a href="#安装grub-到efi分区">安装grub 到EFI分区</a></li>
+        <li><a href="#生成grub所需文件">生成grub所需文件</a></li>
+        <li><a href="#系统安装完成退出chroot取消挂载重启">系统安装完成。退出chroot，取消挂载，重启</a></li>
+      </ol>
+    </li>
+    <li><a href="#系统后续安装优化">系统后续安装优化</a>
+      <ol>
+        <li><a href="#配置中文输入法">配置中文输入法</a></li>
+        <li><a href="#pacman软件管理器使用方式">pacman软件管理器使用方式</a></li>
+        <li><a href="#安装aur-助手">安装AUR 助手</a></li>
+        <li><a href="#clash-for-windows-代理软体">Clash for windows 代理软体</a></li>
+        <li><a href="#自用gnome-插件">自用gnome 插件</a></li>
+        <li><a href="#开启32位库支持">开启32位库支持</a></li>
+        <li><a href="#android-刷机工具">Android 刷机工具</a></li>
+      </ol>
+    </li>
+    <li><a href="#文章引用">文章引用</a>
+      <ol>
+        <li><a href="#arch-linux安装教学kde-plasma桌面中文输入法httpsivonblogcompostsinstall-archlinux"><a href="https://ivonblog.com/posts/install-archlinux/">Arch Linux安装教学，KDE Plasma桌面＋中文输入法</a></a></li>
+        <li><a href="#archlinux-基础安装httpsarchicekylinonlineguide"><a href="https://arch.icekylin.online/guide/">archlinux 基础安装</a></a></li>
+        <li><a href="#如果你感觉arch很耗电可以看看这篇文章httpsflymeow-2compostrecordstlp-for-power-savinghtml"><a href="https://fly.meow-2.com/post/records/tlp-for-power-saving.html">如果你感觉Arch很耗电，可以看看这篇文章</a></a></li>
+        <li><a href="#heading"><a href=""></a></a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/archlinux%E5%AE%89%E8%A3%85/">
+                <img src="/p/archlinux%E5%AE%89%E8%A3%85/arch_hu56f17c9044ea99b37c05eb2feb8e32e6_299626_800x0_resize_box_3.png"
+                        srcset="/p/archlinux%E5%AE%89%E8%A3%85/arch_hu56f17c9044ea99b37c05eb2feb8e32e6_299626_800x0_resize_box_3.png 800w, /p/archlinux%E5%AE%89%E8%A3%85/arch_hu56f17c9044ea99b37c05eb2feb8e32e6_299626_1600x0_resize_box_3.png 1600w"
+                        width="800" 
+                        height="450" 
+                        loading="lazy"
+                        alt="Featured image of post ArchLinux安装" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/program/" >
+                Program
+            </a>
+        
+            <a href="/categories/guidance/" >
+                Guidance
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/archlinux%E5%AE%89%E8%A3%85/">ArchLinux安装</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">May 23, 2023</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 6 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+        <footer class="article-translations">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+            <div>
+                
+                    <a href="http://localhost:1313/zh-tw/p/archlinux%E5%AE%89%E8%A3%9D/" class="link">繁中</a>
+                
+            </div>
+        </footer>
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="前言">前言
+</h2><p>本来有写这个博客的想法，但无奈最近时间比较忙
+~一心想去编译Samsung内核，中间一波多折.~</p>
+<p>~故一拖再拖。幸好最近内核的进程一直搁置，我就打算今晚扔到Stackoverflow然后收获一堆downvote，或者去XDA看看。~</p>
+<h2 id="材料准备">材料准备
+</h2><p>电脑，U盘各一个，在<a class="link" href="https://archlinux.org/download/"  target="_blank" rel="noopener"
+    >ArchLinux官方</a>
+
+
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+
+选择镜像站下载镜像，用<a class="link" href="https://etcher.balena.io/"  target="_blank" rel="noopener"
+    >Etcher</a>
+
+
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+
+制作启动U盘</p>
+<blockquote>
+<ul>
+<li>Etcher 有个非常好的优点——全平台兼容，酱紫就不怕出现在Linux很难制作Windows启动U盘的尴尬场面。</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="安装步骤">安装步骤
+</h2><h3 id="制作启动盘">制作启动盘
+</h3><p>打开Etcher 直接选择iso文件再选择U盘安装即可
+<img src="/p/archlinux%E5%AE%89%E8%A3%85/etcher.png"
+	width="1593"
+	height="1015"
+	srcset="/p/archlinux%E5%AE%89%E8%A3%85/etcher_hu6381e2e734e42ff5318ef07523feabe7_49359_480x0_resize_box_3.png 480w, /p/archlinux%E5%AE%89%E8%A3%85/etcher_hu6381e2e734e42ff5318ef07523feabe7_49359_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="156"
+		data-flex-basis="376px"
+	
+></p>
+<h3 id="进入bios">进入BIOS
+</h3><p>每个主板或笔电进入BIOS的方法,各不相同故请自行Google
+记得在BIOS里面关闭secure boot</p>
+<h3 id="连接网路">连接网路
+</h3><h4 id="有线网路">有线网路
+</h4><p>接上网路，稍等片刻即可</p>
+<h4 id="无线网路">无线网路
+</h4><pre><code>iwctl #进入无线网路工具         
+device list # 列出网路设备 通常为Wlan0
+station wlan0 scan #扫描无线网路
+station wlan0 get-networks #列出可用无线网路
+station wlan0 connnect WiFiname
+</code></pre>
+<blockquote>
+<ul>
+<li>WiFiname 为WiFi 名称，输入一部分可用Tab补全，然后输入密码回车，最后输入exit退出</li>
+</ul>
+</blockquote>
+<h3 id="测试网路连接是否正常">测试网路连接是否正常
+</h3><pre><code>ping www.bing.com
+</code></pre>
+<h3 id="设置镜像网站">设置镜像网站
+</h3><p>把我们要设定的镜像站放在前面</p>
+<blockquote>
+<ul>
+<li>使用上下左右键移动，按i输入文字，改好后按Esc，再输入「:wq」退出VIM</li>
+<li>如果真的不会如何使用vim那就Google一下再回来吧</li>
+</ul>
+</blockquote>
+<pre><code>vim /etc/pacman.d/mirrorlist #打开文件按需求把下面的源加进去
+</code></pre>
+<p>中国大陆用户设定清华源和中科大即可</p>
+<pre><code>#China 
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
+</code></pre>
+<h3 id="分割磁盘">分割磁盘
+</h3><p>archlinux安装需要分三个分区</p>
+<p>efi分区 512MB.</p>
+<p>swap分区 运存的60% # 看个人运存而定</p>
+<p>主分区 剩余部分即为主分区 .</p>
+<p>下面将会用cfdisk分割磁盘，efi分区格式type为 EFI Ssystem，Swap分区为Swap System，主分区为Lnux System</p>
+<pre><code>cfdisk /dev/nvme0n1 #执行分割分区大小，类型
+fdisk -l # 查看分区情况
+</code></pre>
+<h5 id="配置分区">配置分区
+</h5><pre><code>mkswap /dev/nvmexn1p2 # 格式化 swap 分区
+mkfs.vfat /dev/nvmexn1p1 #格式化EFI分区
+mkfs.btrfs -L ArchLinux /dev/nvmexn1p3 # 格式化主分区为ext4
+
+mount -t btrfs -o compress=zstd /dev/nvmexn1p3 #挂载主分区到/mnt, 为创建子卷做准备
+
+btrfs subvolume create /mnt/@ # 创建 / 目录子卷
+btrfs subvolume create /mnt/@home # 创建 /home 目录子卷
+unmount /mnt 
+</code></pre>
+<h5 id="挂载分区">挂载分区
+</h5><pre><code>mount -t btrfs -o subvol=/@,compress=zstd /dev/nvmexn1p3 /mnt # 挂载 / 目录
+mkdir /mnt/home # 创建 /home 目录
+mount -t btrfs -o subvol=/@home,compress=zstd /dev/nvmexn1p3 /mnt/home # 挂载 /home 目录
+mkdir -p /mnt/boot # 创建 /boot 目录
+mount /dev/nvmexn1p1 /mnt/boot # 挂载 /boot 目录
+swapon /dev/nvmexn1p1 # 挂载交换分区
+fdisk -l #查看分区挂载是否正确
+</code></pre>
+<h3 id="使用pacstrap安装基本linux-baselinux">使用pacstrap安装基本Linux base、linux
+</h3><pre><code>pacstrap /mnt linux linux-firmware linux-headers base base-devel vim btrfs-progs 
+</code></pre>
+<h4 id="生成fstab">生成fstab
+</h4><pre><code>genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+</code></pre>
+<h4 id="检视挂载状况">检视挂载状况
+</h4><pre><code>cat /mnt/etc/fstab
+</code></pre>
+<h4 id="chroot到系统">chroot到系统。
+</h4><pre><code>arch-chroot /mnt
+</code></pre>
+<h3 id="设定主机名和时区">设定主机名和时区
+</h3><h4 id="首先在etchostname设定主机名字">首先在/etc/hostname设定主机名字
+</h4><pre><code>vim /etc/hostname #输入ArchLinux 再:wq保存退出即可
+</code></pre>
+<p>ArchLinux 为主机名</p>
+<h4 id="在vim-etchosts配置hosts">在vim /etc/hosts配置hosts
+</h4><pre><code>127.0.0.1   localhost
+::1         localhost
+127.0.1.1   ArchLinux.localdomain ArchLinux
+</code></pre>
+<h4 id="设定时区">设定时区
+</h4><pre><code>ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime # 设定台北为时间同步时区 二选一
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime # 设定上海为时间同步时区 
+</code></pre>
+<h4 id="硬体时间">硬体时间
+</h4><p>用命令将同步时间设定到硬体</p>
+<pre><code>hwclock --systohc
+</code></pre>
+<h3 id="安装微码">安装微码
+</h3><pre><code>pacman -S intel-ucode # Intel
+pacman -S amd-ucode # AMD
+</code></pre>
+<h3 id="设定locale">设定locale
+</h3><p>编辑 /etc/locale.gen，去掉 en_US.UTF-8 UTF-8 以及 zh_CN.UTF-8 UTF-8 tw_CN.UTF-8 UTF-8</p>
+<pre><code>vim /etc/locale.gen
+locale-gen 
+</code></pre>
+<p>在 /etc/locale.conf 设定为英文，防止乱码</p>
+<pre><code>echo 'LANG=en_US.UTF-8'  &gt; /etc/locale.conf
+</code></pre>
+<h3 id="安装桌面程式">安装桌面程式
+</h3><h4 id="安装基本软件">安装基本软件
+</h4><pre><code>pacman -S sudo networkmanager vim firefox noto-fonts-cjk noto-fonts-emoji
+pacman -S xorg xorg-server pipewire nvtop
+pacman -S fcitx5-im fcitx5-chewing fcitx5-qt fcitx5-gtk fcitx5-chinese-addons # 输入法
+pacman -S git openssh fakeroot base-devel
+pacman -S sof-firmware alsa-firmware alsa-ucm-conf #声卡
+</code></pre>
+<h3 id="安装gnome-桌面">安装gnome 桌面
+</h3><pre><code>pacman -S gnome gdm 
+</code></pre>
+<h4 id="安装kde桌面">安装KDE桌面
+</h4><pre><code>pacman -S sddm plasma-meta kde-applications plasma-wayland-session
+</code></pre>
+<blockquote>
+<ul>
+<li>sddm 为kde桌面的登录管理器，而gdm为gnome的，
+两个桌面二选一即可</li>
+</ul>
+</blockquote>
+<h3 id="为root用户设定密码">为Root用户设定密码
+</h3><pre><code>passwd root
+</code></pre>
+<h4 id="配置root用户默认编辑器">配置Root用户默认编辑器
+</h4><blockquote>
+<ul>
+<li>在git 和visudo archlinux会使用vi而不是vim，有时候会出错，所以需要设置默认编辑器</li>
+</ul>
+</blockquote>
+<pre><code>vim ~/.bash_profile
+export EDITOR='vim'
+</code></pre>
+<h4 id="创建普通用户">创建普通用户
+</h4><blockquote>
+<ul>
+<li>username 为用户名，可自行改成自己的名字如 black
+useradd -m -G wheel -s /bin/bash username
+passwd user # 设定普通用户密码</li>
+</ul>
+</blockquote>
+<h4 id="给予普通用户sudo权限">给予普通用户sudo权限
+</h4><pre><code>EDITOR=vim visudo # 设定visudo的编辑器为vim,上面的配置尚未生效
+</code></pre>
+<blockquote>
+<ul>
+<li>找到这行#%wheel ALL=(ALL:ALL) ALL，并把前面的注释符 # 去掉</li>
+</ul>
+</blockquote>
+<h3 id="设置开机服务">设置开机服务
+</h3><pre><code>systemctl enable gdm.service #gnome桌面需要
+systemctl enable NetworkManager.service #网络管理器,连接网络所需
+systemctl enable sshd.service #ssh服务
+sudo systemctl enable --now bluetooth 
+</code></pre>
+<hr>
+<h3 id="安装引导程式">安装引导程式
+</h3><h4 id="安装对应的软体">安装对应的软体
+</h4><pre><code>pacman -S grub efibootmgr
+</code></pre>
+<h3 id="安装grub-到efi分区">安装grub 到EFI分区
+</h3><pre><code>grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=ARCH
+</code></pre>
+<h3 id="生成grub所需文件">生成grub所需文件
+</h3><pre><code>grub-mkconfig -o /boot/grub/grub.cfg
+</code></pre>
+<h3 id="系统安装完成退出chroot取消挂载重启">系统安装完成。退出chroot，取消挂载，重启
+</h3><pre><code>exit
+umount /mnt
+reboot 重启 
+</code></pre>
+<p>_</p>
+<h2 id="系统后续安装优化">系统后续安装优化
+</h2><h3 id="配置中文输入法">配置中文输入法
+</h3><pre><code>sudo vim /etc/environment
+</code></pre>
+<p>把下面这几行加入即可</p>
+<pre><code>GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
+SDL_IM_MODULE=fcitx
+GLFW_IM_MODULE=ibus
+</code></pre>
+<blockquote>
+<ul>
+<li>在桌面打开 fcitx5 搜索拼音(Pinyin)添加即可</li>
+</ul>
+</blockquote>
+<h3 id="pacman软件管理器使用方式">pacman软件管理器使用方式
+</h3><p>pacman 相当于ubuntu 的apt-get,此节列出Arch Linux的套件管理员pacman的常用指令。<br>
+搜索线上仓库软件</p>
+<pre><code>sudo pacman -Ss &lt;软件名称&gt;
+</code></pre>
+<p>用此指令安装软件</p>
+<pre><code>sudo pacman -S &lt;软件名称&gt;
+</code></pre>
+<p>卸载软件</p>
+<pre><code>sudo pacman -R &lt;软件名称&gt;
+</code></pre>
+<p>以下指令会更新整个系统的软件。因为Arch Linux是滚动发行版，建议每半个月进行一次全系统更新。更新前建议看ArchLinux官方的新闻有无更新注意事项。</p>
+<pre><code>sudo pacman -Syu
+</code></pre>
+<p>强制同步软件库。某个软件无法下载的时候才执行此指令。</p>
+<pre><code>sudo pacman -Syuu
+</code></pre>
+<p>删除本机软件快取</p>
+<pre><code>sudo pacman -Sc
+</code></pre>
+<p>查看本地已安装软件</p>
+<pre><code>sudo pacman -Qt
+</code></pre>
+<h3 id="安装aur-助手">安装AUR 助手
+</h3><p>AUR (Arch User Repository) 是Arch Linux官方软件库以外的主要软件来源。AUR没有收录套件档案，只有编译软件的设定档。AUR软件最直接的装法是手动git clone远程仓库，再用makepkg指令打包安装。</p>
+<p>但是这样太麻烦了，所以我们通常会安装一个AUR Helper来自动化处理，我使用Paru，语法跟pacman很像</p>
+<pre><code>sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+</code></pre>
+<p>Paru 安装软件</p>
+<pre><code>paru -S google-chrome # 按下Enter同意安装，并按照萤幕提示输入密码
+</code></pre>
+<p>Paru 移除软件件</p>
+<pre><code>paru -R google-chrome
+</code></pre>
+<p>更新所有AUR套件，并顺便更新整个系统的套件：</p>
+<pre><code>paru -Syu
+</code></pre>
+<h3 id="clash-for-windows-代理软体">Clash for windows 代理软体
+</h3><p>~开启<a class="link" href="https://github.com/Fndroid/clash_for_windows_pkg"  target="_blank" rel="noopener"
+    >Clash for windows GitHub仓库</a>
+
+
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+
+，下载含linux字符文件并解压运行cfw即可，如有不明之处可查看<a class="link" href="https://clashforwindows.org/"  target="_blank" rel="noopener"
+    >官网</a>
+
+
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+
+~</p>
+<blockquote>
+<ul>
+<li>Clash for Windows 已删库,我们使用clash-verge-rev</li>
+</ul>
+</blockquote>
+<p>paru -S clash-verge-rev-bin</p>
+<h3 id="自用gnome-插件">自用gnome 插件
+</h3><p>安装 gnome 插件管理器</p>
+<pre><code>paru -S gnome-browser-connector
+</code></pre>
+<h3 id="开启32位库支持">开启32位库支持
+</h3><pre><code>vim /etc/pacman.conf
+</code></pre>
+<p>仅需把下面两行前面的#去掉,输入:wq保持并退出即可,然后强制更新整个系统</p>
+<pre><code>#[community]
+#Include = /etc/pacman.d/mirrorlist
+
+sudo pacman -Syyu #更新系统
+</code></pre>
+<h3 id="android-刷机工具">Android 刷机工具
+</h3><pre><code>sudo pacman -S android-tools
+</code></pre>
+<p><a class="link" href="https://extensions.gnome.org/extension/3193/blur-my-shell/"  target="_blank" rel="noopener"
+    >blur-my-shell</a>
+
+
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+
+ 模糊抽屉界面不再是灰色~</p>
+<p><a class="link" href="https://extensions.gnome.org/extension/517/caffeine/"  target="_blank" rel="noopener"
+    >Caffeine </a>
+
+
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+
+ 禁用荧幕保护和自动暂停</p>
+<p><a class="link" href="https://extensions.gnome.org/extension/779/clipboard-indicator/"  target="_blank" rel="noopener"
+    >Clipboard Indicator</a>
+
+
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+
+ 剪贴板管理器，记录你复制过的内容</p>
+<p><a class="link" href="https://extensions.gnome.org/extension/307/dash-to-dock/"  target="_blank" rel="noopener"
+    >Coverflow Alt-Tab</a>
+
+
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+
+ 此插件可以实现Mac系统的快速切换任务且自带流畅切换动画</p>
+<p><a class="link" href="https://extensions.gnome.org/extension/307/dash-to-dock/"  target="_blank" rel="noopener"
+    >Dash to Dock</a>
+
+
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+
+ 固定Dock栏，gnome在某次更新砍了这个功能</p>
+<p><a class="link" href="https://extensions.gnome.org/extension/3088/extension-list/"  target="_blank" rel="noopener"
+    >Extension List</a>
+
+
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+
+ 在状态栏开启插件清单</p>
+<p><a class="link" href="https://extensions.gnome.org/extension/750/openweather/"  target="_blank" rel="noopener"
+    >OpenWeather </a>
+
+
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+
+ 在顶栏显示天气状况</p>
+<p><a class="link" href="https://extensions.gnome.org/extension/1460/vitals/"  target="_blank" rel="noopener"
+    >Vitals </a>
+
+
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+
+ 一个很好用的插件可快速查看系统的CPU，Ram，存储占用状况</p>
+<h2 id="文章引用">文章引用
+</h2><blockquote>
+<ul>
+<li>
+<h3 id="arch-linux安装教学kde-plasma桌面中文输入法httpsivonblogcompostsinstall-archlinux"><a class="link" href="https://ivonblog.com/posts/install-archlinux/"  target="_blank" rel="noopener"
+    >Arch Linux安装教学，KDE Plasma桌面＋中文输入法</a>
+
+
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+
+
+</h3></li>
+<li>
+<h3 id="archlinux-基础安装httpsarchicekylinonlineguide"><a class="link" href="https://arch.icekylin.online/guide/"  target="_blank" rel="noopener"
+    >archlinux 基础安装</a>
+
+
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+
+
+</h3></li>
+<li>
+<h3 id="如果你感觉arch很耗电可以看看这篇文章httpsflymeow-2compostrecordstlp-for-power-savinghtml"><a class="link" href="https://fly.meow-2.com/post/records/tlp-for-power-saving.html"  target="_blank" rel="noopener"
+    >如果你感觉Arch很耗电，可以看看这篇文章</a>
+
+
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+
+
+</h3></li>
+<li>
+<h3 id="heading"><a class="link" href="" ></a>
+
+
+
+
+</h3></li>
+</ul>
+</blockquote>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/archlinux/">Archlinux</a>
+        
+            <a href="/tags/android/">Android</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/">
+        
+        
+            <div class="article-image">
+                <img src="/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/pawel.c514d916917173a48a42e0114b469961_hud7e36f7e20e71be184458283bdae4646_55974_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Hugo &#43; Github Page 快速搭建部落格"
+                        
+                        data-hash="md5-xRTZFpFxc6SKQuARS0aZYQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Hugo &#43; Github Page 快速搭建部落格</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/AC86U.59bf83ccec9c6ec2a939b7a88c0b165c_hu04da5977f4f2cc7d3dbbf8f84ab951f6_5978_250x150_fill_q75_h2_box_smart1_2.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 华硕 RT-AC86U 配置"
+                        
+                        data-hash="md5-Wb&#43;DzOycbsKpObeojAsWXA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">华硕 RT-AC86U 配置</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/hugo-stack-%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/">
+        
+        
+            <div class="article-image">
+                <img src="/p/hugo-stack-%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/hugo.0ba28b015b5335c256958b4ef756c2c1_hud8e8095028aee5d3955c996bc629e075_99747_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Hugo Stack 主题魔改"
+                        
+                        data-hash="md5-C6KLAVtTNcJWlYtO91bCwQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Hugo Stack 主题魔改</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+        
+        
+            <div class="article-image">
+                <img src="/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/cloudflare_page.644fecd3a48ac71001161ad650618727_hu5054031d3ab24de388b3c7dbfa85f7ca_16941_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 使用Cloudflare Page 搭建博客"
+                        
+                        data-hash="md5-ZE/s06SKxxABFhrWUGGHJw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">使用Cloudflare Page 搭建博客</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script src="https://utteranc.es/client.js" 
+        repo="LucasBlackLu/blog-comment"
+        issue-term="pathname"
+        
+        crossorigin="anonymous"
+        async
+        >
+</script>
+
+<style>
+    .utterances {
+        max-width: unset;
+    }
+</style>
+
+<script>
+    let utterancesLoaded = false;
+
+    function setUtterancesTheme(theme) {
+        let utterances = document.querySelector('.utterances iframe');
+        if (utterances) {
+            utterances.contentWindow.postMessage(
+                {
+                    type: 'set-theme',
+                    theme: `github-${theme}`
+                },
+                'https://utteranc.es'
+            );
+        }
+    }
+
+    addEventListener('message', event => {
+        if (event.origin !== 'https://utteranc.es') return;
+
+        
+        utterancesLoaded = true;
+        setUtterancesTheme(document.documentElement.dataset.scheme)
+    });
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (!utterancesLoaded) return;
+        setUtterancesTheme(e.detail)
+    })
+</script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2022 - 
+        
+        2024 我语言之局限,即是我世界之局限
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.22.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

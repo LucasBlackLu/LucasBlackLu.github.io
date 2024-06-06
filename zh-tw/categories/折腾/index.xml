@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>折腾 on 我語言之局限，即是我世界之局限</title>
+        <link>http://localhost:1313/zh-tw/categories/%E6%8A%98%E8%85%BE/</link>
+        <description>Recent content in 折腾 on 我語言之局限，即是我世界之局限</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <lastBuildDate>Thu, 09 May 2024 00:54:15 +0800</lastBuildDate><atom:link href="http://localhost:1313/zh-tw/categories/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Android Rom 基礎配置</title>
+        <link>http://localhost:1313/zh-tw/p/android-rom-%E5%9F%BA%E7%A4%8E%E9%85%8D%E7%BD%AE/</link>
+        <pubDate>Thu, 09 May 2024 00:54:15 +0800</pubDate>
+        
+        <guid>http://localhost:1313/zh-tw/p/android-rom-%E5%9F%BA%E7%A4%8E%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;img src="http://localhost:1313/p/android-rom-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/Factory_image.png" alt="Featured image of post Android Rom 基礎配置" /&gt;&lt;h2 id=&#34;配置android-rom-編譯環境&#34;&gt;配置Android Rom 編譯環境
+&lt;/h2&gt;&lt;p&gt;Android Developer 官網上所使用的是 Ubuntu,需要安裝一系列繁瑣的內容，還有配置Repo 工具和路徑
+這裏不得不說一下，Archlinux的優點 &lt;code&gt;Aur&lt;/code&gt;,得益於此,我們僅需安裝兩個package,在這兩個package當中包含了我們所需的所有package，在此之前我們需開啟32位庫&lt;/p&gt;
+&lt;h3 id=&#34;開啟32位庫&#34;&gt;開啟32位庫
+&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;sudo vim /etc/pacman.conf
+
+#[multilib]
+#Include = /etc/pacman.d/mirrorlist
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;更改為&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#[multilib]
+#Include = /etc/pacman.d/mirrorlist
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;安裝所需套件&#34;&gt;安裝所需套件
+&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;yay -S lineageos-devel android-devel
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;adb-工具包&#34;&gt;ADB 工具包
+&lt;/h3&gt;&lt;p&gt;在windows 系統中我們可能需要配置環境，而在 ArchLinux 當中， 我們僅需安裝一個package&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; sudo pacman -S android-tools
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;三星odin&#34;&gt;三星Odin
+&lt;/h3&gt;&lt;p&gt;在Linux 系統上，我們無法使用帶gui 的odin3,但是我們有odin4,這不是開玩笑而是真的有&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;yay -S odin4-cli
+
+odin4 -a ~/Downloads/twrp-t2q-20240324-1620.tar -s ~/Documents/t2q_patched_vbmeta.tar # 刷twrp
+odn4 -h # 可以查看更多，也可以刷Rom
+odin4 -b BL_XXXX.tar.md5 -a AP_XXXX.tar.md5 -c CP_XXXX.tar.md5 -s CSC_XXXX.tar.md5 -d PATH_OF_DEVICE_A # 刷固件
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;pixel-刷官方固件&#34;&gt;Pixel 刷官方固件
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Pixel 有兩種途徑刷寫官方固件，一個是OTA包，另一個是工廠鏡像 factory image
+&lt;a class=&#34;link&#34; href=&#34;https://developers.google.com/android/ota&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;OTA&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+
+&lt;a class=&#34;link&#34; href=&#34;https://developers.google.com/android/images&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Factory Image&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;開啟usb-調試&#34;&gt;開啟USB 調試
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;設定=&amp;gt;關於手機=&amp;gt;版本號, 連續點版本號5,6次進入開發者模式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;設定=&amp;gt;系統=&amp;gt; 開發者選項=&amp;gt;USB 調試 ，選擇開啟&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;將手機使用USB線連接到筆電上，在手機上允許USB 調試&lt;/p&gt;
+&lt;p&gt;adb devices&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;ota&#34;&gt;OTA
+&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;adb reboot recovery
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;當你看到一個 Android 機器人，按住電源鍵再點擊音量增加鍵，使用音量鍵選擇Apply Upldate From ADB, 再使用電源鍵確定&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;heading&#34;&gt;
+&lt;/h6&gt;&lt;pre&gt;&lt;code&gt;adb sideload path_to_OAT.zip
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;factory-images&#34;&gt;Factory Images
+&lt;/h4&gt;&lt;p&gt;下載工廠鏡像並解壓，進入其文件夾,連接手機到筆電&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;adb reboot bootloader #重啟至Bootloader模式
+bash flash-all.sh
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
