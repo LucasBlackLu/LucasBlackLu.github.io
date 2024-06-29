@@ -2,529 +2,490 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/zh-tw/</loc>
+    <loc>https://blacklu.cc/zh-tw/</loc>
     <lastmod>2024-05-09T00:54:15+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/"
+                href="https://blacklu.cc/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/"
+                href="https://blacklu.cc/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/vi/"
+                href="https://blacklu.cc/vi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/"
+                href="https://blacklu.cc/zh-tw/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/tags/android/</loc>
+    <loc>https://blacklu.cc/zh-tw/tags/android/</loc>
     <lastmod>2024-05-09T00:54:15+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/tags/android/"
+                href="https://blacklu.cc/tags/android/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/tags/android/"
+                href="https://blacklu.cc/zh-tw/tags/android/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/p/android-rom-%E5%9F%BA%E7%A4%8E%E9%85%8D%E7%BD%AE/</loc>
+    <loc>https://blacklu.cc/zh-tw/p/android-rom-%E5%9F%BA%E7%A4%8E%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2024-05-09T00:54:15+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/p/android-rom-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/"
+                href="https://blacklu.cc/p/android-rom-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/p/android-rom-%E5%9F%BA%E7%A4%8E%E9%85%8D%E7%BD%AE/"
+                href="https://blacklu.cc/zh-tw/p/android-rom-%E5%9F%BA%E7%A4%8E%E9%85%8D%E7%BD%AE/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/categories/</loc>
+    <loc>https://blacklu.cc/zh-tw/categories/</loc>
     <lastmod>2024-05-09T00:54:15+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/categories/"
+                href="https://blacklu.cc/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/"
+                href="https://blacklu.cc/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/vi/categories/"
+                href="https://blacklu.cc/vi/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/categories/"
+                href="https://blacklu.cc/zh-tw/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/post/</loc>
+    <loc>https://blacklu.cc/zh-tw/post/</loc>
     <lastmod>2024-05-09T00:54:15+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/post/"
+                href="https://blacklu.cc/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/post/"
+                href="https://blacklu.cc/zh-tw/post/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/tags/</loc>
+    <loc>https://blacklu.cc/zh-tw/tags/</loc>
     <lastmod>2024-05-09T00:54:15+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/tags/"
+                href="https://blacklu.cc/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/tags/"
+                href="https://blacklu.cc/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/vi/tags/"
+                href="https://blacklu.cc/vi/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/tags/"
+                href="https://blacklu.cc/zh-tw/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/categories/%E6%8A%98%E8%85%BE/</loc>
+    <loc>https://blacklu.cc/zh-tw/categories/%E6%8A%98%E8%85%BE/</loc>
     <lastmod>2024-05-09T00:54:15+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/categories/%E6%8A%98%E8%85%BE/"
+                href="https://blacklu.cc/categories/%E6%8A%98%E8%85%BE/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/categories/%E6%8A%98%E8%85%BE/"
+                href="https://blacklu.cc/zh-tw/categories/%E6%8A%98%E8%85%BE/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/categories/daily/</loc>
+    <loc>https://blacklu.cc/zh-tw/categories/daily/</loc>
     <lastmod>2024-05-04T08:03:05+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/categories/daily/"
+                href="https://blacklu.cc/categories/daily/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/categories/daily/"
+                href="https://blacklu.cc/zh-tw/categories/daily/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/tags/think/</loc>
+    <loc>https://blacklu.cc/zh-tw/tags/think/</loc>
     <lastmod>2024-05-04T08:03:05+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/tags/think/"
+                href="https://blacklu.cc/tags/think/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/tags/think/"
+                href="https://blacklu.cc/zh-tw/tags/think/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E7%B8%BD%E7%B5%90/</loc>
+    <loc>https://blacklu.cc/zh-tw/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E7%B8%BD%E7%B5%90/</loc>
     <lastmod>2024-05-04T08:03:05+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/"
+                href="https://blacklu.cc/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E7%B8%BD%E7%B5%90/"
+                href="https://blacklu.cc/zh-tw/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E7%B8%BD%E7%B5%90/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/tags/program/</loc>
-    <lastmod>2024-05-04T07:16:07+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/tags/program/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/tags/program/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/zh-tw/p/%E9%9D%A2%E8%A9%A6%E7%B6%93%E6%AD%B7/</loc>
-    <lastmod>2024-05-04T07:16:07+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/p/%E9%9D%A2%E8%A9%A6%E7%B6%93%E6%AD%B7/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/p/%E9%9D%A2%E8%A9%A6%E7%B6%93%E6%AD%B7/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/zh-tw/categories/guidance/</loc>
+    <loc>https://blacklu.cc/zh-tw/categories/guidance/</loc>
     <lastmod>2024-05-04T05:05:04+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/categories/guidance/"
+                href="https://blacklu.cc/categories/guidance/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/categories/guidance/"
+                href="https://blacklu.cc/zh-tw/categories/guidance/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/tags/hugo/</loc>
+    <loc>https://blacklu.cc/zh-tw/tags/hugo/</loc>
     <lastmod>2024-05-04T05:05:04+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/tags/hugo/"
+                href="https://blacklu.cc/tags/hugo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/tags/hugo/"
+                href="https://blacklu.cc/zh-tw/tags/hugo/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</loc>
+    <loc>https://blacklu.cc/zh-tw/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</loc>
     <lastmod>2024-05-04T05:05:04+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/"
+                href="https://blacklu.cc/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/"
+                href="https://blacklu.cc/zh-tw/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/tags/%E6%8A%98%E9%A8%B0/</loc>
+    <loc>https://blacklu.cc/zh-tw/tags/%E6%8A%98%E9%A8%B0/</loc>
     <lastmod>2024-05-04T05:05:04+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/zh-tw/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/</loc>
+    <loc>https://blacklu.cc/zh-tw/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2024-05-03T21:18:02+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/"
+                href="https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/"
+                href="https://blacklu.cc/zh-tw/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/p/hugo-stack-%E4%B8%BB%E9%A1%8C%E9%AD%94%E6%94%B9/</loc>
+    <loc>https://blacklu.cc/zh-tw/p/hugo-stack-%E4%B8%BB%E9%A1%8C%E9%AD%94%E6%94%B9/</loc>
     <lastmod>2024-05-03T05:12:33+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/p/hugo-stack-%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/"
+                href="https://blacklu.cc/p/hugo-stack-%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/p/hugo-stack-%E4%B8%BB%E9%A1%8C%E9%AD%94%E6%94%B9/"
+                href="https://blacklu.cc/zh-tw/p/hugo-stack-%E4%B8%BB%E9%A1%8C%E9%AD%94%E6%94%B9/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/tags/arts/</loc>
+    <loc>https://blacklu.cc/zh-tw/tags/arts/</loc>
     <lastmod>2024-03-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/tags/arts/"
+                href="https://blacklu.cc/tags/arts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/tags/arts/"
+                href="https://blacklu.cc/zh-tw/tags/arts/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/categories/leetcode/</loc>
+    <loc>https://blacklu.cc/zh-tw/categories/leetcode/</loc>
     <lastmod>2024-03-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/categories/leetcode/"
+                href="https://blacklu.cc/categories/leetcode/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/categories/leetcode/"
+                href="https://blacklu.cc/zh-tw/categories/leetcode/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/p/%E5%90%88%E4%B8%A6%E5%85%A9%E5%80%8B%E6%9C%89%E5%BA%8F%E9%8F%88%E8%A1%A8/</loc>
+    <loc>https://blacklu.cc/zh-tw/p/%E5%90%88%E4%B8%A6%E5%85%A9%E5%80%8B%E6%9C%89%E5%BA%8F%E9%8F%88%E8%A1%A8/</loc>
     <lastmod>2024-03-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/p/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/"
+                href="https://blacklu.cc/p/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/p/%E5%90%88%E4%B8%A6%E5%85%A9%E5%80%8B%E6%9C%89%E5%BA%8F%E9%8F%88%E8%A1%A8/"
+                href="https://blacklu.cc/zh-tw/p/%E5%90%88%E4%B8%A6%E5%85%A9%E5%80%8B%E6%9C%89%E5%BA%8F%E9%8F%88%E8%A1%A8/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</loc>
+    <loc>https://blacklu.cc/zh-tw/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</loc>
     <lastmod>2023-07-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"
+                href="https://blacklu.cc/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/"
+                href="https://blacklu.cc/zh-tw/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/</loc>
+    <loc>https://blacklu.cc/zh-tw/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/</loc>
     <lastmod>2023-07-31T04:37:58+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/"
+                href="https://blacklu.cc/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/"
+                href="https://blacklu.cc/zh-tw/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/p/%E5%A4%B1%E7%9C%A0/</loc>
-    <lastmod>2023-06-26T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/p/%E5%A4%B1%E7%9C%A0/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/p/%E5%A4%B1%E7%9C%A0/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/zh-tw/p/%E9%80%99%E5%B9%BE%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/</loc>
+    <loc>https://blacklu.cc/zh-tw/p/%E9%80%99%E5%B9%BE%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/</loc>
     <lastmod>2023-05-26T05:02:28+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/p/%E8%BF%99%E5%87%A0%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/"
+                href="https://blacklu.cc/p/%E8%BF%99%E5%87%A0%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/p/%E9%80%99%E5%B9%BE%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/"
+                href="https://blacklu.cc/zh-tw/p/%E9%80%99%E5%B9%BE%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/tags/archlinux/</loc>
+    <loc>https://blacklu.cc/zh-tw/tags/archlinux/</loc>
     <lastmod>2023-05-23T14:33:51+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/tags/archlinux/"
+                href="https://blacklu.cc/tags/archlinux/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/tags/archlinux/"
+                href="https://blacklu.cc/zh-tw/tags/archlinux/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/p/archlinux%E5%AE%89%E8%A3%9D/</loc>
+    <loc>https://blacklu.cc/zh-tw/p/archlinux%E5%AE%89%E8%A3%9D/</loc>
     <lastmod>2023-05-23T14:33:51+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/"
+                href="https://blacklu.cc/p/archlinux%E5%AE%89%E8%A3%85/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/p/archlinux%E5%AE%89%E8%A3%9D/"
+                href="https://blacklu.cc/zh-tw/p/archlinux%E5%AE%89%E8%A3%9D/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/categories/program/</loc>
+    <loc>https://blacklu.cc/zh-tw/categories/program/</loc>
     <lastmod>2023-05-23T14:33:51+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/categories/program/"
+                href="https://blacklu.cc/categories/program/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/categories/program/"
+                href="https://blacklu.cc/zh-tw/categories/program/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/tags/blog/</loc>
+    <loc>https://blacklu.cc/zh-tw/tags/blog/</loc>
     <lastmod>2023-03-18T22:07:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/tags/blog/"
+                href="https://blacklu.cc/tags/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/tags/blog/"
+                href="https://blacklu.cc/zh-tw/tags/blog/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/</loc>
+    <loc>https://blacklu.cc/zh-tw/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/</loc>
     <lastmod>2023-03-18T22:07:31+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/"
+                href="https://blacklu.cc/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/"
+                href="https://blacklu.cc/zh-tw/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/tags/%E9%9A%A8%E7%AD%86/</loc>
+    <loc>https://blacklu.cc/zh-tw/tags/%E9%9A%A8%E7%AD%86/</loc>
     <lastmod>2023-03-18T22:07:31+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/zh-tw/page/</loc>
+    <loc>https://blacklu.cc/zh-tw/page/</loc>
     <lastmod>2022-05-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/page/"
+                href="https://blacklu.cc/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/page/"
+                href="https://blacklu.cc/en/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/vi/page/"
+                href="https://blacklu.cc/vi/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/page/"
+                href="https://blacklu.cc/zh-tw/page/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/archives/</loc>
+    <loc>https://blacklu.cc/zh-tw/archives/</loc>
     <lastmod>2022-05-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/archives/"
+                href="https://blacklu.cc/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/archives/"
+                href="https://blacklu.cc/en/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/vi/archives/"
+                href="https://blacklu.cc/vi/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/archives/"
+                href="https://blacklu.cc/zh-tw/archives/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/search/</loc>
+    <loc>https://blacklu.cc/zh-tw/search/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/search/"
+                href="https://blacklu.cc/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/search/"
+                href="https://blacklu.cc/en/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/vi/search/"
+                href="https://blacklu.cc/vi/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/search/"
+                href="https://blacklu.cc/zh-tw/search/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/%E9%8F%88%E6%8E%A5/</loc>
+    <loc>https://blacklu.cc/zh-tw/%E9%8F%88%E6%8E%A5/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/%E9%93%BE%E6%8E%A5/"
+                href="https://blacklu.cc/%E9%93%BE%E6%8E%A5/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/links/"
+                href="https://blacklu.cc/en/links/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/vi/li%C3%AAn-k%E1%BA%BFt/"
+                href="https://blacklu.cc/vi/li%C3%AAn-k%E1%BA%BFt/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/%E9%8F%88%E6%8E%A5/"
+                href="https://blacklu.cc/zh-tw/%E9%8F%88%E6%8E%A5/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/%E9%97%9C%E6%96%BC/</loc>
+    <loc>https://blacklu.cc/zh-tw/%E9%97%9C%E6%96%BC/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/%E5%85%B3%E4%BA%8E/"
+                href="https://blacklu.cc/%E5%85%B3%E4%BA%8E/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/about/"
+                href="https://blacklu.cc/en/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/vi/v%E1%BB%81/"
+                href="https://blacklu.cc/vi/v%E1%BB%81/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/%E9%97%9C%E6%96%BC/"
+                href="https://blacklu.cc/zh-tw/%E9%97%9C%E6%96%BC/"
                 />
   </url>
 </urlset>

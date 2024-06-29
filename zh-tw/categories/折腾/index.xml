@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>折腾 on 我語言之局限，即是我世界之局限</title>
-        <link>http://localhost:1313/zh-tw/categories/%E6%8A%98%E8%85%BE/</link>
+        <link>https://blacklu.cc/zh-tw/categories/%E6%8A%98%E8%85%BE/</link>
         <description>Recent content in 折腾 on 我語言之局限，即是我世界之局限</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Thu, 09 May 2024 00:54:15 +0800</lastBuildDate><atom:link href="http://localhost:1313/zh-tw/categories/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 09 May 2024 00:54:15 +0800</lastBuildDate><atom:link href="https://blacklu.cc/zh-tw/categories/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Android Rom 基礎配置</title>
-        <link>http://localhost:1313/zh-tw/p/android-rom-%E5%9F%BA%E7%A4%8E%E9%85%8D%E7%BD%AE/</link>
+        <link>https://blacklu.cc/zh-tw/p/android-rom-%E5%9F%BA%E7%A4%8E%E9%85%8D%E7%BD%AE/</link>
         <pubDate>Thu, 09 May 2024 00:54:15 +0800</pubDate>
         
-        <guid>http://localhost:1313/zh-tw/p/android-rom-%E5%9F%BA%E7%A4%8E%E9%85%8D%E7%BD%AE/</guid>
-        <description>&lt;img src="http://localhost:1313/p/android-rom-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/Factory_image.png" alt="Featured image of post Android Rom 基礎配置" /&gt;&lt;h2 id=&#34;配置android-rom-編譯環境&#34;&gt;配置Android Rom 編譯環境
+        <guid>https://blacklu.cc/zh-tw/p/android-rom-%E5%9F%BA%E7%A4%8E%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;img src="https://blacklu.cc/p/android-rom-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/Factory_image.png" alt="Featured image of post Android Rom 基礎配置" /&gt;&lt;h2 id=&#34;配置android-rom-編譯環境&#34;&gt;配置Android Rom 編譯環境
 &lt;/h2&gt;&lt;p&gt;Android Developer 官網上所使用的是 Ubuntu,需要安裝一系列繁瑣的內容，還有配置Repo 工具和路徑
 這裏不得不說一下，Archlinux的優點 &lt;code&gt;Aur&lt;/code&gt;,得益於此,我們僅需安裝兩個package,在這兩個package當中包含了我們所需的所有package，在此之前我們需開啟32位庫&lt;/p&gt;
 &lt;h3 id=&#34;開啟32位庫&#34;&gt;開啟32位庫

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Guidance on 我語言之局限，即是我世界之局限</title>
-        <link>http://localhost:1313/zh-tw/categories/guidance/</link>
+        <link>https://blacklu.cc/zh-tw/categories/guidance/</link>
         <description>Recent content in Guidance on 我語言之局限，即是我世界之局限</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Sat, 04 May 2024 05:05:04 +0800</lastBuildDate><atom:link href="http://localhost:1313/zh-tw/categories/guidance/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 04 May 2024 05:05:04 +0800</lastBuildDate><atom:link href="https://blacklu.cc/zh-tw/categories/guidance/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hugo &#43; Github Page 快速搭建部落格</title>
-        <link>http://localhost:1313/zh-tw/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</link>
+        <link>https://blacklu.cc/zh-tw/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</link>
         <pubDate>Sat, 04 May 2024 05:05:04 +0800</pubDate>
         
-        <guid>http://localhost:1313/zh-tw/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</guid>
-        <description>&lt;img src="http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/pawel.jpg" alt="Featured image of post Hugo &#43; Github Page 快速搭建部落格" /&gt;&lt;h3 id=&#34;緣起&#34;&gt;緣起
+        <guid>https://blacklu.cc/zh-tw/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</guid>
+        <description>&lt;img src="https://blacklu.cc/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/pawel.jpg" alt="Featured image of post Hugo &#43; Github Page 快速搭建部落格" /&gt;&lt;h3 id=&#34;緣起&#34;&gt;緣起
 &lt;/h3&gt;&lt;p&gt;原本有一篇文章是關於如何使用github page 搭建部落格,由於配置系統的時候丟失了,故今日快速重寫一篇,順便藉此提高自己寫作的速度,下載就以stack 爲例&lt;/p&gt;
 &lt;h3 id=&#34;準備&#34;&gt;準備
 &lt;/h3&gt;&lt;ol&gt;
@@ -110,10 +110,10 @@
 &lt;li&gt;在終端按住Ctrl 鍵點擊 &lt;strong&gt;http://localhost:*/&lt;/strong&gt; 開啓預覽網站,或者複製 &lt;strong&gt;http://localhost:*/&lt;/strong&gt; 粘貼到瀏覽器開啓,* 代表系統分配的端口名&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/stack_sample.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://blacklu.cc/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/stack_sample.png&#34;
 	width=&#34;1492&#34;
 	height=&#34;981&#34;
-	srcset=&#34;http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/stack_sample_huca5ec3bce65184c7928dcf00a10781c0_481376_480x0_resize_box_3.png 480w, http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/stack_sample_huca5ec3bce65184c7928dcf00a10781c0_481376_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blacklu.cc/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/stack_sample_huca5ec3bce65184c7928dcf00a10781c0_481376_480x0_resize_box_3.png 480w, https://blacklu.cc/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/stack_sample_huca5ec3bce65184c7928dcf00a10781c0_481376_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;stack_sample&#34;
@@ -325,11 +325,11 @@
         </item>
         <item>
         <title>華碩 RT-AC86U 配置</title>
-        <link>http://localhost:1313/zh-tw/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/</link>
+        <link>https://blacklu.cc/zh-tw/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/</link>
         <pubDate>Fri, 03 May 2024 21:18:02 +0800</pubDate>
         
-        <guid>http://localhost:1313/zh-tw/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/AC86U.webp" alt="Featured image of post 華碩 RT-AC86U 配置" /&gt;&lt;h3 id=&#34;起因&#34;&gt;起因
+        <guid>https://blacklu.cc/zh-tw/p/%E8%8F%AF%E7%A2%A9-rt-ac86u-%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;img src="https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/AC86U.webp" alt="Featured image of post 華碩 RT-AC86U 配置" /&gt;&lt;h3 id=&#34;起因&#34;&gt;起因
 &lt;/h3&gt;&lt;p&gt;在我尚未上高中時候，在群組裏就有人直接使用路由器進行翻牆上網，當時就十分好奇如何實現&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
@@ -352,10 +352,10 @@
 
 
 搜尋RT-AC86U並下載固件
-&lt;img src=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware.png&#34;
+&lt;img src=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware.png&#34;
 	width=&#34;1249&#34;
 	height=&#34;1068&#34;
-	srcset=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware_huab63e992f50e4fe75c365c48d01cb758_347806_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware_huab63e992f50e4fe75c365c48d01cb758_347806_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware_huab63e992f50e4fe75c365c48d01cb758_347806_480x0_resize_box_3.png 480w, https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware_huab63e992f50e4fe75c365c48d01cb758_347806_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;merlin_firmware&#34;
@@ -407,10 +407,10 @@
 &lt;h3 id=&#34;刷機&#34;&gt;刷機
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;在chromium 內核的瀏覽器輸入 192.168.50.1 進入路由器管理頁面, 系統管理=&amp;gt; 固件升級,點擊上傳固件選擇下載的固件,此過程需要耐心等待
-&lt;img src=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade.jpg&#34;
+&lt;img src=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade.jpg&#34;
 	width=&#34;1034&#34;
 	height=&#34;1504&#34;
-	srcset=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade_hu6096c0906f99a312f953cc97a5a8e8a0_308618_480x0_resize_q75_box.jpg 480w, http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade_hu6096c0906f99a312f953cc97a5a8e8a0_308618_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade_hu6096c0906f99a312f953cc97a5a8e8a0_308618_480x0_resize_q75_box.jpg 480w, https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade_hu6096c0906f99a312f953cc97a5a8e8a0_308618_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;firmupgrade&#34;
@@ -428,10 +428,10 @@
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;軟體中心 =&amp;gt; 手動安裝 =&amp;gt; 離線安裝插件安裝 =&amp;gt; 選擇文件, 選擇已下載的 MerlinClash 插件
 [軟體中心=&amp;gt; 全部軟體 可以在線安裝插件,軟體中心=&amp;gt; 手動安裝, 離線安裝插件即安裝軟體中心沒有的插件]
-&lt;img src=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension.jpg&#34;
+&lt;img src=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;1368&#34;
-	srcset=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension_hu2fef85b49a5ffe457e38bfbbe9e61951_226148_480x0_resize_q75_box.jpg 480w, http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension_hu2fef85b49a5ffe457e38bfbbe9e61951_226148_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension_hu2fef85b49a5ffe457e38bfbbe9e61951_226148_480x0_resize_q75_box.jpg 480w, https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension_hu2fef85b49a5ffe457e38bfbbe9e61951_226148_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;extension&#34;
@@ -525,11 +525,11 @@
         </item>
         <item>
         <title>Hugo Stack 主題魔改</title>
-        <link>http://localhost:1313/zh-tw/p/hugo-stack-%E4%B8%BB%E9%A1%8C%E9%AD%94%E6%94%B9/</link>
+        <link>https://blacklu.cc/zh-tw/p/hugo-stack-%E4%B8%BB%E9%A1%8C%E9%AD%94%E6%94%B9/</link>
         <pubDate>Fri, 03 May 2024 05:12:33 +0800</pubDate>
         
-        <guid>http://localhost:1313/zh-tw/p/hugo-stack-%E4%B8%BB%E9%A1%8C%E9%AD%94%E6%94%B9/</guid>
-        <description>&lt;img src="http://localhost:1313/p/hugo-stack-%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/hugo.png" alt="Featured image of post Hugo Stack 主題魔改" /&gt;&lt;h2 id=&#34;緣起&#34;&gt;緣起
+        <guid>https://blacklu.cc/zh-tw/p/hugo-stack-%E4%B8%BB%E9%A1%8C%E9%AD%94%E6%94%B9/</guid>
+        <description>&lt;img src="https://blacklu.cc/p/hugo-stack-%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/hugo.png" alt="Featured image of post Hugo Stack 主題魔改" /&gt;&lt;h2 id=&#34;緣起&#34;&gt;緣起
 &lt;/h2&gt;&lt;p&gt;在部署完成博客之後一直有對Blog進行大改的想法，無奈自己懶惰的緣由以及stack 主題有一些小問題導致問題一直遺留至今&lt;/p&gt;
 &lt;h2 id=&#34;問題&#34;&gt;問題
 &lt;/h2&gt;&lt;p&gt;Stack 主題在content裏面的內容會與根目錄下的文件衝突，而現在已經沒有類似的問題，配置方式如下&lt;/p&gt;
@@ -628,11 +628,11 @@
         </item>
         <item>
         <title>使用Cloudflare Page 搭建部落格</title>
-        <link>http://localhost:1313/zh-tw/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</link>
+        <link>https://blacklu.cc/zh-tw/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</link>
         <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/zh-tw/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/cloudflare_page.png" alt="Featured image of post 使用Cloudflare Page 搭建部落格" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+        <guid>https://blacklu.cc/zh-tw/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</guid>
+        <description>&lt;img src="https://blacklu.cc/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/cloudflare_page.png" alt="Featured image of post 使用Cloudflare Page 搭建部落格" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;　　過去幾個月當中，我搭建部落格都是使用Github Page的方式搭建且域名無法自定義，從朋友中得知可以用CloudFlare搭建，不僅簡單且可以自定義域名，那我們開始吧&lt;/p&gt;
 &lt;h2 id=&#34;部署&#34;&gt;部署
 &lt;/h2&gt;&lt;h3 id=&#34;github-page&#34;&gt;GitHub Page
@@ -758,11 +758,11 @@
         </item>
         <item>
         <title>ArchLinux安裝</title>
-        <link>http://localhost:1313/zh-tw/p/archlinux%E5%AE%89%E8%A3%9D/</link>
+        <link>https://blacklu.cc/zh-tw/p/archlinux%E5%AE%89%E8%A3%9D/</link>
         <pubDate>Tue, 23 May 2023 14:33:51 +0800</pubDate>
         
-        <guid>http://localhost:1313/zh-tw/p/archlinux%E5%AE%89%E8%A3%9D/</guid>
-        <description>&lt;img src="http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/arch.png" alt="Featured image of post ArchLinux安裝" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+        <guid>https://blacklu.cc/zh-tw/p/archlinux%E5%AE%89%E8%A3%9D/</guid>
+        <description>&lt;img src="https://blacklu.cc/p/archlinux%E5%AE%89%E8%A3%85/arch.png" alt="Featured image of post ArchLinux安裝" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;本來有寫這個博客的想法，但無奈最近時間比較忙&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;一心想去編譯Samsung內核，中間一波多折.&lt;/p&gt;
@@ -803,10 +803,10 @@
 &lt;h2 id=&#34;安裝步驟&#34;&gt;安裝步驟
 &lt;/h2&gt;&lt;h3 id=&#34;製作啓動盤&#34;&gt;製作啓動盤
 &lt;/h3&gt;&lt;p&gt;打開Etcher 直接選擇iso文件再選擇U盤安裝即可
-&lt;img src=&#34;http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/etcher.png&#34;
+&lt;img src=&#34;https://blacklu.cc/p/archlinux%E5%AE%89%E8%A3%85/etcher.png&#34;
 	width=&#34;1593&#34;
 	height=&#34;1015&#34;
-	srcset=&#34;http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/etcher_hu6381e2e734e42ff5318ef07523feabe7_49359_480x0_resize_box_3.png 480w, http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/etcher_hu6381e2e734e42ff5318ef07523feabe7_49359_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blacklu.cc/p/archlinux%E5%AE%89%E8%A3%85/etcher_hu6381e2e734e42ff5318ef07523feabe7_49359_480x0_resize_box_3.png 480w, https://blacklu.cc/p/archlinux%E5%AE%89%E8%A3%85/etcher_hu6381e2e734e42ff5318ef07523feabe7_49359_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	

@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on Chào mừng cưng</title>
-        <link>http://localhost:1313/vi/categories/</link>
+        <link>https://blacklu.cc/vi/categories/</link>
         <description>Recent content in Categories on Chào mừng cưng</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>vi</language><atom:link href="http://localhost:1313/vi/categories/index.xml" rel="self" type="application/rss+xml" />
+        <language>vi</language><atom:link href="https://blacklu.cc/vi/categories/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>

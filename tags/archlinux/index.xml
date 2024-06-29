@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Archlinux on 我语言之局限,即是我世界之局限</title>
-        <link>http://localhost:1313/tags/archlinux/</link>
+        <link>https://blacklu.cc/tags/archlinux/</link>
         <description>Recent content in Archlinux on 我语言之局限,即是我世界之局限</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 23 May 2023 14:33:51 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/archlinux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 23 May 2023 14:33:51 +0800</lastBuildDate><atom:link href="https://blacklu.cc/tags/archlinux/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>ArchLinux安装</title>
-        <link>http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/</link>
+        <link>https://blacklu.cc/p/archlinux%E5%AE%89%E8%A3%85/</link>
         <pubDate>Tue, 23 May 2023 14:33:51 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/</guid>
-        <description>&lt;img src="http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/arch.png" alt="Featured image of post ArchLinux安装" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+        <guid>https://blacklu.cc/p/archlinux%E5%AE%89%E8%A3%85/</guid>
+        <description>&lt;img src="https://blacklu.cc/p/archlinux%E5%AE%89%E8%A3%85/arch.png" alt="Featured image of post ArchLinux安装" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;本来有写这个博客的想法，但无奈最近时间比较忙
-~一心想去编译Samsung内核，中间一波多折.~&lt;/p&gt;
-&lt;p&gt;~故一拖再拖。幸好最近内核的进程一直搁置，我就打算今晚扔到Stackoverflow然后收获一堆downvote，或者去XDA看看。~&lt;/p&gt;
+&lt;del&gt;一心想去编译Samsung内核，中间一波多折.&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;故一拖再拖。幸好最近内核的进程一直搁置，我就打算今晚扔到Stackoverflow然后收获一堆downvote，或者去XDA看看。&lt;/del&gt;&lt;/p&gt;
 &lt;h2 id=&#34;材料准备&#34;&gt;材料准备
 &lt;/h2&gt;&lt;p&gt;电脑，U盘各一个，在&lt;a class=&#34;link&#34; href=&#34;https://archlinux.org/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;ArchLinux官方&lt;/a&gt;
@@ -51,10 +51,10 @@
 &lt;h2 id=&#34;安装步骤&#34;&gt;安装步骤
 &lt;/h2&gt;&lt;h3 id=&#34;制作启动盘&#34;&gt;制作启动盘
 &lt;/h3&gt;&lt;p&gt;打开Etcher 直接选择iso文件再选择U盘安装即可
-&lt;img src=&#34;http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/etcher.png&#34;
+&lt;img src=&#34;https://blacklu.cc/p/archlinux%E5%AE%89%E8%A3%85/etcher.png&#34;
 	width=&#34;1593&#34;
 	height=&#34;1015&#34;
-	srcset=&#34;http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/etcher_hu6381e2e734e42ff5318ef07523feabe7_49359_480x0_resize_box_3.png 480w, http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/etcher_hu6381e2e734e42ff5318ef07523feabe7_49359_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blacklu.cc/p/archlinux%E5%AE%89%E8%A3%85/etcher_hu6381e2e734e42ff5318ef07523feabe7_49359_480x0_resize_box_3.png 480w, https://blacklu.cc/p/archlinux%E5%AE%89%E8%A3%85/etcher_hu6381e2e734e42ff5318ef07523feabe7_49359_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -298,7 +298,7 @@ makepkg -si
 &lt;pre&gt;&lt;code&gt;paru -Syu
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;clash-for-windows-代理软体&#34;&gt;Clash for windows 代理软体
-&lt;/h3&gt;&lt;p&gt;~开启&lt;a class=&#34;link&#34; href=&#34;https://github.com/Fndroid/clash_for_windows_pkg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;del&gt;开启&lt;a class=&#34;link&#34; href=&#34;https://github.com/Fndroid/clash_for_windows_pkg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Clash for windows GitHub仓库&lt;/a&gt;
 
 
@@ -322,7 +322,7 @@ makepkg -si
 &lt;/svg&gt;&lt;/span&gt;
 
 
-~&lt;/p&gt;
+&lt;/del&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;Clash for Windows 已删库,我们使用clash-verge-rev&lt;/li&gt;

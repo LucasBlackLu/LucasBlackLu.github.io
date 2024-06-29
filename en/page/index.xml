@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on </title>
-        <link>http://localhost:1313/en/page/</link>
+        <link>https://blacklu.cc/en/page/</link>
         <description>Recent content in Pages on </description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://blacklu.cc/en/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Archives</title>
-        <link>http://localhost:1313/en/archives/</link>
+        <link>https://blacklu.cc/en/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/en/archives/</guid>
+        <guid>https://blacklu.cc/en/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>About</title>
-        <link>http://localhost:1313/en/about/</link>
+        <link>https://blacklu.cc/en/about/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/en/about/</guid>
+        <guid>https://blacklu.cc/en/about/</guid>
         <description></description>
         </item>
         <item>
         <title>Links</title>
-        <link>http://localhost:1313/en/links/</link>
+        <link>https://blacklu.cc/en/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/en/links/</guid>
+        <guid>https://blacklu.cc/en/links/</guid>
         <description></description>
         </item>
         <item>
         <title>Search</title>
-        <link>http://localhost:1313/en/search/</link>
+        <link>https://blacklu.cc/en/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/en/search/</guid>
+        <guid>https://blacklu.cc/en/search/</guid>
         <description></description>
         </item>
         

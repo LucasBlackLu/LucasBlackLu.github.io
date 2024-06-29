@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Daily on 我語言之局限，即是我世界之局限</title>
-        <link>http://localhost:1313/zh-tw/categories/daily/</link>
+        <link>https://blacklu.cc/zh-tw/categories/daily/</link>
         <description>Recent content in Daily on 我語言之局限，即是我世界之局限</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Sat, 04 May 2024 08:03:05 +0800</lastBuildDate><atom:link href="http://localhost:1313/zh-tw/categories/daily/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 04 May 2024 08:03:05 +0800</lastBuildDate><atom:link href="https://blacklu.cc/zh-tw/categories/daily/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>四月的總結</title>
-        <link>http://localhost:1313/zh-tw/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E7%B8%BD%E7%B5%90/</link>
+        <link>https://blacklu.cc/zh-tw/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E7%B8%BD%E7%B5%90/</link>
         <pubDate>Sat, 04 May 2024 08:03:05 +0800</pubDate>
         
-        <guid>http://localhost:1313/zh-tw/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E7%B8%BD%E7%B5%90/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/imposter_factory.jpg" alt="Featured image of post 四月的總結" /&gt;&lt;h3 id=&#34;前言&#34;&gt;前言
+        <guid>https://blacklu.cc/zh-tw/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E7%B8%BD%E7%B5%90/</guid>
+        <description>&lt;img src="https://blacklu.cc/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/imposter_factory.jpg" alt="Featured image of post 四月的總結" /&gt;&lt;h3 id=&#34;前言&#34;&gt;前言
 &lt;/h3&gt;&lt;p&gt;原本我想借編程隨想文章的標題 &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://program-think.blogspot.com/2020/12/Study-and-Life.html?m=1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;學習與人生&lt;/a&gt;
 
@@ -41,77 +41,23 @@
 </description>
         </item>
         <item>
-        <title>面試經歷</title>
-        <link>http://localhost:1313/zh-tw/p/%E9%9D%A2%E8%A9%A6%E7%B6%93%E6%AD%B7/</link>
-        <pubDate>Sat, 04 May 2024 07:16:07 +0800</pubDate>
-        
-        <guid>http://localhost:1313/zh-tw/p/%E9%9D%A2%E8%A9%A6%E7%B6%93%E6%AD%B7/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E9%9D%A2%E8%A9%A6%E7%B6%93%E6%AD%B7/linux.png" alt="Featured image of post 面試經歷" /&gt;&lt;h3 id=&#34;緣起&#34;&gt;緣起
-&lt;/h3&gt;&lt;p&gt;四月下旬,一次偶然的機會在Twitter 上面看到一份招聘信息,工作內容剛好合我意且剛好可以當做自己歷練的地方,經過詢問得知他們也收實習生;便從網路上下載一份模板經過簡單修改投遞到要求郵箱;再者由於之前暑假經驗,放假之後再找工作太遲了&lt;/p&gt;
-&lt;h3 id=&#34;過程&#34;&gt;過程
-&lt;/h3&gt;&lt;p&gt;第一次打電話過來,問我是否是本人需要面試;我們便約定第二天下午進行電話面試;在面試之前,我並沒有做任何準備,現在想起十分後悔; 在面試期間, 面試官跟我說面試可能需要一個小時,而我們半個小時就草草結束, 可見我的水平有多爛.不過面試官知道我的水平,一些問題並未刁難我,不過我也爲此感到羞愧,自己沒做好充分準備;再找便是在簡歷上我寫了瞭解網路協議,實際上我只瞭解ssh 剩下的內容基本上全都忘光光了&lt;/p&gt;
-&lt;h3 id=&#34;面試官提問內容&#34;&gt;面試官提問內容
-&lt;/h3&gt;&lt;p&gt;linux 系統如何在終端查看進程,內存,cpu的佔用情況
-linux 系統桌面app的開啓是如何實現的
-linux系統上某個app 的可執行文件或目錄存放在哪裏
-還有archlinux 的包是如何打包的
-兩臺不在同一網路的設備情況下如何用ssh 連接
-go 是什麼語言,應用與那些方面
-vue vue的問題,我是真的不會,才剛學vue 不久
-線程與進程的區別
-bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 遍历所有参数&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; device in &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$@&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# 如果设备代码是 flame、coral 或 sunfish，则将其设置为固定值 derp&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[[&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$device&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;flame&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$device&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;coral&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$device&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;sunfish&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nv&#34;&gt;device&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;derp&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# 打印出 lunch 命令&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;lunch derp_\$device-userdebug&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;結語&#34;&gt;結語
-&lt;/h3&gt;&lt;p&gt;這次面試並沒有考我算法題, 五一之後還會有一場面試,所有在五一這幾天,我還要準備一番&lt;/p&gt;
-</description>
-        </item>
-        <item>
         <title>夏日之惑</title>
-        <link>http://localhost:1313/zh-tw/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/</link>
+        <link>https://blacklu.cc/zh-tw/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/</link>
         <pubDate>Mon, 31 Jul 2023 04:37:58 +0800</pubDate>
         
-        <guid>http://localhost:1313/zh-tw/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/photo_2023-12-11_01-36-08.jpg" alt="Featured image of post 夏日之惑" /&gt;&lt;h3 id=&#34;前言&#34;&gt;前言
+        <guid>https://blacklu.cc/zh-tw/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/</guid>
+        <description>&lt;img src="https://blacklu.cc/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/photo_2023-12-11_01-36-08.jpg" alt="Featured image of post 夏日之惑" /&gt;&lt;h3 id=&#34;前言&#34;&gt;前言
 &lt;/h3&gt;&lt;p&gt;近一些天，發現自己不僅失眠而且注意力分散，且無法專注看完一本&lt;/p&gt;
 &lt;h3 id=&#34;失眠&#34;&gt;失眠
 &lt;/h3&gt;&lt;p&gt;最近老是失眠，以前的時候是下午睡覺然後在晚上敲敲代碼，編譯系統去看看有什麼 Bug 需要修或者去 pick 別人的代碼，現在完全不行了，彷彿是日夜顛倒，成功過上美國人的生活，但身體和精神狀況卻越來越糟；甚至成了曠課大王，真的是惡夢啊&lt;/p&gt;
 &lt;h4 id=&#34;202454&#34;&gt;2024.5.4
 &lt;/h4&gt;&lt;p&gt;其實失眠也沒那麼可怕,假如睡不着就找一些事情做,保持充足的睡眠時間即可; 最好的睡眠方法是讓自己疲憊; Rom 編譯的事情可以留在白天在做,給自己一個安穩的睡眠吧&lt;/p&gt;
 &lt;h3 id=&#34;注意力分散&#34;&gt;注意力分散
-&lt;/h3&gt;&lt;p&gt;~這個問題已經是老生常談，在互聯網下充斥著短視頻和社交媒體，很難集中精力學習。以前我以為是短視頻所以戒掉 Tiktok 之類的短視頻 App 或者關掉其功能；短視頻，使得人們難以擺脫這種短暫的刺激，導致注意力分散和學習效果不佳。~&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;del&gt;這個問題已經是老生常談，在互聯網下充斥著短視頻和社交媒體，很難集中精力學習。以前我以為是短視頻所以戒掉 Tiktok 之類的短視頻 App 或者關掉其功能；短視頻，使得人們難以擺脫這種短暫的刺激，導致注意力分散和學習效果不佳。&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;假如因爲其他事情而導致注意力分散,那麼先做完其他事情吧,不然一心二用只會竹籃打水&amp;ndash;一場空&lt;/p&gt;
-&lt;p&gt;~不論我用手機還是筆記本看書在都會感覺到困，但是在晚上看手機卻不會，不知道怎麼回事，可能是 OLED 螢幕的問題？~ 看書最好不要疲憊&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;不論我用手機還是筆記本看書在都會感覺到困，但是在晚上看手機卻不會，不知道怎麼回事，可能是 OLED 螢幕的問題？&lt;/del&gt; 看書最好不要疲憊&lt;/p&gt;
 &lt;h3 id=&#34;haskell&#34;&gt;Haskell
-&lt;/h3&gt;&lt;p&gt;~言歸正傳，注意力分散實際上就是專注力下滑，如我之前一直在學的 Haskell，我從 YouTube 上面發現了&lt;a class=&#34;link&#34; href=&#34;https://learnyouahaskell.mno2.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;del&gt;言歸正傳，注意力分散實際上就是專注力下滑，如我之前一直在學的 Haskell，我從 YouTube 上面發現了&lt;a class=&#34;link&#34; href=&#34;https://learnyouahaskell.mno2.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Learn You A Haskell For Great Good&lt;/a&gt;
 
 
@@ -123,7 +69,7 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/svg&gt;&lt;/span&gt;
 
 
-這本書就開始看了一週時間，大致懂了，但是還是無法解開 exercism 練習題裡麵的第二題；後來，在 Telegram 上面的某個群組裡麵得知學 Haskell 建議去 看 [The Real World Haskell ]（https://rwh.readthedocs.io/en/latest/）；~&lt;/p&gt;
+這本書就開始看了一週時間，大致懂了，但是還是無法解開 exercism 練習題裡麵的第二題；後來，在 Telegram 上面的某個群組裡麵得知學 Haskell 建議去 看 [The Real World Haskell ]（https://rwh.readthedocs.io/en/latest/）；&lt;/del&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;雖然他說 Rust 寫起來比 Haskell 更好
@@ -133,53 +79,17 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
 &lt;/blockquote&gt;
 &lt;p&gt;與其專研一些獨樹一幟的編程語言不錯,但還是得把握好學習的重心&lt;/p&gt;
 &lt;h3 id=&#34;反思&#34;&gt;反思
-&lt;/h3&gt;&lt;p&gt;~最近失眠已經影響到日常的課程和自己的生活作息，所以需要加以調整，不然容易形成不好的習慣；加上自己的注意力分散，學不到什麼東西，只能虛度光陰，現在還在謀求解決方案~
+&lt;/h3&gt;&lt;p&gt;&lt;del&gt;最近失眠已經影響到日常的課程和自己的生活作息，所以需要加以調整，不然容易形成不好的習慣；加上自己的注意力分散，學不到什麼東西，只能虛度光陰，現在還在謀求解決方案&lt;/del&gt;
 方法其實心裏已經知道,只是沒有下定決心去做; 事情進度慢一些也無妨,至少比什麼都不做好&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>失眠</title>
-        <link>http://localhost:1313/zh-tw/p/%E5%A4%B1%E7%9C%A0/</link>
-        <pubDate>Mon, 26 Jun 2023 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/zh-tw/p/%E5%A4%B1%E7%9C%A0/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E5%A4%B1%E7%9C%A0/sleepless.jpg" alt="Featured image of post 失眠" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
-&lt;/h2&gt;&lt;p&gt;近一些天，發現自己不僅失眠而且注意力分散，且無法專注看完一本&lt;/p&gt;
-&lt;h2 id=&#34;失眠&#34;&gt;失眠
-&lt;/h2&gt;&lt;p&gt;最近老是失眠，以前的時候是下午睡覺然後在晚上敲敲代碼，編譯系統去看看有什麼 Bug 需要修或者去 pick 別人的代碼，現在完全不行了，彷彿是日夜顛倒，成功過上美國人的生活，但身體和精神狀況卻越來越糟；甚至成了曠課大王，真的是惡夢啊&lt;/p&gt;
-&lt;h2 id=&#34;注意力分散&#34;&gt;注意力分散
-&lt;/h2&gt;&lt;p&gt;這個問題已經是老生常談，在互聯網下充斥著短視頻和社交媒體，很難集中精力學習。以前我以為是短視頻所以戒掉 Tiktok 之類的短視頻 App 或者關掉其功能；短視頻，使得人們難以擺脫這種短暫的刺激，導致注意力分散和學習效果不佳。言歸正傳，注意力分散實際上就是專注力下滑，如我之前一直在學的 Haskell，我從 YouTube 上面發現了&lt;a class=&#34;link&#34; href=&#34;https://learnyouahaskell.mno2.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Learn You A Haskell For Great Good&lt;/a&gt;
-
-
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
-這本書就開始看了一週時間，大致懂了，但是還是無法解開 exercism 練習題裡麵的第二題；後來，在 Telegram 上面的某個群組裡麵得知學 Haskell 建議去 看 [The Real World Haskell ]（https://rwh.readthedocs.io/en/latest/）；&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;雖然他說 Rust 寫起來比 Haskell 更好
-但是我是主要是想通過學 Haskell 學習 Functional Program，因此還是會選擇 Haskell 作為學習語言。&lt;/li&gt;
-&lt;li&gt;Haskell 確實是很好的學習 Functional Program 的語言，只是 Rust 也有其獨特的優勢。我覺得都可以試試看，根據個人興趣和需求做決定。值得一試的語言，多學習才能拓寬自己的視野。此注釋由 AI 生產出。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;不論我用手機還是筆記本看書在都會感覺到困，但是在晚上看手機卻不會，不知道怎麼回事，可能是 OLED 螢幕的問題？&lt;/p&gt;
-&lt;h2 id=&#34;反思&#34;&gt;反思
-&lt;/h2&gt;&lt;p&gt;最近失眠已經影響到日常的課程和自己的生活作息，所以需要加以調整，不然容易形成不好的習慣；加上自己的注意力分散，學不到什麼東西，只能虛度光陰，現在還在謀求解決方案&lt;/p&gt;
-</description>
-        </item>
-        <item>
         <title>這幾天的感想</title>
-        <link>http://localhost:1313/zh-tw/p/%E9%80%99%E5%B9%BE%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/</link>
+        <link>https://blacklu.cc/zh-tw/p/%E9%80%99%E5%B9%BE%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/</link>
         <pubDate>Fri, 26 May 2023 05:02:28 +0800</pubDate>
         
-        <guid>http://localhost:1313/zh-tw/p/%E9%80%99%E5%B9%BE%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E8%BF%99%E5%87%A0%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/photo_2023-05-13_21-54-26.jpg" alt="Featured image of post 這幾天的感想" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+        <guid>https://blacklu.cc/zh-tw/p/%E9%80%99%E5%B9%BE%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/</guid>
+        <description>&lt;img src="https://blacklu.cc/p/%E8%BF%99%E5%87%A0%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/photo_2023-05-13_21-54-26.jpg" alt="Featured image of post 這幾天的感想" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;最近在瞎折騰，什麼內核啊，再什麼onedrive網盤，還有什麼自定義域名當郵箱，反正是屁事一堆，什麼都是做一半;&lt;/p&gt;
 &lt;h2 id=&#34;落實&#34;&gt;落實
 &lt;/h2&gt;&lt;p&gt;明天打算把onedrive整了，然後再看看吧，email差不多可以了，可以裝裝門面&lt;/p&gt;
@@ -189,11 +99,11 @@ bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&
         </item>
         <item>
         <title>第一篇文章亦或不是</title>
-        <link>http://localhost:1313/zh-tw/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/</link>
+        <link>https://blacklu.cc/zh-tw/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/</link>
         <pubDate>Sat, 18 Mar 2023 22:07:31 +0800</pubDate>
         
-        <guid>http://localhost:1313/zh-tw/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/Hello-World.jpg" alt="Featured image of post 第一篇文章亦或不是" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+        <guid>https://blacklu.cc/zh-tw/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/</guid>
+        <description>&lt;img src="https://blacklu.cc/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/Hello-World.jpg" alt="Featured image of post 第一篇文章亦或不是" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;早在去年初旬，我就創建了一個Github Pag，打開就一個空白頁面，留下一行字“Lucasblacklu.github.io”，那時候並不知曉什麼主題也不懂什麼Hexo,Hugo。後來，去年剛開學不久看到班上的同學在show他的Blog，於是便粗略的看了一下，自己並沒有什麼想法去搭建；直到後來，在班上的老師展示他的Blog，用hexo和js搭建的，後來便開始了，我自己摸索搭建Blog。剛開始慢慢看教程，然後不斷碰壁，一開始我看到的優質教程是&lt;a class=&#34;link&#34; href=&#34;https://huangno1.github.io/hugo_theme_change/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;RemBlog的教程&lt;/a&gt;
 

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Blog on 我语言之局限,即是我世界之局限</title>
-        <link>http://localhost:1313/tags/blog/</link>
+        <link>https://blacklu.cc/tags/blog/</link>
         <description>Recent content in Blog on 我语言之局限,即是我世界之局限</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sat, 18 Mar 2023 22:07:31 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 18 Mar 2023 22:07:31 +0800</lastBuildDate><atom:link href="https://blacklu.cc/tags/blog/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>第一篇文章亦或不是</title>
-        <link>http://localhost:1313/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/</link>
+        <link>https://blacklu.cc/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/</link>
         <pubDate>Sat, 18 Mar 2023 22:07:31 +0800</pubDate>
         
-        <guid>http://localhost:1313/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/Hello-World.jpg" alt="Featured image of post 第一篇文章亦或不是" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+        <guid>https://blacklu.cc/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/</guid>
+        <description>&lt;img src="https://blacklu.cc/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/Hello-World.jpg" alt="Featured image of post 第一篇文章亦或不是" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;早在去年初旬，我就创建了一个Github Pag，打开就一个空白页面，留下一行字“Lucasblacklu.github.io”，那时候并不知晓什么主题也不懂什么Hexo,Hugo。后来，去年刚开学不久看到班上的同学在show他的Blog，于是便粗略的看了一下，自己并没有什么想法去搭建；直到后来，在班上的老师展示他的Blog，用hexo和js搭建的，后来便开始了，我自己摸索搭建Blog。刚开始慢慢看教程，然后不断碰壁，一开始我看到的优质教程是&lt;a class=&#34;link&#34; href=&#34;https://huangno1.github.io/hugo_theme_change/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;RemBlog的教程&lt;/a&gt;
 
