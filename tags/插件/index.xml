@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>插件 on 我语言之局限,即是我世界之局限</title>
+        <link>http://localhost:1313/tags/%E6%8F%92%E4%BB%B6/</link>
+        <description>Recent content in 插件 on 我语言之局限,即是我世界之局限</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 30 Jun 2024 04:31:08 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%8F%92%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Win11 LTSC 配置 </title>
+        <link>http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/</link>
+        <pubDate>Sun, 30 Jun 2024 04:31:08 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;img src="http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/win11.jpg" alt="Featured image of post Win11 LTSC 配置 " /&gt;&lt;h2 id=&#34;缘起&#34;&gt;缘起
+&lt;/h2&gt;&lt;p&gt;今天帮同学重装系统,选择了Win11 LTSC,刚好他也不需要太多的东西,这一晚上刚好配置了一大堆东西,不过主要时间花在office 上面,让我们开始吧&lt;/p&gt;
+&lt;h2 id=&#34;系统安装&#34;&gt;系统安装
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;下载&lt;a class=&#34;link&#34; href=&#34;https://www.123pan.com/s/QvmKVv-ukGB&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;系统镜像 &lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;下载&lt;a class=&#34;link&#34; href=&#34;https://rufus.ie/zh/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;rufus&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+
+下载镜像之后选择镜像然后高级设置关闭所有选项即可
+&lt;img src=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/rufus.png&#34;
+	width=&#34;1018&#34;
+	height=&#34;1234&#34;
+	srcset=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/rufus_hu61c7e72369b6d7463504ebd76a09d8ee_74623_480x0_resize_box_3.png 480w, http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/rufus_hu61c7e72369b6d7463504ebd76a09d8ee_74623_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;rufus&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;82&#34;
+		data-flex-basis=&#34;197px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;进入BIOS 选择U盘优先启动&lt;/li&gt;
+&lt;li&gt;默认配置安装系统即可,完成后进入系统&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;系统配置&#34;&gt;系统配置
+&lt;/h2&gt;&lt;h3 id=&#34;转换版本&#34;&gt;转换版本
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;下载安装win10/11 &lt;a class=&#34;link&#34; href=&#34;https://www.xyboot.com/windows10_ver_one_key_switch/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;转换工具&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;先转换成专业版再换成LTSC 版或者 lot LTSC 物联网版
+&lt;img src=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/professional.jpg&#34;
+	width=&#34;420&#34;
+	height=&#34;200&#34;
+	srcset=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/professional_hud5da09607b99928c6ef55198a8c80878_34779_480x0_resize_q75_box.jpg 480w, http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/professional_hud5da09607b99928c6ef55198a8c80878_34779_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;210&#34;
+		data-flex-basis=&#34;504px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;office-tool&#34;&gt;office tool
+&lt;/h3&gt;&lt;p&gt;为设备安装激活Office,无特别需求可选择2021版本&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如有条件请支持正版,请勿商用
+&lt;a class=&#34;link&#34; href=&#34;https://otp.landian.vip/zh-cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;kms-激活&#34;&gt;KMS 激活
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.yrxitong.com/h-nd-759.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;国内下载地址&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/zbezj/HEU_KMS_Activator/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github 项目地址&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如有条件请支持正版,请勿商用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;必备软件&#34;&gt;必备软件
+&lt;/h2&gt;&lt;h3 id=&#34;steam-watt-tookit&#34;&gt;Steam++ Watt tookit
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;如果说 Clash 是太阳能手电筒,那么它就是临时的太阳能,给予我们光明寻找我们的手电筒
+&lt;a class=&#34;link&#34; href=&#34;https://steampp.net/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载地址&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+
+安装之后,选择github加速,更稳定地访问 github以找到我们的手电筒&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;win11-轻松设置&#34;&gt;win11 轻松设置
+&lt;/h3&gt;&lt;p&gt;安装基本的软件和国内的软件且无需直接在浏览器下载,以及一些好用的功能,下面的类似
+&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/read/cv32460492/?jump_opus=1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;B站作者发布页&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+
+&lt;img src=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/win11_easy.webp&#34;
+	width=&#34;1656&#34;
+	height=&#34;928&#34;
+	srcset=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/win11_easy_huf8f36970a4c38bf18ae14eddf11201c6_78306_480x0_resize_q75_h2_box_2.webp 480w, http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/win11_easy_huf8f36970a4c38bf18ae14eddf11201c6_78306_1024x0_resize_q75_h2_box_2.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;win11easy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;178&#34;
+		data-flex-basis=&#34;428px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;win11-fixer&#34;&gt;win11 fixer
+&lt;/h3&gt;&lt;p&gt;不想要在浏览器搜索安装一些国外软件可以使用这个,
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/yozooCN/Windows-11-Fixer/releases/tag/v2.1.0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载地址&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;h3 id=&#34;图吧工具箱&#34;&gt;图吧工具箱
+&lt;/h3&gt;&lt;p&gt;内置硬件检测,以及磁盘管理工具可用分盘
+&lt;a class=&#34;link&#34; href=&#34;https://www.tbtool.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;h3 id=&#34;clash-verge-rev&#34;&gt;clash-verge-rev
+&lt;/h3&gt;&lt;p&gt;这就是我们其中之一的太阳能手电筒
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/clash-verge-rev/clash-verge-rev/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;clash-verge-rev&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;浏览器输入 &lt;code&gt;古拉.com&lt;/code&gt;, 注册登陆机场&lt;/li&gt;
+&lt;li&gt;复制订阅链接&lt;/li&gt;
+&lt;li&gt;打开clash =&amp;gt; 设置, 开启 Tun 模式和系统代理&lt;/li&gt;
+&lt;li&gt;点击订阅选项,粘贴订阅链接 =&amp;gt; 导入,即完成操作
+&lt;a class=&#34;link&#34; href=&#34;copy.png&#34; &gt;订阅链接&lt;/a&gt;
+
+
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;浏览器插件推荐&#34;&gt;浏览器插件推荐
+&lt;/h2&gt;&lt;p&gt;Edge 用户需要在扩展/插件页面开启 &lt;code&gt;允许来自其他商店的扩展&lt;/code&gt;,&lt;/p&gt;
+&lt;h3 id=&#34;ublacklist&#34;&gt;ublacklist
+&lt;/h3&gt;&lt;p&gt;此插件可用于屏蔽农场文,参考&lt;a class=&#34;link&#34; href=&#34;https://sspai.com/post/69407&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;清理「内容农场」，还你清爽的 Google 中文搜索体验&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/iorate/ublacklist&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github 地址&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+
+&lt;a class=&#34;link&#34; href=&#34;https://chromewebstore.google.com/detail/ublacklist/pncfbmialoiaghdehhbnbhkkgmjanfhe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;chrome web store &lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;可以访问问chrome web 则忽略第二步&lt;/li&gt;
+&lt;li&gt;Edge 用户需要在扩展/插件页面开启 &lt;code&gt;开发人员模式&lt;/code&gt; 和 &lt;code&gt;允许来自其他商店的扩展&lt;/code&gt;,
+下载chrome.zip, 然后在扩展页面点击 &lt;code&gt;加载解压缩的扩展&lt;/code&gt;选择你的扩展文件夹&lt;/li&gt;
+&lt;li&gt;点击扩展的&lt;code&gt;详细信息&lt;/code&gt;滑到最后 &lt;code&gt;扩展选项&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;点击&lt;code&gt;启用&lt;/code&gt;,启用 edge brave yandex duckduckgo 搜索引擎&lt;/li&gt;
+&lt;li&gt;按下图要求订阅黑名单, 订阅链接 &lt;code&gt;https://git.io/ublacklist&lt;/code&gt;
+&lt;img src=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/subscription.png&#34;
+	width=&#34;661&#34;
+	height=&#34;501&#34;
+	srcset=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/subscription_hu924c874ed84eb8522338a7a59497335e_31105_480x0_resize_box_3.png 480w, http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/subscription_hu924c874ed84eb8522338a7a59497335e_31105_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ublacklist&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;131&#34;
+		data-flex-basis=&#34;316px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;沉浸式翻译&#34;&gt;沉浸式翻译
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://immersivetranslate.com/?force=1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+
+可用同时显示中英文,看就可以边看文章边学习英语
+&lt;img src=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/theeconomist.png&#34;
+	width=&#34;1387&#34;
+	height=&#34;1214&#34;
+	srcset=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/theeconomist_hu236ff260203bff97cf898ca2f0134ec7_420287_480x0_resize_box_3.png 480w, http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/theeconomist_hu236ff260203bff97cf898ca2f0134ec7_420287_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;theeconomist&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;114&#34;
+		data-flex-basis=&#34;274px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;bypass-paywall-clean&#34;&gt;Bypass paywall clean
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/bpc-clone/bpc_updates/releases/tag/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github 地址&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+
+可用于解锁一些英文文章的限制,如经济学人,NYT 等等,安装方法参考上面或者链接里面readme&lt;/p&gt;
+&lt;h3 id=&#34;simple-copy&#34;&gt;Simple copy
+&lt;/h3&gt;&lt;p&gt;一些网站不允许你复制内容,那么这个插件就可以解决
+&lt;a class=&#34;link&#34; href=&#34;https://chromewebstore.google.com/detail/simple-allow-copy/aefehdhdciieocakfobpaaolhipkcpgc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;chrome web store&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;h3 id=&#34;leapsearch&#34;&gt;leapSearch
+&lt;/h3&gt;&lt;p&gt;快速切换搜索引擎搜索内容
+&lt;a class=&#34;link&#34; href=&#34;https://chromewebstore.google.com/detail/leapsearch/lapaieaegaclofackbjhjhbhfiplcgki?hl=zh-TW&amp;amp;ref=producthunt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;chrome web store&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;h3 id=&#34;uyou-标签页&#34;&gt;uyou 标签页
+&lt;/h3&gt;&lt;p&gt;好看的二次元主页
+&lt;a class=&#34;link&#34; href=&#34;https://newtab.uyou.org.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;h2 id=&#34;结语&#34;&gt;结语
+&lt;/h2&gt;&lt;p&gt;以上就是为win11 ltsc的配置,还有一些常用的插件,谢谢各位的浏览&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

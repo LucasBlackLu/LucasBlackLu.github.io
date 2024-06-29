@@ -2,184 +2,184 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blacklu.cc/vi/</loc>
+    <loc>http://localhost:1313/vi/</loc>
     <lastmod>2022-12-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://blacklu.cc/zh-tw/"
+                href="http://localhost:1313/zh-tw/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://blacklu.cc/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blacklu.cc/en/"
+                href="http://localhost:1313/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://blacklu.cc/vi/"
+                href="http://localhost:1313/vi/"
                 />
   </url><url>
-    <loc>https://blacklu.cc/vi/page/</loc>
+    <loc>http://localhost:1313/vi/page/</loc>
     <lastmod>2022-12-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://blacklu.cc/zh-tw/page/"
+                href="http://localhost:1313/zh-tw/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://blacklu.cc/page/"
+                href="http://localhost:1313/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blacklu.cc/en/page/"
+                href="http://localhost:1313/en/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://blacklu.cc/vi/page/"
+                href="http://localhost:1313/vi/page/"
                 />
   </url><url>
-    <loc>https://blacklu.cc/vi/v%E1%BB%81/</loc>
+    <loc>http://localhost:1313/vi/v%E1%BB%81/</loc>
     <lastmod>2022-12-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://blacklu.cc/zh-tw/%E9%97%9C%E6%96%BC/"
+                href="http://localhost:1313/zh-tw/%E9%97%9C%E6%96%BC/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://blacklu.cc/%E5%85%B3%E4%BA%8E/"
+                href="http://localhost:1313/%E5%85%B3%E4%BA%8E/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blacklu.cc/en/about/"
+                href="http://localhost:1313/en/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://blacklu.cc/vi/v%E1%BB%81/"
+                href="http://localhost:1313/vi/v%E1%BB%81/"
                 />
   </url><url>
-    <loc>https://blacklu.cc/vi/archives/</loc>
+    <loc>http://localhost:1313/vi/archives/</loc>
     <lastmod>2022-05-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://blacklu.cc/zh-tw/archives/"
+                href="http://localhost:1313/zh-tw/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://blacklu.cc/archives/"
+                href="http://localhost:1313/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blacklu.cc/en/archives/"
+                href="http://localhost:1313/en/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://blacklu.cc/vi/archives/"
+                href="http://localhost:1313/vi/archives/"
                 />
   </url><url>
-    <loc>https://blacklu.cc/vi/categories/</loc>
+    <loc>http://localhost:1313/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://blacklu.cc/zh-tw/categories/"
+                href="http://localhost:1313/zh-tw/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://blacklu.cc/categories/"
+                href="http://localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blacklu.cc/en/categories/"
+                href="http://localhost:1313/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://blacklu.cc/vi/categories/"
+                href="http://localhost:1313/vi/categories/"
                 />
   </url><url>
-    <loc>https://blacklu.cc/vi/li%C3%AAn-k%E1%BA%BFt/</loc>
+    <loc>http://localhost:1313/vi/li%C3%AAn-k%E1%BA%BFt/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://blacklu.cc/zh-tw/%E9%8F%88%E6%8E%A5/"
+                href="http://localhost:1313/zh-tw/%E9%8F%88%E6%8E%A5/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://blacklu.cc/%E9%93%BE%E6%8E%A5/"
+                href="http://localhost:1313/%E9%93%BE%E6%8E%A5/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blacklu.cc/en/links/"
+                href="http://localhost:1313/en/links/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://blacklu.cc/vi/li%C3%AAn-k%E1%BA%BFt/"
+                href="http://localhost:1313/vi/li%C3%AAn-k%E1%BA%BFt/"
                 />
   </url><url>
-    <loc>https://blacklu.cc/vi/tags/</loc>
+    <loc>http://localhost:1313/vi/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://blacklu.cc/zh-tw/tags/"
+                href="http://localhost:1313/zh-tw/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://blacklu.cc/tags/"
+                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blacklu.cc/en/tags/"
+                href="http://localhost:1313/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://blacklu.cc/vi/tags/"
+                href="http://localhost:1313/vi/tags/"
                 />
   </url><url>
-    <loc>https://blacklu.cc/vi/search/</loc>
+    <loc>http://localhost:1313/vi/search/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://blacklu.cc/zh-tw/search/"
+                href="http://localhost:1313/zh-tw/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://blacklu.cc/search/"
+                href="http://localhost:1313/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://blacklu.cc/en/search/"
+                href="http://localhost:1313/en/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://blacklu.cc/vi/search/"
+                href="http://localhost:1313/vi/search/"
                 />
   </url>
 </urlset>

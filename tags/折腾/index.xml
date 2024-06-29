@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>折腾 on 我语言之局限,即是我世界之局限</title>
-        <link>https://blacklu.cc/tags/%E6%8A%98%E8%85%BE/</link>
+        <link>http://localhost:1313/tags/%E6%8A%98%E8%85%BE/</link>
         <description>Recent content in 折腾 on 我语言之局限,即是我世界之局限</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sat, 04 May 2024 05:05:04 +0800</lastBuildDate><atom:link href="https://blacklu.cc/tags/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 04 May 2024 05:05:04 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%8A%98%E8%85%BE/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hugo &#43; Github Page 快速搭建部落格</title>
-        <link>https://blacklu.cc/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</link>
+        <link>http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</link>
         <pubDate>Sat, 04 May 2024 05:05:04 +0800</pubDate>
         
-        <guid>https://blacklu.cc/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</guid>
-        <description>&lt;img src="https://blacklu.cc/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/pawel.jpg" alt="Featured image of post Hugo &#43; Github Page 快速搭建部落格" /&gt;&lt;h3 id=&#34;缘起&#34;&gt;缘起
+        <guid>http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</guid>
+        <description>&lt;img src="http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/pawel.jpg" alt="Featured image of post Hugo &#43; Github Page 快速搭建部落格" /&gt;&lt;h3 id=&#34;缘起&#34;&gt;缘起
 &lt;/h3&gt;&lt;p&gt;原本有一篇文章是关于如何使用github page 搭建部落格,由于配置系统的时候丢失了,故今日快速重写一篇,顺便藉此提高自己写作的速度,下载就以stack 爲例&lt;/p&gt;
 &lt;h3 id=&#34;准备&#34;&gt;准备
 &lt;/h3&gt;&lt;ol&gt;
@@ -110,10 +110,10 @@
 &lt;li&gt;在终端按住Ctrl 键点击 &lt;strong&gt;http://localhost:*/&lt;/strong&gt; 开啓预览网站,或者複製 &lt;strong&gt;http://localhost:*/&lt;/strong&gt; 粘贴到浏览器开啓,* 代表系统分配的端口名&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://blacklu.cc/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/stack_sample.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/stack_sample.png&#34;
 	width=&#34;1492&#34;
 	height=&#34;981&#34;
-	srcset=&#34;https://blacklu.cc/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/stack_sample_huca5ec3bce65184c7928dcf00a10781c0_481376_480x0_resize_box_3.png 480w, https://blacklu.cc/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/stack_sample_huca5ec3bce65184c7928dcf00a10781c0_481376_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/stack_sample_huca5ec3bce65184c7928dcf00a10781c0_481376_480x0_resize_box_3.png 480w, http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/stack_sample_huca5ec3bce65184c7928dcf00a10781c0_481376_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;stack_sample&#34;
@@ -325,11 +325,11 @@
         </item>
         <item>
         <title>华硕 RT-AC86U 配置</title>
-        <link>https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/</link>
+        <link>http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/</link>
         <pubDate>Fri, 03 May 2024 21:18:02 +0800</pubDate>
         
-        <guid>https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/</guid>
-        <description>&lt;img src="https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/AC86U.webp" alt="Featured image of post 华硕 RT-AC86U 配置" /&gt;&lt;h3 id=&#34;起因&#34;&gt;起因
+        <guid>http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/AC86U.webp" alt="Featured image of post 华硕 RT-AC86U 配置" /&gt;&lt;h3 id=&#34;起因&#34;&gt;起因
 &lt;/h3&gt;&lt;p&gt;在我尚未上高中时候，在群组里就有人直接使用路由器进行翻牆上网，当时就十分好奇如何实现&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
@@ -352,10 +352,10 @@
 
 
 搜寻RT-AC86U并下载固件
-&lt;img src=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware.png&#34;
+&lt;img src=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware.png&#34;
 	width=&#34;1249&#34;
 	height=&#34;1068&#34;
-	srcset=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware_huab63e992f50e4fe75c365c48d01cb758_347806_480x0_resize_box_3.png 480w, https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware_huab63e992f50e4fe75c365c48d01cb758_347806_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware_huab63e992f50e4fe75c365c48d01cb758_347806_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware_huab63e992f50e4fe75c365c48d01cb758_347806_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;merlin_firmware&#34;
@@ -407,10 +407,10 @@
 &lt;h3 id=&#34;刷机&#34;&gt;刷机
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;在chromium 内核的浏览器输入 192.168.50.1 进入路由器管理页面, 系统管理=&amp;gt; 固件升级,点击上传固件选择下载的固件,此过程需要耐心等待
-&lt;img src=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade.jpg&#34;
+&lt;img src=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade.jpg&#34;
 	width=&#34;1034&#34;
 	height=&#34;1504&#34;
-	srcset=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade_hu6096c0906f99a312f953cc97a5a8e8a0_308618_480x0_resize_q75_box.jpg 480w, https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade_hu6096c0906f99a312f953cc97a5a8e8a0_308618_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade_hu6096c0906f99a312f953cc97a5a8e8a0_308618_480x0_resize_q75_box.jpg 480w, http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade_hu6096c0906f99a312f953cc97a5a8e8a0_308618_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;firmupgrade&#34;
@@ -428,10 +428,10 @@
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;软体中心 =&amp;gt; 手动安装 =&amp;gt; 离线安装插件安装 =&amp;gt; 选择文件, 选择已下载的 MerlinClash 插件
 [软体中心=&amp;gt; 全部软体 可以在线安装插件,软体中心=&amp;gt; 手动安装, 离线安装插件即安装软体中心没有的插件]
-&lt;img src=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension.jpg&#34;
+&lt;img src=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;1368&#34;
-	srcset=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension_hu2fef85b49a5ffe457e38bfbbe9e61951_226148_480x0_resize_q75_box.jpg 480w, https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension_hu2fef85b49a5ffe457e38bfbbe9e61951_226148_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension_hu2fef85b49a5ffe457e38bfbbe9e61951_226148_480x0_resize_q75_box.jpg 480w, http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension_hu2fef85b49a5ffe457e38bfbbe9e61951_226148_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;extension&#34;
@@ -449,10 +449,10 @@
 &lt;li&gt;右键点击打开文件,找到其.yaml 文件所在位置,複製到其他目录并重命名爲*.ymal, *要求15个字符以内&lt;/li&gt;
 &lt;li&gt;软体中心 =&amp;gt; 已安装 =&amp;gt; MerlinClash =&amp;gt; 打开=&amp;gt; 配置文件-Clash-Yaml配置下载
 复制你的订阅链接,并粘贴到旁边的输入框内,如图所示,并重命名(命名)你的订阅,我的是nu,然后点击&lt;code&gt;Clasn 订阅&lt;/code&gt;即可保存订阅文件
-&lt;img src=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu.png&#34;
+&lt;img src=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu.png&#34;
 	width=&#34;978&#34;
 	height=&#34;688&#34;
-	srcset=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_hu3f65974bf75c7db0dd6992eafe94cbaf_109394_480x0_resize_box_3.png 480w, https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_hu3f65974bf75c7db0dd6992eafe94cbaf_109394_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_hu3f65974bf75c7db0dd6992eafe94cbaf_109394_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_hu3f65974bf75c7db0dd6992eafe94cbaf_109394_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;nc&#34;
@@ -464,10 +464,10 @@
 	
 &gt;&lt;/li&gt;
 &lt;li&gt;回到首页配置,配置文件选择你重命名的配置文件,选择保存&amp;amp;重启即可
-&lt;img src=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_config.png&#34;
+&lt;img src=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_config.png&#34;
 	width=&#34;988&#34;
 	height=&#34;1008&#34;
-	srcset=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_config_huda92a7eafce3e9937ca506f762f16d71_229156_480x0_resize_box_3.png 480w, https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_config_huda92a7eafce3e9937ca506f762f16d71_229156_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_config_huda92a7eafce3e9937ca506f762f16d71_229156_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_config_huda92a7eafce3e9937ca506f762f16d71_229156_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;nc_config&#34;

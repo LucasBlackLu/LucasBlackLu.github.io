@@ -2,17 +2,410 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>我语言之局限,即是我世界之局限</title>
-        <link>https://blacklu.cc/</link>
+        <link>http://localhost:1313/</link>
         <description>Recent content on 我语言之局限,即是我世界之局限</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Thu, 09 May 2024 00:54:15 +0800</lastBuildDate><atom:link href="https://blacklu.cc/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 30 Jun 2024 04:31:08 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Win11 LTSC 配置 </title>
+        <link>http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/</link>
+        <pubDate>Sun, 30 Jun 2024 04:31:08 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;img src="http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/win11.jpg" alt="Featured image of post Win11 LTSC 配置 " /&gt;&lt;h2 id=&#34;缘起&#34;&gt;缘起
+&lt;/h2&gt;&lt;p&gt;今天帮同学重装系统,选择了Win11 LTSC,刚好他也不需要太多的东西,这一晚上刚好配置了一大堆东西,不过主要时间花在office 上面,让我们开始吧&lt;/p&gt;
+&lt;h2 id=&#34;系统安装&#34;&gt;系统安装
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;下载&lt;a class=&#34;link&#34; href=&#34;https://www.123pan.com/s/QvmKVv-ukGB&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;系统镜像 &lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;下载&lt;a class=&#34;link&#34; href=&#34;https://rufus.ie/zh/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;rufus&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+
+下载镜像之后选择镜像然后高级设置关闭所有选项即可
+&lt;img src=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/rufus.png&#34;
+	width=&#34;1018&#34;
+	height=&#34;1234&#34;
+	srcset=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/rufus_hu61c7e72369b6d7463504ebd76a09d8ee_74623_480x0_resize_box_3.png 480w, http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/rufus_hu61c7e72369b6d7463504ebd76a09d8ee_74623_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;rufus&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;82&#34;
+		data-flex-basis=&#34;197px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;进入BIOS 选择U盘优先启动&lt;/li&gt;
+&lt;li&gt;默认配置安装系统即可,完成后进入系统&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;系统配置&#34;&gt;系统配置
+&lt;/h2&gt;&lt;h3 id=&#34;转换版本&#34;&gt;转换版本
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;下载安装win10/11 &lt;a class=&#34;link&#34; href=&#34;https://www.xyboot.com/windows10_ver_one_key_switch/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;转换工具&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;先转换成专业版再换成LTSC 版或者 lot LTSC 物联网版
+&lt;img src=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/professional.jpg&#34;
+	width=&#34;420&#34;
+	height=&#34;200&#34;
+	srcset=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/professional_hud5da09607b99928c6ef55198a8c80878_34779_480x0_resize_q75_box.jpg 480w, http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/professional_hud5da09607b99928c6ef55198a8c80878_34779_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;210&#34;
+		data-flex-basis=&#34;504px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;office-tool&#34;&gt;office tool
+&lt;/h3&gt;&lt;p&gt;为设备安装激活Office,无特别需求可选择2021版本&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如有条件请支持正版,请勿商用
+&lt;a class=&#34;link&#34; href=&#34;https://otp.landian.vip/zh-cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;kms-激活&#34;&gt;KMS 激活
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.yrxitong.com/h-nd-759.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;国内下载地址&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/zbezj/HEU_KMS_Activator/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github 项目地址&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如有条件请支持正版,请勿商用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;必备软件&#34;&gt;必备软件
+&lt;/h2&gt;&lt;h3 id=&#34;steam-watt-tookit&#34;&gt;Steam++ Watt tookit
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;如果说 Clash 是太阳能手电筒,那么它就是临时的太阳能,给予我们光明寻找我们的手电筒
+&lt;a class=&#34;link&#34; href=&#34;https://steampp.net/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网下载地址&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+
+安装之后,选择github加速,更稳定地访问 github以找到我们的手电筒&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;win11-轻松设置&#34;&gt;win11 轻松设置
+&lt;/h3&gt;&lt;p&gt;安装基本的软件和国内的软件且无需直接在浏览器下载,以及一些好用的功能,下面的类似
+&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/read/cv32460492/?jump_opus=1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;B站作者发布页&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+
+&lt;img src=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/win11_easy.webp&#34;
+	width=&#34;1656&#34;
+	height=&#34;928&#34;
+	srcset=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/win11_easy_huf8f36970a4c38bf18ae14eddf11201c6_78306_480x0_resize_q75_h2_box_2.webp 480w, http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/win11_easy_huf8f36970a4c38bf18ae14eddf11201c6_78306_1024x0_resize_q75_h2_box_2.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;win11easy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;178&#34;
+		data-flex-basis=&#34;428px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;win11-fixer&#34;&gt;win11 fixer
+&lt;/h3&gt;&lt;p&gt;不想要在浏览器搜索安装一些国外软件可以使用这个,
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/yozooCN/Windows-11-Fixer/releases/tag/v2.1.0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载地址&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;h3 id=&#34;图吧工具箱&#34;&gt;图吧工具箱
+&lt;/h3&gt;&lt;p&gt;内置硬件检测,以及磁盘管理工具可用分盘
+&lt;a class=&#34;link&#34; href=&#34;https://www.tbtool.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;h3 id=&#34;clash-verge-rev&#34;&gt;clash-verge-rev
+&lt;/h3&gt;&lt;p&gt;这就是我们其中之一的太阳能手电筒
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/clash-verge-rev/clash-verge-rev/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;clash-verge-rev&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;浏览器输入 &lt;code&gt;古拉.com&lt;/code&gt;, 注册登陆机场&lt;/li&gt;
+&lt;li&gt;复制订阅链接&lt;/li&gt;
+&lt;li&gt;打开clash =&amp;gt; 设置, 开启 Tun 模式和系统代理&lt;/li&gt;
+&lt;li&gt;点击订阅选项,粘贴订阅链接 =&amp;gt; 导入,即完成操作
+&lt;a class=&#34;link&#34; href=&#34;copy.png&#34; &gt;订阅链接&lt;/a&gt;
+
+
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;浏览器插件推荐&#34;&gt;浏览器插件推荐
+&lt;/h2&gt;&lt;p&gt;Edge 用户需要在扩展/插件页面开启 &lt;code&gt;允许来自其他商店的扩展&lt;/code&gt;,&lt;/p&gt;
+&lt;h3 id=&#34;ublacklist&#34;&gt;ublacklist
+&lt;/h3&gt;&lt;p&gt;此插件可用于屏蔽农场文,参考&lt;a class=&#34;link&#34; href=&#34;https://sspai.com/post/69407&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;清理「内容农场」，还你清爽的 Google 中文搜索体验&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/iorate/ublacklist&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github 地址&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+
+&lt;a class=&#34;link&#34; href=&#34;https://chromewebstore.google.com/detail/ublacklist/pncfbmialoiaghdehhbnbhkkgmjanfhe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;chrome web store &lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;可以访问问chrome web 则忽略第二步&lt;/li&gt;
+&lt;li&gt;Edge 用户需要在扩展/插件页面开启 &lt;code&gt;开发人员模式&lt;/code&gt; 和 &lt;code&gt;允许来自其他商店的扩展&lt;/code&gt;,
+下载chrome.zip, 然后在扩展页面点击 &lt;code&gt;加载解压缩的扩展&lt;/code&gt;选择你的扩展文件夹&lt;/li&gt;
+&lt;li&gt;点击扩展的&lt;code&gt;详细信息&lt;/code&gt;滑到最后 &lt;code&gt;扩展选项&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;点击&lt;code&gt;启用&lt;/code&gt;,启用 edge brave yandex duckduckgo 搜索引擎&lt;/li&gt;
+&lt;li&gt;按下图要求订阅黑名单, 订阅链接 &lt;code&gt;https://git.io/ublacklist&lt;/code&gt;
+&lt;img src=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/subscription.png&#34;
+	width=&#34;661&#34;
+	height=&#34;501&#34;
+	srcset=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/subscription_hu924c874ed84eb8522338a7a59497335e_31105_480x0_resize_box_3.png 480w, http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/subscription_hu924c874ed84eb8522338a7a59497335e_31105_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ublacklist&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;131&#34;
+		data-flex-basis=&#34;316px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;沉浸式翻译&#34;&gt;沉浸式翻译
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://immersivetranslate.com/?force=1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+
+可用同时显示中英文,看就可以边看文章边学习英语
+&lt;img src=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/theeconomist.png&#34;
+	width=&#34;1387&#34;
+	height=&#34;1214&#34;
+	srcset=&#34;http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/theeconomist_hu236ff260203bff97cf898ca2f0134ec7_420287_480x0_resize_box_3.png 480w, http://localhost:1313/p/win11-ltsc-%E9%85%8D%E7%BD%AE/theeconomist_hu236ff260203bff97cf898ca2f0134ec7_420287_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;theeconomist&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;114&#34;
+		data-flex-basis=&#34;274px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;bypass-paywall-clean&#34;&gt;Bypass paywall clean
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/bpc-clone/bpc_updates/releases/tag/latest&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github 地址&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+
+可用于解锁一些英文文章的限制,如经济学人,NYT 等等,安装方法参考上面或者链接里面readme&lt;/p&gt;
+&lt;h3 id=&#34;simple-copy&#34;&gt;Simple copy
+&lt;/h3&gt;&lt;p&gt;一些网站不允许你复制内容,那么这个插件就可以解决
+&lt;a class=&#34;link&#34; href=&#34;https://chromewebstore.google.com/detail/simple-allow-copy/aefehdhdciieocakfobpaaolhipkcpgc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;chrome web store&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;h3 id=&#34;leapsearch&#34;&gt;leapSearch
+&lt;/h3&gt;&lt;p&gt;快速切换搜索引擎搜索内容
+&lt;a class=&#34;link&#34; href=&#34;https://chromewebstore.google.com/detail/leapsearch/lapaieaegaclofackbjhjhbhfiplcgki?hl=zh-TW&amp;amp;ref=producthunt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;chrome web store&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;h3 id=&#34;uyou-标签页&#34;&gt;uyou 标签页
+&lt;/h3&gt;&lt;p&gt;好看的二次元主页
+&lt;a class=&#34;link&#34; href=&#34;https://newtab.uyou.org.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+&lt;/p&gt;
+&lt;h2 id=&#34;结语&#34;&gt;结语
+&lt;/h2&gt;&lt;p&gt;以上就是为win11 ltsc的配置,还有一些常用的插件,谢谢各位的浏览&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Android Rom 基础配置</title>
-        <link>https://blacklu.cc/p/android-rom-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</link>
+        <link>http://localhost:1313/p/android-rom-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</link>
         <pubDate>Thu, 09 May 2024 00:54:15 +0800</pubDate>
         
-        <guid>https://blacklu.cc/p/android-rom-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</guid>
-        <description>&lt;img src="https://blacklu.cc/p/android-rom-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/Factory_image.png" alt="Featured image of post Android Rom 基础配置" /&gt;&lt;hr&gt;
+        <guid>http://localhost:1313/p/android-rom-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;img src="http://localhost:1313/p/android-rom-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/Factory_image.png" alt="Featured image of post Android Rom 基础配置" /&gt;&lt;hr&gt;
 &lt;h2 id=&#34;配置android-rom-编译环境&#34;&gt;配置Android Rom 编译环境
 &lt;/h2&gt;&lt;p&gt;Android Developer 官网上所使用的是 Ubuntu,需要安装一系列繁琐的内容，还有配置Repo 工具和路径
 这里不得不说一下，Archlinux的优点 &lt;code&gt;Aur&lt;/code&gt;,得益于此,我们仅需安装两个package,在这两个package当中包含了我们所需的所有package，在此之前我们需开启32位库&lt;/p&gt;
@@ -110,11 +503,11 @@ bash flash-all.sh
         </item>
         <item>
         <title>四月的总结--To Darling</title>
-        <link>https://blacklu.cc/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/</link>
+        <link>http://localhost:1313/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/</link>
         <pubDate>Sat, 04 May 2024 08:03:05 +0800</pubDate>
         
-        <guid>https://blacklu.cc/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/</guid>
-        <description>&lt;img src="https://blacklu.cc/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/imposter_factory.jpg" alt="Featured image of post 四月的总结--To Darling" /&gt;&lt;h3 id=&#34;前言&#34;&gt;前言
+        <guid>http://localhost:1313/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E5%9B%9B%E6%9C%88%E7%9A%84%E6%80%BB%E7%BB%93--to-darling/imposter_factory.jpg" alt="Featured image of post 四月的总结--To Darling" /&gt;&lt;h3 id=&#34;前言&#34;&gt;前言
 &lt;/h3&gt;&lt;p&gt;原本我想借编程随想文章的标题 &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://program-think.blogspot.com/2020/12/Study-and-Life.html?m=1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;学习与人生&lt;/a&gt;
 
@@ -143,12 +536,66 @@ bash flash-all.sh
 </description>
         </item>
         <item>
+        <title>面試經歷</title>
+        <link>http://localhost:1313/p/%E9%9D%A2%E8%A9%A6%E7%B6%93%E6%AD%B7/</link>
+        <pubDate>Sat, 04 May 2024 07:16:07 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/%E9%9D%A2%E8%A9%A6%E7%B6%93%E6%AD%B7/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E9%9D%A2%E8%A9%A6%E7%B6%93%E6%AD%B7/linux.png" alt="Featured image of post 面試經歷" /&gt;&lt;h3 id=&#34;緣起&#34;&gt;緣起
+&lt;/h3&gt;&lt;p&gt;四月下旬,一次偶然的機會在Twitter 上面看到一份招聘信息,工作內容剛好合我意且剛好可以當做自己歷練的地方,經過詢問得知他們也收實習生;便從網路上下載一份模板經過簡單修改投遞到要求郵箱;再者由於之前暑假經驗,放假之後再找工作太遲了&lt;/p&gt;
+&lt;h3 id=&#34;過程&#34;&gt;過程
+&lt;/h3&gt;&lt;p&gt;第一次打電話過來,問我是否是本人需要面試;我們便約定第二天下午進行電話面試;在面試之前,我並沒有做任何準備,現在想起十分後悔; 在面試期間, 面試官跟我說面試可能需要一個小時,而我們半個小時就草草結束, 可見我的水平有多爛.不過面試官知道我的水平,一些問題並未刁難我,不過我也爲此感到羞愧,自己沒做好充分準備;再找便是在簡歷上我寫了瞭解網路協議,實際上我只瞭解ssh 剩下的內容基本上全都忘光光了&lt;/p&gt;
+&lt;h3 id=&#34;面試官提問內容&#34;&gt;面試官提問內容
+&lt;/h3&gt;&lt;p&gt;linux 系統如何在終端查看進程,內存,cpu的佔用情況
+linux 系統桌面app的開啓是如何實現的
+linux系統上某個app 的可執行文件或目錄存放在哪裏
+還有archlinux 的包是如何打包的
+兩臺不在同一網路的設備情況下如何用ssh 連接
+go 是什麼語言,應用與那些方面
+vue vue的問題,我是真的不會,才剛學vue 不久
+線程與進程的區別
+bash 腳本實現某些經常調用的代碼設定爲固定的值 類似如此?&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 遍历所有参数&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; device in &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$@&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# 如果设备代码是 flame、coral 或 sunfish，则将其设置为固定值 derp&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[[&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$device&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;flame&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$device&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;coral&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$device&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;sunfish&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nv&#34;&gt;device&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;derp&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# 打印出 lunch 命令&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;lunch derp_\$device-userdebug&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;結語&#34;&gt;結語
+&lt;/h3&gt;&lt;p&gt;這次面試並沒有考我算法題, 五一之後還會有一場面試,所有在五一這幾天,我還要準備一番&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Hugo &#43; Github Page 快速搭建部落格</title>
-        <link>https://blacklu.cc/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</link>
+        <link>http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</link>
         <pubDate>Sat, 04 May 2024 05:05:04 +0800</pubDate>
         
-        <guid>https://blacklu.cc/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</guid>
-        <description>&lt;img src="https://blacklu.cc/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/pawel.jpg" alt="Featured image of post Hugo &#43; Github Page 快速搭建部落格" /&gt;&lt;h3 id=&#34;缘起&#34;&gt;缘起
+        <guid>http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/</guid>
+        <description>&lt;img src="http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/pawel.jpg" alt="Featured image of post Hugo &#43; Github Page 快速搭建部落格" /&gt;&lt;h3 id=&#34;缘起&#34;&gt;缘起
 &lt;/h3&gt;&lt;p&gt;原本有一篇文章是关于如何使用github page 搭建部落格,由于配置系统的时候丢失了,故今日快速重写一篇,顺便藉此提高自己写作的速度,下载就以stack 爲例&lt;/p&gt;
 &lt;h3 id=&#34;准备&#34;&gt;准备
 &lt;/h3&gt;&lt;ol&gt;
@@ -246,10 +693,10 @@ bash flash-all.sh
 &lt;li&gt;在终端按住Ctrl 键点击 &lt;strong&gt;http://localhost:*/&lt;/strong&gt; 开啓预览网站,或者複製 &lt;strong&gt;http://localhost:*/&lt;/strong&gt; 粘贴到浏览器开啓,* 代表系统分配的端口名&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://blacklu.cc/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/stack_sample.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/stack_sample.png&#34;
 	width=&#34;1492&#34;
 	height=&#34;981&#34;
-	srcset=&#34;https://blacklu.cc/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/stack_sample_huca5ec3bce65184c7928dcf00a10781c0_481376_480x0_resize_box_3.png 480w, https://blacklu.cc/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/stack_sample_huca5ec3bce65184c7928dcf00a10781c0_481376_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/stack_sample_huca5ec3bce65184c7928dcf00a10781c0_481376_480x0_resize_box_3.png 480w, http://localhost:1313/p/hugo--github-page-%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%83%A8%E8%90%BD%E6%A0%BC/stack_sample_huca5ec3bce65184c7928dcf00a10781c0_481376_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;stack_sample&#34;
@@ -461,11 +908,11 @@ bash flash-all.sh
         </item>
         <item>
         <title>华硕 RT-AC86U 配置</title>
-        <link>https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/</link>
+        <link>http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/</link>
         <pubDate>Fri, 03 May 2024 21:18:02 +0800</pubDate>
         
-        <guid>https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/</guid>
-        <description>&lt;img src="https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/AC86U.webp" alt="Featured image of post 华硕 RT-AC86U 配置" /&gt;&lt;h3 id=&#34;起因&#34;&gt;起因
+        <guid>http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/AC86U.webp" alt="Featured image of post 华硕 RT-AC86U 配置" /&gt;&lt;h3 id=&#34;起因&#34;&gt;起因
 &lt;/h3&gt;&lt;p&gt;在我尚未上高中时候，在群组里就有人直接使用路由器进行翻牆上网，当时就十分好奇如何实现&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
@@ -488,10 +935,10 @@ bash flash-all.sh
 
 
 搜寻RT-AC86U并下载固件
-&lt;img src=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware.png&#34;
+&lt;img src=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware.png&#34;
 	width=&#34;1249&#34;
 	height=&#34;1068&#34;
-	srcset=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware_huab63e992f50e4fe75c365c48d01cb758_347806_480x0_resize_box_3.png 480w, https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware_huab63e992f50e4fe75c365c48d01cb758_347806_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware_huab63e992f50e4fe75c365c48d01cb758_347806_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/merlin_firmware_huab63e992f50e4fe75c365c48d01cb758_347806_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;merlin_firmware&#34;
@@ -543,10 +990,10 @@ bash flash-all.sh
 &lt;h3 id=&#34;刷机&#34;&gt;刷机
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;在chromium 内核的浏览器输入 192.168.50.1 进入路由器管理页面, 系统管理=&amp;gt; 固件升级,点击上传固件选择下载的固件,此过程需要耐心等待
-&lt;img src=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade.jpg&#34;
+&lt;img src=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade.jpg&#34;
 	width=&#34;1034&#34;
 	height=&#34;1504&#34;
-	srcset=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade_hu6096c0906f99a312f953cc97a5a8e8a0_308618_480x0_resize_q75_box.jpg 480w, https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade_hu6096c0906f99a312f953cc97a5a8e8a0_308618_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade_hu6096c0906f99a312f953cc97a5a8e8a0_308618_480x0_resize_q75_box.jpg 480w, http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/firmupgrade_hu6096c0906f99a312f953cc97a5a8e8a0_308618_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;firmupgrade&#34;
@@ -564,10 +1011,10 @@ bash flash-all.sh
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;软体中心 =&amp;gt; 手动安装 =&amp;gt; 离线安装插件安装 =&amp;gt; 选择文件, 选择已下载的 MerlinClash 插件
 [软体中心=&amp;gt; 全部软体 可以在线安装插件,软体中心=&amp;gt; 手动安装, 离线安装插件即安装软体中心没有的插件]
-&lt;img src=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension.jpg&#34;
+&lt;img src=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;1368&#34;
-	srcset=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension_hu2fef85b49a5ffe457e38bfbbe9e61951_226148_480x0_resize_q75_box.jpg 480w, https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension_hu2fef85b49a5ffe457e38bfbbe9e61951_226148_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension_hu2fef85b49a5ffe457e38bfbbe9e61951_226148_480x0_resize_q75_box.jpg 480w, http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/extension_hu2fef85b49a5ffe457e38bfbbe9e61951_226148_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;extension&#34;
@@ -585,10 +1032,10 @@ bash flash-all.sh
 &lt;li&gt;右键点击打开文件,找到其.yaml 文件所在位置,複製到其他目录并重命名爲*.ymal, *要求15个字符以内&lt;/li&gt;
 &lt;li&gt;软体中心 =&amp;gt; 已安装 =&amp;gt; MerlinClash =&amp;gt; 打开=&amp;gt; 配置文件-Clash-Yaml配置下载
 复制你的订阅链接,并粘贴到旁边的输入框内,如图所示,并重命名(命名)你的订阅,我的是nu,然后点击&lt;code&gt;Clasn 订阅&lt;/code&gt;即可保存订阅文件
-&lt;img src=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu.png&#34;
+&lt;img src=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu.png&#34;
 	width=&#34;978&#34;
 	height=&#34;688&#34;
-	srcset=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_hu3f65974bf75c7db0dd6992eafe94cbaf_109394_480x0_resize_box_3.png 480w, https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_hu3f65974bf75c7db0dd6992eafe94cbaf_109394_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_hu3f65974bf75c7db0dd6992eafe94cbaf_109394_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_hu3f65974bf75c7db0dd6992eafe94cbaf_109394_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;nc&#34;
@@ -600,10 +1047,10 @@ bash flash-all.sh
 	
 &gt;&lt;/li&gt;
 &lt;li&gt;回到首页配置,配置文件选择你重命名的配置文件,选择保存&amp;amp;重启即可
-&lt;img src=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_config.png&#34;
+&lt;img src=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_config.png&#34;
 	width=&#34;988&#34;
 	height=&#34;1008&#34;
-	srcset=&#34;https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_config_huda92a7eafce3e9937ca506f762f16d71_229156_480x0_resize_box_3.png 480w, https://blacklu.cc/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_config_huda92a7eafce3e9937ca506f762f16d71_229156_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_config_huda92a7eafce3e9937ca506f762f16d71_229156_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E5%8D%8E%E7%A1%95-rt-ac86u-%E9%85%8D%E7%BD%AE/nu_config_huda92a7eafce3e9937ca506f762f16d71_229156_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;nc_config&#34;
@@ -698,11 +1145,11 @@ bash flash-all.sh
         </item>
         <item>
         <title>Hugo Stack 主题魔改</title>
-        <link>https://blacklu.cc/p/hugo-stack-%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/</link>
+        <link>http://localhost:1313/p/hugo-stack-%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/</link>
         <pubDate>Fri, 03 May 2024 05:12:33 +0800</pubDate>
         
-        <guid>https://blacklu.cc/p/hugo-stack-%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/</guid>
-        <description>&lt;img src="https://blacklu.cc/p/hugo-stack-%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/hugo.png" alt="Featured image of post Hugo Stack 主题魔改" /&gt;&lt;h2 id=&#34;缘起&#34;&gt;缘起
+        <guid>http://localhost:1313/p/hugo-stack-%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/</guid>
+        <description>&lt;img src="http://localhost:1313/p/hugo-stack-%E4%B8%BB%E9%A2%98%E9%AD%94%E6%94%B9/hugo.png" alt="Featured image of post Hugo Stack 主题魔改" /&gt;&lt;h2 id=&#34;缘起&#34;&gt;缘起
 &lt;/h2&gt;&lt;p&gt;在部署完成博客之后一直有对Blog进行大改的想法，无奈自己懒惰的缘由以及stack 主题有一些小问题导致问题一直遗留至今&lt;/p&gt;
 &lt;h2 id=&#34;问题&#34;&gt;问题
 &lt;/h2&gt;&lt;p&gt;Stack 主题在content里面的内容会与根目录下的文件冲突，而现在已经没有类似的问题，配置方式如下&lt;/p&gt;
@@ -801,15 +1248,15 @@ bash flash-all.sh
         </item>
         <item>
         <title>合并两个有序链表</title>
-        <link>https://blacklu.cc/p/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/</link>
+        <link>http://localhost:1313/p/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/</link>
         <pubDate>Sat, 23 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://blacklu.cc/p/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/</guid>
+        <guid>http://localhost:1313/p/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/</guid>
         <description>&lt;h1 id=&#34;合并两个有序链表&#34;&gt;合并两个有序链表
-&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;https://blacklu.cc/p/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/mergetwolists.png&#34;
+&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/mergetwolists.png&#34;
 	width=&#34;333&#34;
 	height=&#34;151&#34;
-	srcset=&#34;https://blacklu.cc/p/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/mergetwolists_hu74e4907842b1adb9c5c3f342cf6c03c7_9026_480x0_resize_box_3.png 480w, https://blacklu.cc/p/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/mergetwolists_hu74e4907842b1adb9c5c3f342cf6c03c7_9026_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/mergetwolists_hu74e4907842b1adb9c5c3f342cf6c03c7_9026_480x0_resize_box_3.png 480w, http://localhost:1313/p/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/mergetwolists_hu74e4907842b1adb9c5c3f342cf6c03c7_9026_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;MergeTwoLists&#34;
@@ -898,11 +1345,11 @@ bash flash-all.sh
         </item>
         <item>
         <title>使用Cloudflare Page 搭建博客</title>
-        <link>https://blacklu.cc/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+        <link>http://localhost:1313/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
         <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://blacklu.cc/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
-        <description>&lt;img src="https://blacklu.cc/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/cloudflare_page.png" alt="Featured image of post 使用Cloudflare Page 搭建博客" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+        <guid>http://localhost:1313/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E4%BD%BF%E7%94%A8cloudflare-page-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/cloudflare_page.png" alt="Featured image of post 使用Cloudflare Page 搭建博客" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;　　过去几个月当中，我搭建部落格都是使用Github Page的方式搭建且域名无法自定义，从朋友中得知可以用CloudFlare搭建，不仅简单且可以自定义域名，那我们开始吧&lt;/p&gt;
 &lt;h2 id=&#34;部署&#34;&gt;部署
 &lt;/h2&gt;&lt;h3 id=&#34;github-page&#34;&gt;GitHub Page
@@ -1028,11 +1475,11 @@ bash flash-all.sh
         </item>
         <item>
         <title>夏日之惑</title>
-        <link>https://blacklu.cc/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/</link>
+        <link>http://localhost:1313/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/</link>
         <pubDate>Mon, 31 Jul 2023 04:37:58 +0800</pubDate>
         
-        <guid>https://blacklu.cc/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/</guid>
-        <description>&lt;img src="https://blacklu.cc/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/photo_2023-12-11_01-36-08.jpg" alt="Featured image of post 夏日之惑" /&gt;&lt;h3 id=&#34;前言&#34;&gt;前言
+        <guid>http://localhost:1313/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%83%91/photo_2023-12-11_01-36-08.jpg" alt="Featured image of post 夏日之惑" /&gt;&lt;h3 id=&#34;前言&#34;&gt;前言
 &lt;/h3&gt;&lt;p&gt;近一些天，发现自己不仅失眠而且注意力分散，且无法专注看完一本&lt;/p&gt;
 &lt;h3 id=&#34;失眠&#34;&gt;失眠
 &lt;/h3&gt;&lt;p&gt;最近老是失眠，以前的时候是下午睡觉然后在晚上敲敲代码，编译系统去看看有什麽 Bug 需要修或者去 pick 别人的代码，现在完全不行了，彷彿是日夜颠倒，成功过上美国人的生活，但身体和精神状况却越来越糟；甚至成了旷课大王，真的是恶梦啊&lt;/p&gt;
@@ -1070,12 +1517,48 @@ bash flash-all.sh
 </description>
         </item>
         <item>
+        <title>失眠</title>
+        <link>http://localhost:1313/p/%E5%A4%B1%E7%9C%A0/</link>
+        <pubDate>Mon, 26 Jun 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/%E5%A4%B1%E7%9C%A0/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E5%A4%B1%E7%9C%A0/sleepless.jpg" alt="Featured image of post 失眠" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;近一些天，发现自己不仅失眠而且注意力分散，且无法专注看完一本&lt;/p&gt;
+&lt;h2 id=&#34;失眠&#34;&gt;失眠
+&lt;/h2&gt;&lt;p&gt;最近老是失眠，以前的时候是下午睡觉然后在晚上敲敲代码，编译系统去看看有什麽 Bug 需要修或者去 pick 别人的代码，现在完全不行了，彷彿是日夜颠倒，成功过上美国人的生活，但身体和精神状况却越来越糟；甚至成了旷课大王，真的是恶梦啊&lt;/p&gt;
+&lt;h2 id=&#34;注意力分散&#34;&gt;注意力分散
+&lt;/h2&gt;&lt;p&gt;这个问题已经是老生常谈，在互联网下充斥着短视频和社交媒体，很难集中精力学习。以前我以为是短视频所以戒掉 Tiktok 之类的短视频 App 或者关掉其功能；短视频，使得人们难以摆脱这种短暂的刺激，导致注意力分散和学习效果不佳。言归正传，注意力分散实际上就是专注力下滑，如我之前一直在学的 Haskell，我从 YouTube 上面发现了&lt;a class=&#34;link&#34; href=&#34;https://learnyouahaskell.mno2.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Learn You A Haskell For Great Good&lt;/a&gt;
+
+
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
+这本书就开始看了一週时间，大致懂了，但是还是无法解开 exercism 练习题裡麵的第二题；后来，在 Telegram 上面的某个群组裡麵得知学 Haskell 建议去 看 [The Real World Haskell ]（https://rwh.readthedocs.io/en/latest/）；&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;虽然他说 Rust 写起来比 Haskell 更好
+但是我是主要是想通过学 Haskell 学习 Functional Program，因此还是会选择 Haskell 作为学习语言。&lt;/li&gt;
+&lt;li&gt;Haskell 确实是很好的学习 Functional Program 的语言，只是 Rust 也有其独特的优势。我觉得都可以试试看，根据个人兴趣和需求做决定。值得一试的语言，多学习才能拓宽自己的视野。此注释由 AI 生产出。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;不论我用手机还是笔记本看书在都会感觉到困，但是在晚上看手机却不会，不知道怎麽回事，可能是 OLED 萤幕的问题？&lt;/p&gt;
+&lt;h2 id=&#34;反思&#34;&gt;反思
+&lt;/h2&gt;&lt;p&gt;最近失眠已经影响到日常的课程和自己的生活作息，所以需要加以调整，不然容易形成不好的习惯；加上自己的注意力分散，学不到什麽东西，只能虚度光阴，现在还在谋求解决方案&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>这几天的感想</title>
-        <link>https://blacklu.cc/p/%E8%BF%99%E5%87%A0%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/</link>
+        <link>http://localhost:1313/p/%E8%BF%99%E5%87%A0%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/</link>
         <pubDate>Fri, 26 May 2023 05:02:28 +0800</pubDate>
         
-        <guid>https://blacklu.cc/p/%E8%BF%99%E5%87%A0%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/</guid>
-        <description>&lt;img src="https://blacklu.cc/p/%E8%BF%99%E5%87%A0%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/photo_2023-05-13_21-54-26.jpg" alt="Featured image of post 这几天的感想" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+        <guid>http://localhost:1313/p/%E8%BF%99%E5%87%A0%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E8%BF%99%E5%87%A0%E5%A4%A9%E7%9A%84%E6%84%9F%E6%83%B3/photo_2023-05-13_21-54-26.jpg" alt="Featured image of post 这几天的感想" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;最近在瞎折腾，什麽内核啊，再什麽onedrive网盘，还有什麽自定义域名当邮箱，反正是屁事一堆，什麽都是做一半;&lt;/p&gt;
 &lt;h2 id=&#34;落实&#34;&gt;落实
 &lt;/h2&gt;&lt;p&gt;明天打算把onedrive整了，然后再看看吧，email差不多可以了，可以装装门面&lt;/p&gt;
@@ -1085,11 +1568,11 @@ bash flash-all.sh
         </item>
         <item>
         <title>ArchLinux安装</title>
-        <link>https://blacklu.cc/p/archlinux%E5%AE%89%E8%A3%85/</link>
+        <link>http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/</link>
         <pubDate>Tue, 23 May 2023 14:33:51 +0800</pubDate>
         
-        <guid>https://blacklu.cc/p/archlinux%E5%AE%89%E8%A3%85/</guid>
-        <description>&lt;img src="https://blacklu.cc/p/archlinux%E5%AE%89%E8%A3%85/arch.png" alt="Featured image of post ArchLinux安装" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+        <guid>http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/</guid>
+        <description>&lt;img src="http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/arch.png" alt="Featured image of post ArchLinux安装" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;本来有写这个博客的想法，但无奈最近时间比较忙
 &lt;del&gt;一心想去编译Samsung内核，中间一波多折.&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;故一拖再拖。幸好最近内核的进程一直搁置，我就打算今晚扔到Stackoverflow然后收获一堆downvote，或者去XDA看看。&lt;/del&gt;&lt;/p&gt;
@@ -1128,10 +1611,10 @@ bash flash-all.sh
 &lt;h2 id=&#34;安装步骤&#34;&gt;安装步骤
 &lt;/h2&gt;&lt;h3 id=&#34;制作启动盘&#34;&gt;制作启动盘
 &lt;/h3&gt;&lt;p&gt;打开Etcher 直接选择iso文件再选择U盘安装即可
-&lt;img src=&#34;https://blacklu.cc/p/archlinux%E5%AE%89%E8%A3%85/etcher.png&#34;
+&lt;img src=&#34;http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/etcher.png&#34;
 	width=&#34;1593&#34;
 	height=&#34;1015&#34;
-	srcset=&#34;https://blacklu.cc/p/archlinux%E5%AE%89%E8%A3%85/etcher_hu6381e2e734e42ff5318ef07523feabe7_49359_480x0_resize_box_3.png 480w, https://blacklu.cc/p/archlinux%E5%AE%89%E8%A3%85/etcher_hu6381e2e734e42ff5318ef07523feabe7_49359_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/etcher_hu6381e2e734e42ff5318ef07523feabe7_49359_480x0_resize_box_3.png 480w, http://localhost:1313/p/archlinux%E5%AE%89%E8%A3%85/etcher_hu6381e2e734e42ff5318ef07523feabe7_49359_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1587,11 +2070,11 @@ sudo pacman -Syyu #更新系统
         </item>
         <item>
         <title>第一篇文章亦或不是</title>
-        <link>https://blacklu.cc/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/</link>
+        <link>http://localhost:1313/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/</link>
         <pubDate>Sat, 18 Mar 2023 22:07:31 +0800</pubDate>
         
-        <guid>https://blacklu.cc/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/</guid>
-        <description>&lt;img src="https://blacklu.cc/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/Hello-World.jpg" alt="Featured image of post 第一篇文章亦或不是" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+        <guid>http://localhost:1313/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/</guid>
+        <description>&lt;img src="http://localhost:1313/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%BA%A6%E6%88%96%E4%B8%8D%E6%98%AF/Hello-World.jpg" alt="Featured image of post 第一篇文章亦或不是" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
 &lt;/h2&gt;&lt;p&gt;早在去年初旬，我就创建了一个Github Pag，打开就一个空白页面，留下一行字“Lucasblacklu.github.io”，那时候并不知晓什么主题也不懂什么Hexo,Hugo。后来，去年刚开学不久看到班上的同学在show他的Blog，于是便粗略的看了一下，自己并没有什么想法去搭建；直到后来，在班上的老师展示他的Blog，用hexo和js搭建的，后来便开始了，我自己摸索搭建Blog。刚开始慢慢看教程，然后不断碰壁，一开始我看到的优质教程是&lt;a class=&#34;link&#34; href=&#34;https://huangno1.github.io/hugo_theme_change/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;RemBlog的教程&lt;/a&gt;
 
@@ -1639,34 +2122,34 @@ sudo pacman -Syyu #更新系统
         </item>
         <item>
         <title>归档</title>
-        <link>https://blacklu.cc/archives/</link>
+        <link>http://localhost:1313/archives/</link>
         <pubDate>Sat, 28 May 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://blacklu.cc/archives/</guid>
+        <guid>http://localhost:1313/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>关于</title>
-        <link>https://blacklu.cc/%E5%85%B3%E4%BA%8E/</link>
+        <link>http://localhost:1313/%E5%85%B3%E4%BA%8E/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://blacklu.cc/%E5%85%B3%E4%BA%8E/</guid>
+        <guid>http://localhost:1313/%E5%85%B3%E4%BA%8E/</guid>
         <description></description>
         </item>
         <item>
         <title>链接</title>
-        <link>https://blacklu.cc/%E9%93%BE%E6%8E%A5/</link>
+        <link>http://localhost:1313/%E9%93%BE%E6%8E%A5/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://blacklu.cc/%E9%93%BE%E6%8E%A5/</guid>
+        <guid>http://localhost:1313/%E9%93%BE%E6%8E%A5/</guid>
         <description></description>
         </item>
         <item>
         <title>搜索</title>
-        <link>https://blacklu.cc/search/</link>
+        <link>http://localhost:1313/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://blacklu.cc/search/</guid>
+        <guid>http://localhost:1313/search/</guid>
         <description></description>
         </item>
         
